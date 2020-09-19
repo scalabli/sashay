@@ -1,9 +1,9 @@
-## lazymux.py - Lazymux v4.0
+## sashay v1.0.1
 ##
 import os, sys
 import readline
 from time import sleep as timeout
-from core.lzmcore import *
+from core.smenu import *
 
 def main():
 	banner()
@@ -22,12 +22,11 @@ def main():
 	print("   [13] Install Linux Distro")
 	print("   [14] Termux Utility")
 	print("   [15] Shell Function [.bashrc]")
-	print("   [16] Install CLI Games")
-	print("\n   [00] Exit the Lazymux\n")
-	lazymux = input("lzmx > ")
+	print("\n   [00] Exit Sashay\n")
+	sashay = input("sshy > ")
 
 	# 01 - Information Gathering
-	if lazymux.strip() == "1" or lazymux.strip() == "01":
+	if sashay.strip() == "1" or sashay.strip() == "01":
 		print("\n    [01] Nmap: Utility for network discovery and security auditing")
 		print("    [02] Red Hawk: Information Gathering, Vulnerability Scanning and Crawling")
 		print("    [03] D-TECT: All-In-One Tool for Penetration Testing")
@@ -66,7 +65,7 @@ def main():
 		print("    [36] Sherlock: Hunt down social media accounts by username")
 		print("    [37] userrecon: Find usernames across over 75 social networks")
 		print("\n    [00] Back to main menu\n")
-		infogathering = input("lzmx > ")
+		infogathering = input("sshy > ")
 		if infogathering.strip() == "01" or infogathering.strip() == "1": nmap()
 		elif infogathering.strip() == "02" or infogathering.strip() == "2": red_hawk()
 		elif infogathering.strip() == "03" or infogathering.strip() == "3": dtect()
@@ -108,7 +107,7 @@ def main():
 		else: print("\nERROR: Wrong Input");timeout(1);restart_program()
 	
 	# 02 - Vulnerability Analysis
-	elif lazymux.strip() == "2" or lazymux.strip() == "02":
+	elif sashay.strip() == "2" or sashay.strip() == "02":
 		print("\n    [01] Nmap: Utility for network discovery and security auditing")
 		print("    [02] AndroZenmap")
 		print("    [03] AstraNmap: Security scanner used to find hosts and services on a computer network")
@@ -133,7 +132,7 @@ def main():
 		print("    [22] XAttacker: Website Vulnerability Scanner & Auto Exploiter")
 		print("    [23] OWScan: OVID Web Scanner")
 		print("\n    [00] Back to main menu\n")
-		vulnsys = input("lzmx > ")
+		vulnsys = input("sshy > ")
 		if vulnsys.strip() == "01" or vulnsys.strip() == "1": nmap()
 		elif vulnsys.strip() == "02" or vulnsys.strip() == "2": androZenmap()
 		elif vulnsys.strip() == "03" or vulnsys.strip() == "3": astraNmap()
@@ -413,14 +412,14 @@ def main():
 		else: print("\nERROR: Wrong Input");timeout(1);restart_program()
 	
 	# 13 - Install Linux Distro
-	elif lazymux.strip() == "13":
+	elif sashay.strip() == "13":
 		print("\n    [01] Ubuntu")
 		print("    [02] Fedora")
 		print("    [03] Kali Nethunter")
 		print("    [04] Parrot")
 		print("    [05] Arch Linux")
 		print("\n    [00] Back to main menu\n")
-		innudis = input("lzmx > ")
+		innudis = input("sshy > ")
 		if innudis.strip() == "01" or innudis.strip() == "1": ubuntu()
 		elif innudis.strip() == "02" or innudis.strip() == "2": fedora()
 		elif innudis.strip() == "03" or innudis.strip() == "3": nethunter()
@@ -430,7 +429,7 @@ def main():
 		else: print("\nERROR: Wrong Input");timeout(1);restart_program()
 	
 	# 14 - Termux Utility
-	elif lazymux.strip() == "14":
+	elif sashay.strip() == "14":
 		print("\n    [01] SpiderBot: Curl website using random proxy and user agent")
 		print("    [02] Ngrok: tunnel local ports to public URLs and inspect traffic")
 		print("    [03] Sudo: sudo installer for Android")
@@ -454,7 +453,7 @@ def main():
 		print("    [22] fp-compiler: Free Pascal is a 32, 64 and 16 bit professional Pascal compiler")
 		print("    [23] Numpy: The fundamental package for scientific computing with Python")
 		print("\n    [00] Back to main menu\n")
-		moretool = input("lzmx > ")
+		moretool = input("sshy > ")
 		if moretool.strip() == "01" or moretool.strip() == "1": spiderbot()
 		elif moretool.strip() == "02" or moretool.strip() == "2": ngrok()
 		elif moretool.strip() == "03" or moretool.strip() == "3": sudo()
@@ -482,7 +481,7 @@ def main():
 		else: print("\nERROR: Wrong Input");timeout(1);restart_program()
 	
 	# 15 - Shell Function [.bashrc]
-	elif lazymux.strip() == "15":
+	elif sashay.strip() == "15":
 		print("\n    [01] FBVid (FB Video Downloader)")
 		print("    [02] cast2video (Asciinema Cast Converter)")
 		print("    [03] iconset (AIDE App Icon)")
@@ -492,7 +491,7 @@ def main():
 		print("    [07] pranayama (4-7-8 Relax Breathing)")
 		print("    [08] sqlc (SQLite Query Processor)")
 		print("\n    [00] Back to main menu\n")
-		myshf = input("lzmx > ")
+		myshf = input("sshy > ")
 		if myshf.strip() == "01" or myshf.strip() == "1": fbvid()
 		elif myshf.strip() == "02" or myshf.strip() == "2": cast2video()
 		elif myshf.strip() == "03" or myshf.strip() == "3": iconset()
@@ -504,34 +503,13 @@ def main():
 		elif myshf.strip() == "00" or myshf.strip() == "0": restart_program()
 		else: print("\nERROR: Wrong Input");timeout(1);restart_program()
 	
-	# 16 - Install CLI Games
-	elif lazymux.strip() == "16":
-		print("\n    [01] Flappy Bird")
-		print("    [02] Street Car")
-		print("    [03] Speed Typing")
-		print("    [04] NSnake: The classic snake game with textual interface")
-		print("    [05] Moon buggy: Simple game where you drive a car across the moon's surface")
-		print("    [06] Nudoku: ncurses based sudoku game")
-		print("    [07] tty-solitaire")
-		print("    [08] Pacman4Console")
-		print("\n    [00] Back to main menu\n")
-		cligam = input("lzmx > ")
-		if cligam.strip() == "01" or cligam.strip() == "1": flappy_bird()
-		elif cligam.strip() == "02" or cligam.strip() == "2": street_car()
-		elif cligam.strip() == "03" or cligam.strip() == "3": speed_typing()
-		elif cligam.strip() == "04" or cligam.strip() == "4": nsnake()
-		elif cligam.strip() == "05" or cligam.strip() == "5": moon_buggy()
-		elif cligam.strip() == "06" or cligam.strip() == "6": nudoku()
-		elif cligam.strip() == "07" or cligam.strip() == "7": ttysolitaire()
-		elif cligam.strip() == "08" or cligam.strip() == "8": pacman4console()
-		elif cligam.strip() == "00" or cligam.strip() == "0": restart_program()
-		else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+
 	
-	elif lazymux.strip() == "00":
+	elif sashay.strip() == "00":
 		sys.exit()
 	
 	else:
-		print("\nERROR: Wrong Input")
+		print("\nERROR: Invalid Input, please try again")
 		timeout(1)
 		restart_program()
 
