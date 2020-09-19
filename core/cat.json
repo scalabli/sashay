@@ -1,0 +1,18 @@
+{
+  "information_gathering" : "Information Gathering",
+  "vulnerability_analysis" : "Vulnerability Analysis",
+  "web_hacking" : "Web Hacking",
+  "database_assessment" : "Database Assessment",
+  "password_attacks" : "Password Attacks",
+  "wireless_attacks" : "Web Hacking",
+  "reverse_engineering" : "Reverse Engineering",
+  "exploitation_tools" : "Exploitation Tools",
+  "sniffing_and_spoofing" : "Sniffing and Spoofing",
+  "reporting_tools" : "Reporting Tools",
+  "forensics_tools" : "Forensics Tools",
+  "stress_testing" : "Stress Testing",
+  "linux_distros" : "Linux Distros",
+  "shell_function" : "Shell Function",
+  "web_servers" : "Web Servers"
+  "programming_languages" : "Programming Languages"
+}
