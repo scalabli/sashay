@@ -5,7 +5,7 @@ import urllib.request
 from subprocess import check_output as inputstream
 
 sashay_banner = """
- _
+\033[1;33m
 ( )
 | |       _ _  ____  _   _   ___ ___   _   _
 | |  _  /'_` )(_  ,)( ) ( )/' _ ` _ `\( ) ( )(`\/')
@@ -13,7 +13,7 @@ sashay_banner = """
 (____/'`\__,_)(____)`\__, |(_) (_) (_)`\___/'(_/\_)
                     ( )_| |
                     `\___/'
-"""
+"""\033[1;91m
 backtomenu_banner = """
   [99] <<Back to main menu
   [00] Exit Sashay
