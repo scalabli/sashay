@@ -1,0 +1,9 @@
+{
+  "4nonimizer" : { 
+    "name" : "4nonimizer",
+    "package_name" : "4nonimizer",
+    "category" : [null],
+    "url" : "https://github.com/Hackplayers/4nonimizer.git",
+    "package_manager" : "git",
+    "dependency" : ["git"]
+},
