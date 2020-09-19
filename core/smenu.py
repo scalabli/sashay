@@ -1,10 +1,10 @@
-## lzmcore.py - useful module of Lazymux
+## sashay v1.0.1
 ##
 import os, sys, time
 import urllib.request
 from subprocess import check_output as inputstream
 
-lazymux_banner = """
+sashay_banner = """
  _
 ( )
 | |       _ _  ____  _   _   ___ ___   _   _
@@ -15,8 +15,8 @@ lazymux_banner = """
                     `\___/'
 """
 backtomenu_banner = """
-  [99] Back to main menu
-  [00] Exit the Lazymux
+  [99] <<Back to main menu
+  [00] Exit Sashay
 """
 
 def repo_check(sources_list):
@@ -31,7 +31,7 @@ def restart_program():
 
 def backtomenu_option():
 	print(backtomenu_banner)
-	backtomenu = input("lzmx > ")
+	backtomenu = input("sshy > ")
 	
 	if backtomenu == "99":
 		restart_program()
@@ -43,7 +43,7 @@ def backtomenu_option():
 		restart_program()
 
 def banner():
-	print(lazymux_banner)
+	print(sashay_banner)
 
 def nmap():
 	print('\n###### Installing Nmap')
