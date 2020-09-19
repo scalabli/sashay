@@ -160,7 +160,7 @@ def main():
 		else: print("\nERROR: Wrong Input");timeout(1);restart_program()
 
 	# 03 - Web Hacking
-	elif lazymux.strip() == "3" or lazymux.strip() == "03":
+	elif sashay.strip() == "3" or sashay.strip() == "03":
 		print("\n    [01] sqlmap: Automatic SQL injection and database takeover tool")
 		print("    [02] WebDAV: WebDAV File Upload Exploiter")
 		print("    [03] MaxSubdoFinder: Tool for Discovering Subdomain")
@@ -184,7 +184,7 @@ def main():
 		print("    [21] AUXILE: Auxile Framework")
 		print("    [22] xss-payload-list: Cross Site Scripting ( XSS ) Vulnerability Payload List")
 		print("\n    [00] Back to main menu\n")
-		webhack = input("lzmx > ")
+		webhack = input("sshy > ")
 		if webhack.strip() == "01" or webhack.strip() == "1": sqlmap()
 		elif webhack.strip() == "02" or webhack.strip() == "2": webdav()
 		elif webhack.strip() == "03" or webhack.strip() == "3": maxsubdofinder()
@@ -211,14 +211,14 @@ def main():
 		else: print("\nERROR: Wrong Input");timeout(1);restart_program()
 	
 	# 04 - Database Assessment
-	elif lazymux.strip() == "4" or lazymux.strip() == "04":
+	elif sashay.strip() == "4" or sashay.strip() == "04":
 		print("\n    [01] DbDat: DbDat performs numerous checks on a database to evaluate security")
 		print("    [02] sqlmap: Automatic SQL injection and database takeover tool")
 		print("    [03] NoSQLMap: Automated NoSQL database enumeration and web application exploitation tool")
 		print("    [04] audit_couchdb: Detect security issues, large or small, in a CouchDB server")
 		print("    [05] mongoaudit: An automated pentesting tool that lets you know if your MongoDB instances are properly secured")
 		print("\n    [00] Back to main menu\n")
-		dbssm = input("lzmx > ")
+		dbssm = input("sshy > ")
 		if dbssm.strip() == "01" or dbssm.strip() == "1": dbdat()
 		elif dbssm.strip() == "02" or dbssm.strip() == "2": sqlmap()
 		elif dbssm.strip() == "03" or dbssm.strip() == "3": nosqlmap
@@ -228,7 +228,7 @@ def main():
 		else: print("\nERROR: Wrong Input");timeout(1);restart_program()
 	
 	# 05 - Password Attacks
-	elif lazymux.strip() == "5" or lazymux.strip() == "05":
+	elif sashay.strip() == "5" or sashay.strip() == "05":
 		print("\n    [01] Hydra: Network logon cracker supporting different services")
 		print("    [02] FMBrute: Facebook Multi Brute Force")
 		print("    [03] HashID: Software to identify the different types of hashes")
@@ -251,7 +251,7 @@ def main():
 		print("    [20] Hashcat: World's fastest and most advanced password recovery utility")
 		print("    [21] ASU: Facebook Hacking ToolKit")
 		print("\n    [00] Back to main menu\n")
-		passtak = input("lzmx > ")
+		passtak = input("sshy > ")
 		if passtak.strip() == "01" or passtak.strip() == "1": hydra()
 		elif passtak.strip() == "02" or passtak.strip() == "2": fmbrute()
 		elif passtak.strip() == "03" or passtak.strip() == "3": hashid()
