@@ -1,6 +1,6 @@
-# Tool Name :- T-fndr
-# Author :- Gerrishon sirere
-# Date :- 9/18/2020
+# 
+# 
+# 
 
 if [ -e  /usr/lib/sudo ];then
   if [ -e /usr/bin/apt-get ];then
