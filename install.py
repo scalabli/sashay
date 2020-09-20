@@ -42,17 +42,17 @@ class tool:
             tmp=input("\033[1;36m ##> \033[00m")
             break
         else:
-          if os.path.exists(system.conf_dir+"/Tool-X"):
+          if os.path.exists(system.conf_dir+"/Sashay"):
             pass
           else:
-            os.system("mkdir "+system.conf_dir+"/Tool-X")
-          os.system("cp -r modules core Tool-X.py "+system.conf_dir+"/Tool-X")
-          os.system("cp -r core/Tool-X "+system.bin)
-          os.system("cp -r core/toolx "+system.bin)
-          os.system("chmod +x "+system.bin+"/Tool-X")
-          os.system("chmod +x "+system.bin+"/toolx")
-          os.system("cd .. && rm -rf Tool-X")
-          if os.path.exists(system.bin+"/Tool-X") and os.path.exists(system.conf_dir+"/Tool-X"):
+            os.system("mkdir "+system.conf_dir+"/Sashay")
+          os.system("cp -r modules core Sashay.py "+system.conf_dir+"/Sashay")
+          os.system("cp -r core/Sashay "+system.bin)
+          os.system("cp -r core/sashay "+system.bin)
+          os.system("chmod +x "+system.bin+"/Sashay")
+          os.system("chmod +x "+system.bin+"/sashay")
+          os.system("cd .. && rm -rf Sashay")
+          if os.path.exists(system.bin+"/Sashay") and os.path.exists(system.conf_dir+"/Sashay"):
             os.system("clear")
             logo.ins_sc()
             tmp=input("\033[1;36m ##> \033[00m")
