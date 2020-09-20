@@ -9,10 +9,10 @@
 [![License](https://img.shields.io/github/license/chouette254/Tools-Fndr.svg)](https://github.com/chouette254/Tools-Fndr)
 
 ### Introduction
-> Tools Finder (T-fndr) is an automatic installer for useful hacking tools.
+> Sashay is an automatic installer for useful hacking tools.
 
 ### Requirements
-Tfndr works flawlessly on any of the following:<br>
+Sashay works flawlessly on any of the following:<br>
 • **Android** (Termux, androlinux, userLand etc) <br>
 • **Linux** (All Debian Based Systems) <br>
 
@@ -21,11 +21,11 @@ Tfndr works flawlessly on any of the following:<br>
 
 1. Clone the project files:
 
-        git clone https://github.com/chouette254/Tools-Fndr.git
+        git clone https://github.com/chouette254/Sashay.git
 
 2. Change directory:
 
-        cd T-fndr
+        cd Sashay
 
 3. Execute:
      
@@ -41,9 +41,9 @@ Tfndr works flawlessly on any of the following:<br>
 Each number represents a specific output:
 - (1) : Type **1** to show all available tools. Type the number corresponding number of a tool which you want to install.
 - (2) : Type **2** to show tools categories
-- (3) : Type **3** to  update T-fndr
+- (3) : Type **3** to  update Sashay
 - (4) : Type **4** to know more about Us
-- (x) : Type **x** to exit T-fndr
+- (x) : Type **x** to exit Sashay
 
 ### Buy us a cup of coffee☕
 Btc address:
