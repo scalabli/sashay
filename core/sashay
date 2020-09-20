@@ -1,6 +1,6 @@
-# Tool Name :- Tool-X
-# Author :- Rajkumar dusad
-# Date :- 1/11/2017
+# 
+#
+# 
 
 if [ -d /data/data/com.termux/files/usr/etc ]; then
   conf_dir="/data/data/com.termux/files/usr/etc"
