@@ -11,11 +11,11 @@ class logo:
         (   __   ___ | |   \ \/ /
          \  | |/ _ \ / _ \| |____\  /
           \ | | (_) | (_) | |____/  \    
-         __)_|\___/ \___/|_|   /_/\_\ \033[1;91mv2.1
+         __)_|\___/ \___/|_|   /_/\_\ \033[1;91mBy Gerrishon
 
 
 \033[1;36m =============================================\033[1;m
-\033[1;33m|          Install Best Hacking Tool          |
+\033[1;33m|          Install Usefull Hacking Tools         |
 \033[1;36m =============================================\033[00m''')
 
   @classmethod
@@ -28,7 +28,7 @@ class logo:
   def not_ins(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ + ]  \033[1;31mWe can't install Tool-X.\033[1;m
+\033[1;31m  [ + ]  \033[1;31mWe can't install Sashay at the moment.\033[1;m
 \033[1;31m  [ + ]  \033[1;31mThere are some error.\033[1;m
 \033[1;31m  [ + ]  \033[1;31mPlease try again after some time.\033[1;m''')
     self.tool_footer()
