@@ -1,4 +1,5 @@
-#
+#This file is part of Sashay and may be subject to redistribution and commercial restrictions. Please visit our website
+#for more information on licensing and terms of use.
 #
 #
 import os
@@ -18,7 +19,7 @@ class sys:
   conf_dir=None
   def __init__(self):
 
-    # checking if root access exists © Gerrishon Sirere
+    # checking existence of root access
     if os.path.exists("/usr/lib/sudo"):
       self.sudo="sudo"
     elif os.path.exists("/lib/sudo"):
@@ -32,7 +33,7 @@ class sys:
     elif os.path.exists("/sbin/sudo"):
       self.sudo="sudo"
 
-    # checking for configuration directory
+    # checking for existance of configuration directories
     if os.path.exists("/usr/etc"):
       self.conf_dir="/usr/etc"
     elif os.path.exists("/data/data/com.termux/files/usr/etc"):
@@ -40,7 +41,7 @@ class sys:
     elif os.path.exists("/etc"):
       self.conf_dir="/etc"
 
-    # checking for system bin dir and system pkg manager
+    # checking for system bin, dir and system pkg manager
     if os.path.exists("/usr/bin/yum"):
       self.sys="linux"
       self.bin="/usr/bin"
