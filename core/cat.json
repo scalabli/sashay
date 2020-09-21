@@ -1,18 +1,17 @@
 {
   "information_gathering" : "Information Gathering",
-  "vulnerability_analysis" : "Vulnerability Analysis",
-  "web_hacking" : "Web Hacking",
-  "database_assessment" : "Database Assessment",
-  "password_attacks" : "Password Attacks",
-  "wireless_attacks" : "Web Hacking",
-  "reverse_engineering" : "Reverse Engineering",
+  "vulnerability_scanner" : "Vulnerability Scanner",
   "exploitation_tools" : "Exploitation Tools",
-  "sniffing_and_spoofing" : "Sniffing and Spoofing",
-  "reporting_tools" : "Reporting Tools",
+  "wireless_testing" : "Wireless Testing",
   "forensics_tools" : "Forensics Tools",
+  "web_hacking" : "Web Hacking",
   "stress_testing" : "Stress Testing",
-  "linux_distros" : "Linux Distros",
-  "shell_function" : "Shell Function",
-  "web_servers" : "Web Servers"
-  "programming_languages" : "Programming Languages"
+  "sniffing_spoofing" : "Sniffing & Spoofing",
+  "password_attack" : "Password Attacks",
+  "maintaining_access" : "Maintaining Access",
+  "ip_tracking" : "IP-Tracking tools",
+  "programming_language" : "Programming Languages",
+  "ddos" : "DDOS Attacks",
+  "web_server" : "Web Server's",
+  "termux_os" : "Termux OS"
 }
