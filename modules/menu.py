@@ -1,3 +1,7 @@
+#This file is part of Sashay and may be subject to redistribution and commercial restrictions. Please visit our website
+#for more information on licensing and terms of use.
+#
+#
 import os
 import json
 from time import sleep
@@ -188,7 +192,7 @@ class main:
         os.system("clear")
         logo.exit()
         break
-      elif cmd=="rm -t" or cmd=="rm -T" or cmd=="uninstall tool-x" or cmd=="unistall Tool-X":
+      elif cmd=="rm -s" or cmd=="rm -S" or cmd=="uninstall sshy" or cmd=="unistall Sashay":
         system=sys()
         if system.sudo:
           os.system(system.sudo+" rm -rf "+system.bin+"/Sashay")
