@@ -1,4 +1,5 @@
-#
+#This file is part of Sashay and may be subject to redistribution and commercial restrictions. Please visit our website
+#for more information on licensing and terms of use.
 #
 #
 class logo:
@@ -15,7 +16,7 @@ class logo:
 
 
 \033[1;36m =============================================\033[1;m
-\033[1;33m|          Install Usefull Hacking Tools         |
+\033[1;33m|          Install Useful Hacking Tools         |
 \033[1;36m =============================================\033[00m''')
 
   @classmethod
@@ -29,7 +30,7 @@ class logo:
     self.tool_header()
     print ('''
 \033[1;31m  [ + ]  \033[1;31mWe can't install Sashay at the moment.\033[1;m
-\033[1;31m  [ + ]  \033[1;31mThere are some error.\033[1;m
+\033[1;31m  [ + ]  \033[1;31mAn error occurred.\033[1;m
 \033[1;31m  [ + ]  \033[1;31mPlease try again after some time.\033[1;m''')
     self.tool_footer()
 
