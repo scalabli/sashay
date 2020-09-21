@@ -1,6 +1,5 @@
-# Tool Name :- Tool-X
-# Author :- Rajkumar dusad
-# Date :- 1/11/2017
+#This file is part of Sashay and may be subject to redistribution and commercial restrictions. Please visit our website
+#for more information on licensing and terms of use.
 
 import os
 import sys
