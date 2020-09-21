@@ -1,6 +1,3 @@
-#
-#
-#
 import os
 import json
 from time import sleep
@@ -191,15 +188,15 @@ class main:
         os.system("clear")
         logo.exit()
         break
-      elif cmd=="rm -t" or cmd=="rm -T" or cmd=="uninstall sashay" or cmd=="unistall Sashay":
+      elif cmd=="rm -t" or cmd=="rm -T" or cmd=="uninstall tool-x" or cmd=="unistall Tool-X":
         system=sys()
         if system.sudo:
           os.system(system.sudo+" rm -rf "+system.bin+"/Sashay")
-          os.system(system.sudo+" rm -rf "+system.bin+"/sashay")
+          os.system(system.sudo+" rm -rf "+system.bin+"/sshy")
           os.system(system.sudo+" rm -rf "+system.conf_dir+"/Sashay")
         else:
           os.system("rm -rf "+system.bin+"/Sashay")
-          os.system("rm -rf "+system.bin+"/sashay")
+          os.system("rm -rf "+system.bin+"/sshy")
           os.system("rm -rf "+system.conf_dir+"/Sashay")
         os.system("clear")
         logo.exit()
