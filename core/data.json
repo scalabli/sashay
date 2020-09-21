@@ -1,13 +1,13 @@
 {
-  "4nonimizer:Bash script for anonymizing public IP" : { 
+  "4nonimizer" : { 
     "name" : "4nonimizer",
     "package_name" : "4nonimizer",
-    "category" : ["other_tools"],
+    "category" : [null],
     "url" : "https://github.com/Hackplayers/4nonimizer.git",
     "package_manager" : "git",
     "dependency" : ["git"]
   },
-  "A-Rat:Remote administration tool based reverse shell" : { 
+  "A-Rat" : { 
     "name" : "A-Rat",
     "package_name" : "A-Rat",
     "category" : ["exploitation_tools"],
@@ -15,15 +15,15 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "ADB-Toolkit:Tool for testing android device" : { 
+  "ADB-Toolkit" : { 
     "name" : "ADB-Toolkit",
     "package_name" : "ADB-Toolkit",
-    "category" : ["exploitation_tools"],
+    "category" : [null],
     "url" : "https://github.com/ASHWIN990/ADB-Toolkit.git",
     "package_manager" : "git",
     "dependency" : ["git"]
   },
-  "ATSCAN:Advanced dork Search & Mass Exploit Scanner" : { 
+  "ATSCAN" : { 
     "name" : "ATSCAN",
     "package_name" : "ATSCAN",
     "category" : ["exploitation_tools"],
@@ -31,18 +31,18 @@
     "package_manager" : "git",
     "dependency" : ["git"]
   },
-  "AndroBugs_Framework:Android vulnerability scanner" : { 
+  "AndroBugs_Framework" : { 
     "name" : "AndroBugs_Framework",
     "package_name" : "AndroBugs_Framework",
-    "category" : ["vulnerability_analysis"],
+    "category" : [null],
     "url" : "https://github.com/AndroBugs/AndroBugs_Framework.git",
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "Androspy:Backdoor Crypter & Creator with Automatic IP Poisener" : { 
+  "Androspy" : { 
     "name" : "Androspy",
     "package_name" : "Androspy",
-    "category" : ["exploitatio_tools"],
+    "category" : [null],
     "url" : "https://github.com/TunisianEagles/Androspy.git",
     "package_manager" : "git",
     "dependency" : ["git"]
@@ -95,10 +95,10 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "Black-Hydra:A program to shorten brutforce session on hydra" : { 
+  "Black-Hydra" : { 
     "name" : "Black-Hydra",
     "package_name" : "Black-Hydra",
-    "category" : ["password_attacks"],
+    "category" : [null],
     "url" : "https://github.com/Gameye98/Black-Hydra.git",
     "package_manager" : "git",
     "dependency" : ["python","git"]
@@ -119,7 +119,7 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "Brutal:Payload for teensy" : { 
+  "Brutal" : { 
     "name" : "Brutal",
     "package_name" : "Brutal",
     "category" : ["exploitation_tools"],
@@ -543,10 +543,10 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "KnockMail:Tool to verify if E-mail exists" : { 
+  "KnockMail" : { 
     "name" : "KnockMail",
     "package_name" : "KnockMail",
-    "category" : ["sniffing_and_spoofing"],
+    "category" : ["sniffing_spoofing"],
     "url" : "https://github.com/4w4k3/KnockMail.git",
     "package_manager" : "git",
     "dependency" : ["python","git"]
@@ -583,11 +583,11 @@
     "package_manager" : "git",
     "dependency" : ["php","git"]
   },
-  "Sashay:Automatic tool installer" : { 
+  "Lazymux" : { 
     "name" : "Lazymux",
     "package_name" : "Lazymux",
-    "category" : [others],
-    "url" : "https://github.com/chouette254/Sashay.git",
+    "category" : [null],
+    "url" : "https://github.com/Gameye98/Lazymux.git",
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
