@@ -1,6 +1,6 @@
-#
-#
-#
+# Tool Name :- Tool-X
+# Author :- Rajkumar dusad
+# Date :- 1/11/2017
 
 import os
 import sys
@@ -15,7 +15,7 @@ class tool:
       system=sys()
       os.system("clear")
       logo.ins_tnc()
-      inp=input("\033[1;33m Do you want to install Sashay [Y/n]> \033[00m")
+      inp=input("\033[1;33m Do you want to install Tool-X [Y/n]> \033[00m")
       if inp=="y" or inp=="Y":
         os.system("clear")
         logo.installing()
@@ -27,9 +27,9 @@ class tool:
             os.system(system.sudo+" mkdir "+system.conf_dir+"/Sashay")
           os.system(system.sudo+" cp -r modules core Sashay.py "+system.conf_dir+"/Sashay")
           os.system(system.sudo+" cp -r core/Sashay "+system.bin)
-          os.system(system.sudo+" cp -r core/sashay "+system.bin)
+          os.system(system.sudo+" cp -r core/sshy "+system.bin)
           os.system(system.sudo+" chmod +x "+system.bin+"/Sashay")
-          os.system(system.sudo+" chmod +x "+system.bin+"/sashay")
+          os.system(system.sudo+" chmod +x "+system.bin+"/sshy")
           os.system("cd .. && "+system.sudo+" rm -rf Sashay")
           if os.path.exists(system.bin+"/Sashay") and os.path.exists(system.conf_dir+"/Sashay"):
             os.system("clear")
@@ -48,9 +48,9 @@ class tool:
             os.system("mkdir "+system.conf_dir+"/Sashay")
           os.system("cp -r modules core Sashay.py "+system.conf_dir+"/Sashay")
           os.system("cp -r core/Sashay "+system.bin)
-          os.system("cp -r core/sashay "+system.bin)
+          os.system("cp -r core/sshy "+system.bin)
           os.system("chmod +x "+system.bin+"/Sashay")
-          os.system("chmod +x "+system.bin+"/sashay")
+          os.system("chmod +x "+system.bin+"/sshy")
           os.system("cd .. && rm -rf Sashay")
           if os.path.exists(system.bin+"/Sashay") and os.path.exists(system.conf_dir+"/Sashay"):
             os.system("clear")
