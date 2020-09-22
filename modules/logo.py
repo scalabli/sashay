@@ -94,8 +94,8 @@ class logo:
   def about(self,total):
     self.tool_header()
     print (f'''
-\033[1;33m       [+] Tool Name :- \033[1;32mTool-X
-\033[1;33m       [+] Author :- \033[1;32mRajkumar Dusad
+\033[1;33m       [✓] Sashay
+\033[1;33m       [✓] By Gerrishon Sirere
 \033[1;33m       [+] Latest Update :- \033[1;32m23/3/2019.\033[1;m
 \033[1;33m       [+] Tools :- \033[1;32mtotal {total} tools.\033[1;m
 
