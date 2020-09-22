@@ -1,7 +1,7 @@
 # Sashay
 [![License](https://img.shields.io/badge/license-Apache2.0-brightgreen.svg)](https://raw.githubusercontent.com/chouette254/Sashay/master/LICENSE) ![Stable Release](https://img.shields.io/badge/stable_release-1.0.1-blue.svg) ![T-fndr Plugins](https://img.shields.io/badge/plugins-10-brightgreen.svg) [![Repositories](https://repology.org/badge/tiny-repos/tfndr.svg)](https://repology.org/project/tfndr/versions)
 
-![logo](https://www.morningstarsecurity.com/wp-content/uploads/2019/02/WhatWeb-Logo-800px.png "T-fndr Logo")
+![logo](https://https://z-m-scontent.fnbo10-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/117578412_170376394611965_5929104527911718322_o.jpg?_nc_cat=101&_nc_sid=85a577&_nc_ohc=Pp9nmHJGjEwAX-21_HR&_nc_ad=z-m&_nc_cid=1104&_nc_pt=5&_nc_eh=9c70b9b54c3704ccfbcc5dd1df071093&_nc_ht=z-m-scontent.fnbo10-1.fna&tp=14&oh=c7f0dacd3f6f0bac099a4ede631ed208&oe=5F8D6296   "T-fndr Logo")
 
 
 [![Build Status](https://img.shields.io/github/forks/chouette254/Tools-Fndr.svg)](https://github.com/chouette254/Tools-Fndr)
