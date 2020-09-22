@@ -52,24 +52,23 @@ class logo:
   def ins_sc(self):
     self.tool_header()
     print ('''
-\033[1;33m    [ + ] \033[1;32mTool-X installed successfully.
-\033[1;33m    [ + ] \033[1;32mTo run Tool-X.
-\033[1;33m    [ + ] \033[1;32mType Tool-X in your terminal.''')
+\033[1;33m    [ ✓ ] \033[1;32mSashay is installed successfully.
+\033[1;33m    [ ✓ ] \033[1;32mType Sashay or sshy to run this tool in your terminal.''')
     self.tool_footer()
 
   @classmethod
   def update(self):
     self.tool_header()
     print ('''
-\033[1;33m  [ 1 ] \033[1;32mUpdate your Tool-X.
-\033[1;33m  [ 0 ] \033[1;32mFor Back.\033[00m''')
+\033[1;33m  [ 1 ] \033[1;32mUpdate Sashay.
+\033[1;33m  [ 0 ] \033[1;32m<< Go Back.\033[00m''')
     self.tool_footer()
 
   @classmethod
   def updated(self):
     self.tool_header()
     print ('''
-\033[1;33m      [ + ] \033[1;32mTool-X Updated Successfully.
+\033[1;33m      [ + ] \033[1;32mCongratulations!! Sashay has been updated successfully.
 \033[1;33m      [ + ] \033[1;32mPress Enter to continue.\033[00m''')
     self.tool_footer()
 
@@ -77,7 +76,7 @@ class logo:
   def nonet(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ + ]  \033[1;31mNo network connection?\033[1;m
+\033[1;31m  [ + ]  \033[1;31mNo network connectivity, please try again later.\033[1;m
 \033[1;31m  [ + ]  \033[1;31mAre you offline?\033[1;m
 \033[1;31m  [ + ]  \033[1;31mPlease try again after some time.\033[00m''')
     self.tool_footer()
