@@ -68,7 +68,7 @@ class logo:
   def updated(self):
     self.tool_header()
     print ('''
-\033[1;33m      [ + ] \033[1;32mCongratulations!! Sashay has been updated successfully.
+\033[1;33m      [ ✓ ] \033[1;32mCongratulations!! Sashay has been updated successfully.
 \033[1;33m      [ + ] \033[1;32mPress Enter to continue.\033[00m''')
     self.tool_footer()
 
@@ -94,14 +94,14 @@ class logo:
   def about(self,total):
     self.tool_header()
     print (f'''
-\033[1;33m       [✓] Sashay
-\033[1;33m       [✓] By Gerrishon Sirere
-\033[1;32m       [✓] "With great power comes great responsibility"
-\033[1;33m       [+] Total tools :- \033[1;32mtotal {total} tools.\033[1;m
+\033[1;33m [✓] Sashay
+\033[1;33m [✓] By Gerrishon Sirere
+\033[1;3   [✓] "With great power comes great responsibility"
+\033[1;33  [✓] Total tools :- \033[1;32mtotal {total} tools.\033[1;m
 
-\033[1;33m [+] \033[1;32mTool-x is automatic tool installer.
-\033[1;33m [+] \033[1;32mMade for termux and linux based system.
-\033[1;31m [+] Note :- Use this tool at your own risk.''')
+\033[1;33m [✓] \033[1;32mSashay is automatic tool installer.
+\033[1;33m [✓] \033[1;32mMade for linux based systems.
+\033[1;31m [✓] Note :- Use this tool at your own risk.''')
     self.tool_footer()
 
 
@@ -162,9 +162,9 @@ class logo:
     print (f'''
 \033[1;33m  [ 1 ] \033[1;32mShow all tools.\033[1;33m [ \033[1;91mAlmost {total} tools\033[1;33m ]
 \033[1;33m  [ 2 ] \033[1;32mTools Category.
-\033[1;33m  [ 3 ] \033[1;32mUpdate Tool-X.
+\033[1;33m  [ 3 ] \033[1;32mUpdate Sashay.
 \033[1;33m  [ 4 ] \033[1;32mAbout Us.
-\033[1;33m  [ x ] \033[1;32mFor Exit.''')
+\033[1;33m  [ x ] \033[1;32mTo Exit Sashay.''')
     self.tool_footer()
 
   @classmethod
