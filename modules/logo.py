@@ -77,7 +77,6 @@ class logo:
     self.tool_header()
     print ('''
 \033[1;31m  [ x ]  \033[1;31mNo network connectivity, please try again later.\033[1;m
-\033[1;31m  [ x ]  \033[1;31mAre you offline?\033[1;m
 \033[1;31m  [ x ]  \033[1;31mPlease try again after some time.\033[00m''')
     self.tool_footer()
 
