@@ -69,24 +69,24 @@ class logo:
     self.tool_header()
     print ('''
 \033[1;33m      [ ✓ ] \033[1;32mCongratulations!! Sashay has been updated successfully.
-\033[1;33m      [ + ] \033[1;32mPress Enter to continue.\033[00m''')
+\033[1;33m      [ ✓ ] \033[1;32mPress Enter to continue.\033[00m''')
     self.tool_footer()
 
   @classmethod
   def nonet(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ + ]  \033[1;31mNo network connectivity, please try again later.\033[1;m
-\033[1;31m  [ + ]  \033[1;31mAre you offline?\033[1;m
-\033[1;31m  [ + ]  \033[1;31mPlease try again after some time.\033[00m''')
+\033[1;31m  [ x ]  \033[1;31mNo network connectivity, please try again later.\033[1;m
+\033[1;31m  [ x ]  \033[1;31mAre you offline?\033[1;m
+\033[1;31m  [ x ]  \033[1;31mPlease try again after some time.\033[00m''')
     self.tool_footer()
 
   @classmethod
   def update_error(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ + ]  \033[1;31mWe can't Update Tool-X.\033[1;m
-\033[1;31m  [ + ]  \033[1;31mPlease try again after some time.\033[00m''')
+\033[1;31m  [ x ]  \033[1;31mWe can't Update Sashay.\033[1;m
+\033[1;31m  [ x ]  \033[1;31mPlease try again after some time.\033[00m''')
     self.tool_footer()
 
 
@@ -161,7 +161,7 @@ class logo:
     self.tool_header()
     print (f'''
 \033[1;33m  [ 1 ] \033[1;32mShow all tools.\033[1;33m [ \033[1;91mAlmost {total} tools\033[1;33m ]
-\033[1;33m  [ 2 ] \033[1;32mTools Category.
+\033[1;33m  [ 2 ] \033[1;32mShow all categories.
 \033[1;33m  [ 3 ] \033[1;32mUpdate Sashay.
 \033[1;33m  [ 4 ] \033[1;32mAbout Us.
 \033[1;33m  [ x ] \033[1;32mTo Exit Sashay.''')
@@ -171,6 +171,6 @@ class logo:
   def exit(self):
     self.tool_header()
     print ('''
-\033[1;33m         [ + ] \033[1;32mThanks for using Tool-X
+\033[1;33m         [ + ] \033[1;32mHoping to see you back soon. 
 \033[1;33m         [ + ] \033[1;32mGood By..... :)\033[00m''')
     self.tool_footer()
