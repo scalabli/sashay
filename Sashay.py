@@ -5,7 +5,6 @@
 
 
 import os
-import fibo
 import sys
 from modules.menu import *
 
