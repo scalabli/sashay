@@ -101,7 +101,7 @@ class logo:
 
 \033[1;33m [✓] \033[1;32mSashay is automatic tool installer.
 \033[1;33m [✓] \033[1;32mMade for linux based systems.
-\033[1;31m [✓] Note :- Use this tool at your own risk.''')
+\033[1;31m [✓] This tool is provided as is, without warranties or guarantees of any kind"''')
     self.tool_footer()
 
 
@@ -147,7 +147,7 @@ class logo:
   @classmethod
   def updating(self):
     print ("""\033[01;33m =============================================
-\033[01;32m|______________ Updating Tool-X ______________|
+\033[01;32m|______________ Updating Sashay ______________|
  \033[01;33m=============================================\033[00m""")
 
   @classmethod
