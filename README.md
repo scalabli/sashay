@@ -38,6 +38,8 @@ Sashay works flawlessly on any of the following:<br>
 
 ### How to use👨‍💻
 
+Type Sashay or sshy in your terminal
+
 Each number represents a specific output:
 - (1) : Type **1** to show all available tools. Type the number corresponding number of a tool which you want to install.
 - (2) : Type **2** to show tools categories
