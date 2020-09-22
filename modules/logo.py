@@ -96,8 +96,8 @@ class logo:
     print (f'''
 \033[1;33m       [✓] Sashay
 \033[1;33m       [✓] By Gerrishon Sirere
-\033[1;33m       [+] Latest Update :- \033[1;32m23/3/2019.\033[1;m
-\033[1;33m       [+] Tools :- \033[1;32mtotal {total} tools.\033[1;m
+\033[1;32m       [✓] "With great power comes great responsibility"
+\033[1;33m       [+] Total tools :- \033[1;32mtotal {total} tools.\033[1;m
 
 \033[1;33m [+] \033[1;32mTool-x is automatic tool installer.
 \033[1;33m [+] \033[1;32mMade for termux and linux based system.
