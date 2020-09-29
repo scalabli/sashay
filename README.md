@@ -1,6 +1,10 @@
 # Sashay
 [![License](https://img.shields.io/badge/license-Apache2.0-brightgreen.svg)](https://raw.githubusercontent.com/chouette254/Sashay/master/LICENSE) ![Stable Release](https://img.shields.io/badge/stable_release-1.0.1-blue.svg) ![Sashay Plugins](https://img.shields.io/badge/plugins-10-brightgreen.svg) [![Repositories](https://repology.org/badge/tiny-repos/sashay.svg)](https://repology.org/project/sashay/versions)
 
+<a href="https://developers.libra.org">
+	<img width="200" src="./.assets/libra.png" alt="Libra Logo" />
+</a>
+
 ![logo](https://https://daringdiariesnet.files.wordpress.com/2020/09/adobe_post_20200929_1526100.1356125307097239-1.png?w=1024 "Sashay logo")
 
 
