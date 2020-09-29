@@ -10,14 +10,12 @@
 [![License](https://img.shields.io/github/license/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay)
 [![Stable Release](https://img.shields.io/badge/stable_release-1.0.1-blue.svg)
 [![Sashay Plugins](https://img.shields.io/badge/plugins-10-brightgreen.svg) 
-[![Repositories](https://repology.org/badge/tiny-repos/sashay.svg)](https://repology.org/project/sashay/versions)
 [![Build Status](https://img.shields.io/github/stars/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay)
 [![GitHub stars](https://img.shields.io/github/stars/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/choueete254/Sashay.svg)](https://github.com/chouette254/Sashay/issues)
 [![GitHub watchers](https://img.shields.io/github/watchers/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/watchers)
 [![Python](https://img.shields.io/badge/language-Python%203-blue.svg)](https://www.python.org)
-[![Bash](https://img.shields.io/badge/language-Bash-blue.svg)](https://www.gnu.org/software/bash/)
 [![chouette254/DedSecTL](https://img.shields.io/badge/author-chouette254/DedSecTL-red.svg)](https://github.com/chouette254)
 
 
