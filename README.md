@@ -9,6 +9,7 @@
 [![GitHub watchers](https://img.shields.io/github/watchers/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/watchers)
 [![Python](https://img.shields.io/badge/language-Python%203-blue.svg)](https://www.python.org)
 [![chouette254/DedSecTL](https://img.shields.io/badge/author-chouette254/DedSecTL-red.svg)](https://github.com/chouette254)
+[![Twitter Follow](https://img.shields.io/twitter/follow/gerrishon_s?style=social)](https://twitter.com/gerrishon_s)
 
 
 ### Introduction
