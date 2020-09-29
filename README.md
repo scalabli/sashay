@@ -63,7 +63,7 @@ Paypal:
 
 * Like our [Facebook Page](https://facebook.com/daringdiaries).
 * Ask a question on [Facebook](https://m.me/daringdiaries).
-* Get the latest updates to our project by signing up for our [newsletter](https://g/newsletter_form).
+* Get the latest updates to our project by signing up for our [newsletter](https://daringdiariesnet.wordpress.com/contact/).
 
 
 
