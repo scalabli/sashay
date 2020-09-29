@@ -8,7 +8,9 @@
 [![logo](https://https://daringdiariesnet.files.wordpress.com/2020/09/adobe_post_20200929_1526100.1356125307097239-1.png?w=1024 "Sashay logo")
 
 [![License](https://img.shields.io/github/license/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay)
-[![Stable Release](https://img.shields.io/badge/stable_release-1.0.1-blue.svg) ![Sashay Plugins](https://img.shields.io/badge/plugins-10-brightgreen.svg) [![Repositories](https://repology.org/badge/tiny-repos/sashay.svg)](https://repology.org/project/sashay/versions)
+[![Stable Release](https://img.shields.io/badge/stable_release-1.0.1-blue.svg)
+[![Sashay Plugins](https://img.shields.io/badge/plugins-10-brightgreen.svg) 
+[![Repositories](https://repology.org/badge/tiny-repos/sashay.svg)](https://repology.org/project/sashay/versions)
 [![Build Status](https://img.shields.io/github/stars/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay)
 [![GitHub stars](https://img.shields.io/github/stars/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/network/members)
@@ -16,8 +18,7 @@
 [![GitHub watchers](https://img.shields.io/github/watchers/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/watchers)
 [![Python](https://img.shields.io/badge/language-Python%203-blue.svg)](https://www.python.org)
 [![Bash](https://img.shields.io/badge/language-Bash-blue.svg)](https://www.gnu.org/software/bash/)
-[![BlackHole Security](https://img.shields.io/badge/team-BlackHole%20Security-ocean.svg)](https://github.com/BlackHoleSecurity)
-[![Gameye98/DedSecTL](https://img.shields.io/badge/author-Gameye98/DedSecTL-red.svg)](https://github.com/Gameye98)
+[![chouette254/DedSecTL](https://img.shields.io/badge/author-chouette254/DedSecTL-red.svg)](https://github.com/chouette254)
 
 
 ### Introduction
