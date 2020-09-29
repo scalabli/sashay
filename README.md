@@ -1,6 +1,7 @@
 # Sashay
 [![Sashay](core/Sashay_logo.png)](https://github.com/chouette254)
 ---
+
 [![License](https://img.shields.io/github/license/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay)
 [![GitHub stars](https://img.shields.io/github/stars/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/network/members)
