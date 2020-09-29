@@ -94,7 +94,7 @@ class logo:
     self.tool_header()
     print (f'''
 \033[1;33m [✓] Sashay
-\033[1;33m [✓] By Gerrishon Sirere
+\033[1;33m [✓] By Gerrishon Sirere(chouette254)
 \033[1;3   [✓] "With great power comes great responsibility"
 \033[1;33  [✓] Total tools :- \033[1;32mtotal {total} tools.\033[1;m
 
@@ -170,6 +170,6 @@ class logo:
   def exit(self):
     self.tool_header()
     print ('''
-\033[1;33m         [ + ] \033[1;32mHoping to see you back soon. 
+\033[1;33m         [ ✓ ] \033[1;32mHoping to see you back soon. 
 \033[1;33m         [ + ] \033[1;32mGood By..... :)\033[00m''')
     self.tool_footer()
