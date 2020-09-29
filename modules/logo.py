@@ -29,20 +29,20 @@ class logo:
   def not_ins(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ + ]  \033[1;31mWe can't install Sashay at the moment.\033[1;m
-\033[1;31m  [ + ]  \033[1;31mAn error occurred.\033[1;m
-\033[1;31m  [ + ]  \033[1;31mPlease try again after some time.\033[1;m''')
+\033[1;31m  [ x ]  \033[1;31mWe can't install Sashay at the moment.\033[1;m
+\033[1;31m  [ x ]  \033[1;31mAn error occurred.\033[1;m
+\033[1;31m  [ x ]  \033[1;31mPlease try again after some time.\033[1;m''')
     self.tool_footer()
 
   @classmethod
   def ins_tnc(self):
     self.tool_header()
     print ('''
-\033[1;33m  [ + ] \033[1;32mUse It At Your Own Risk.
-\033[1;33m  [ + ] \033[1;32mNo Warranty.
-\033[1;33m  [ + ] \033[1;32mUse it legal purpose only.
-\033[1;33m  [ + ] \033[1;32mWe are not responsible for your actions.
-\033[1;33m  [ + ] \033[1;32mDo not do things that are forbidden.
+\033[1;33m  [ ✓ ] \033[1;32mUse It At Your Own Risk.
+\033[1;33m  [ ✓ ] \033[1;32mThis tool is provided as is, without warranties or guarantees of any kind.
+\033[1;33m  [ ✓ ] \033[1;32mUse it legal purpose only.
+\033[1;33m  [ ✓ ] \033[1;32mWe are not responsible for your actions.
+\033[1;33m  [ ✓ ] \033[1;32mDo not do things that are forbidden.
 
 \033[1;31m If you are installing this tool.
  that means you are agree with all terms.''')
@@ -76,7 +76,7 @@ class logo:
   def nonet(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ x ]  \033[1;31mNo network connectivity, please try again later.\033[1;m
+\033[1;31m  [ x ]  \033[1;31mNo network connectivity.\033[1;m
 \033[1;31m  [ x ]  \033[1;31mPlease try again after some time.\033[00m''')
     self.tool_footer()
 
