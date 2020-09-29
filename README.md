@@ -8,7 +8,6 @@
 [![logo](https://https://daringdiariesnet.files.wordpress.com/2020/09/adobe_post_20200929_1526100.1356125307097239-1.png?w=1024 "Sashay logo")
 
 [![License](https://img.shields.io/github/license/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay)
-[![Stable Release](https://img.shields.io/badge/stable_release-1.0.1-blue.svg)
 [![GitHub stars](https://img.shields.io/github/stars/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/choueete254/Sashay.svg)](https://github.com/chouette254/Sashay/issues)
