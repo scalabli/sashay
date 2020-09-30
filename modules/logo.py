@@ -8,24 +8,9 @@ class logo:
     print('''\007
 
 \033[1;33m
-     __________________________________________    
-        (.  (./__SASHAY__\.) .)   .) \/:‑X .)   .)  .
-    + -    (.  (.    (. \ - | + \ .) .)   .)    x      +
-     +    (. (. (.  .)   .) / | /  .) .)     x           +
-     -  (.  |_|\___/ \_/__/|_|   /_/\_ .) 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XX                                                                          XX
-XX   MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   XX
-XX   MMMMMMMMMMMMMMMMMMMMMssssssssssssssssssssssssssMMMMMMMMMMMMMMMMMMMMM   XX
-XX   MMMMMMMMMMMMMMMMss'''                          '''ssMMMMMMMMMMMMMMMM   XX
-XX   MMMMMMMMMMMMyy''                                    ''yyMMMMMMMMMMMM   XX
-XX   MMMMMMMMyy''                                            ''yyMMMMMMMM   XX
-XX   MMMMMy''                                                    ''yMMMMM   XX
-XX   MMMy'                                                          'yMMM   XX
-XX   Mh'                                                              'hM   XX
-XX   -                                                                  -   XX
-XX                                                                          XX
+                                                                   
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                  -   XX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                                                                         XX
 XX   ::                                                                ::   XX
 XX   MMhh.        ..hhhhhh..                      ..hhhhhh..        .hhMM   XX
 XX   MMMMMh   ..hhMMMMMMMMMMhh.                .hhMMMMMMMMMMhh..   hMMMMM   XX
