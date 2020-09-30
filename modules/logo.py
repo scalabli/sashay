@@ -52,14 +52,14 @@ XX                                                                          XX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-    .o88o.                               o8o                .
-    888 `"                               `"'              .o8
-   o888oo   .oooo.o  .ooooo.   .ooooo.  oooo   .ooooo.  .o888oo oooo    ooo
-    888    d88(  "8 d88' `88b d88' `"Y8 `888  d88' `88b   888    `88.  .8'
-    888    `"Y88b.  888   888 888        888  888ooo888   888     `88..8'
-    888    o.  )88b 888   888 888   .o8  888  888    .o   888 .    `888'
-   o888o   8""888P' `Y8bod8P' `Y8bod8P' o888o `Y8bod8P'   "888"      d8'
-                                                                .o...P'
+                                 888                       .
+                                 888         `"'              .o8
+            .oooo.o    .oooo.o  o888888888o.   .ooooo.  oooo   .ooooo.  .o888o  oooo    ooo
+           d88(  "8   d88(  "8   888    88b  d88' `"Y8 `888  d88' `88b   88     `88.  .8'
+           `"Y88b.    `"Y88b.    888    888  888        8 8  888ooo888    88     `88..8'
+           o.  )88b   o.  )88b   888    888  888   .o8  888   88    .o   888 .    `888'
+           8""888P'   8"" 888P  o888o  o888o  .8bod8P' ` 8bo 8P' o88 o `Y8bod8P'   "888"      d8'
+                                                                              .o...P'
 
 
 \033[1;91mBy Gerrishon
