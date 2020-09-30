@@ -25,7 +25,7 @@ XX            +  .sMNNNNNMMMMMN+   `N    N`   +NMMMMMNNNNNMs.  +            XX
 XX              o+++     ++++Mo    M      M    oM++++     +++o              XX
 XX                                oo      oo                                XX
 XX           oM                 oo          oo                 Mo           XX
-XX         oMMo      ()        M              M       ()        oMMo         XX
+XX         oMMo      ()        M              M       ()        oMMo        XX
 XX       +MMMM                 s              s                 MMMM+       XX
 XX      +MMMMM+            +++NNNN+        +NNNN+++            +MMMMM+      XX
 XX     +MMMMMMM+       ++NNMMMMMMMMN+    +NMMMMMMMMNN++       +MMMMMMM+     XX
@@ -52,14 +52,14 @@ XX                                                                          XX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-                                 888                       
-                                 888                      
-            .oooo.o    .oooo.o   888888bo.    ooo    ooo
-           d88(  "8   d88(  "8  o888888888b   `88.  .8'
-           `"Y88b.    `"Y88b.    888    888    `88..8'
-           o.  )88b   o.  )88b   888    888     `888'
-           8""888P'   8"" 888P  o888o  o888o    "888"      d8'
-                                             .o...P'
+                                   888                       
+                                   888                      
+              .oooo.o    .oooo.o   888888bo.    ooo    ooo
+             d88(  "8   d88(  "8  o888888888b   `88.  .8'
+             `"Y88b.    `"Y88b.    888    888    `88..8'
+             o.  )88b   o.  )88b   888    888     `888'
+             8""888P'   8""888P'  o888o  o888o    "888"      d8'
+                                              .o...P'
 
 
 \033[1;91mBy Gerrishon
