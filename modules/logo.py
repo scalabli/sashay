@@ -65,9 +65,9 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 \033[1;91mBy Gerrishon
 
 
-\033[1;36m =============================================\033[1;m
-\033[1;33m|          Install Useful Hacking Tools         |
-\033[1;36m =============================================\033[00m''')
+\033[1;36m ==================================================================\033[1;m
+\033[1;33m|                   Install Useful Hacking Tools                            |
+\033[1;36m ==================================================================\033[00m''')
 
   @classmethod
   def tool_footer(self):
