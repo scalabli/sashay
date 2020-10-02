@@ -16,11 +16,11 @@
 > Sashay is an automatic installer for useful hacking tools.
 Termux
 
-      <br>
-      <p align="center">
-      <img width="40%" src="core/homepage.png"/>
-      <img width="40%" src="core/categories.png"/>
-      </p>
+<br>
+<p align="center">
+<img width="40%" src="core/homepage.png"/>
+<img width="40%" src="core/categories.png"/>
+</p>
 
 ### Requirements
 Sashay works flawlessly on any of the following:<br>
