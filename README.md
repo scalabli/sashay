@@ -17,7 +17,7 @@
 <br>
 <p align="center">
 <img width="40%" src="core/homepage.png"/>
-<img width="28.8%" src="core/toolx_cat.png"/>
+<img width="28.8%" src="core/categories.png"/>
 </p>
 
 ### Requirements
