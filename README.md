@@ -13,7 +13,7 @@
 
 
 ### Introduction
-> Sashay is an automatic installer for useful hacking tools.
+> Sashay is an automatic installer for useful Linux based tools.
 Termux
 
 <br>
