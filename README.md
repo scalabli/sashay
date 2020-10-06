@@ -14,7 +14,6 @@
 
 ### Introduction
 > Sashay is an automatic installer for useful Linux based tools.
-Termux
 
 <br>
 <p align="center">
