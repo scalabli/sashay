@@ -19,7 +19,7 @@ class sys:
   conf_dir=None
   def __init__(self):
 
-    # checking existence of root access
+    # root access 
     if os.path.exists("/usr/lib/sudo"):
       self.sudo="sudo"
     elif os.path.exists("/lib/sudo"):
@@ -33,7 +33,7 @@ class sys:
     elif os.path.exists("/sbin/sudo"):
       self.sudo="sudo"
 
-    # checking for existance of configuration directories
+    # configuration directories
     if os.path.exists("/usr/etc"):
       self.conf_dir="/usr/etc"
     elif os.path.exists("/data/data/com.termux/files/usr/etc"):
@@ -41,7 +41,7 @@ class sys:
     elif os.path.exists("/etc"):
       self.conf_dir="/etc"
 
-    # checking for system bin, dir and system pkg manager
+    # dir, system bin, and system pkg manager
     if os.path.exists("/usr/bin/yum"):
       self.sys="linux"
       self.bin="/usr/bin"
