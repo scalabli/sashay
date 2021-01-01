@@ -15,6 +15,8 @@
 ### Introduction
 > Sashay is an all in one automatic installer for useful Linux based tools.
 
+*There are over 340 tools available. 
+
 <br>
 <p align="center">
 <img width="40%" src="core/homepage.png"/>
