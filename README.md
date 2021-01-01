@@ -13,7 +13,7 @@
 
 
 ### Introduction
-> Sashay is an automatic installer for useful Linux based tools.
+> Sashay is an all in one automatic installer for useful Linux based tools.
 
 <br>
 <p align="center">
@@ -48,7 +48,7 @@ Sashay works flawlessly on any of the following:<br>
 
 ### How to use👨‍💻
 
-Type **Sashay** or **sshy** in your terminal
+Type **'Sashay'** or **'sshy'** in your terminal
 
 Each number represents a specific output:
 - (1) : Type **1** to show all available tools. Type the number corresponding number of a tool which you want to install.
