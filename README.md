@@ -16,7 +16,22 @@
 > Sashay is an all in one automatic installer for useful Linux based tools.
 
 There are over 340 tools available. 
-
+#Tools Categories 
+`Information Gathering`
+`Vulnerability Scanner`
+`Exploitation Tools`
+`Wireless Testing`
+`Forensics Tools`
+`Web Hacking`
+`Stress Testing`
+`Sniffing & Spoofing`
+`Password Attacks`
+`Maintaining Access`
+`IP-tracking Tools`
+`Programming Languages`
+`DDOS Attacks`
+`Web Servers`
+`Distros`
 <br>
 <p align="center">
 <img width="40%" src="core/homepage.png"/>
