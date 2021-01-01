@@ -1,6 +1,6 @@
 requests=<2.24.0
 # Dependencies of requests
 idna<3,>=2.5
-certifi>=2017.4.17
+certifi>=2020.10.10
 urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
 chardet<4,>=3.0.2
