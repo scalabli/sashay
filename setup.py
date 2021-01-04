@@ -11,8 +11,11 @@ setup(
     license="GPLv3+",
     py_modules=['Sashay'],
     install_requires=[
-        'Click',
-        'pygit2==0.24'
+        'requests=<2.24.0', 
+        'idna<3,>=2.5', 
+        'certifi>=2020.10.10', 
+        'urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1', 
+        'chardet<4,>=3.0.2'
     ],
     entry_points='''
         [console_scripts]
