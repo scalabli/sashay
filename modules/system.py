@@ -2,6 +2,8 @@
 #for more information on licensing and terms of use.
 #
 #
+__version__ = "3.2.3"
+
 import os
 import sys
 try:
