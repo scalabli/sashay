@@ -48,7 +48,7 @@ Sashay works flawlessly on any of the following:<br>
 
 1. Clone the project files:
 
-        git clone https://github.com/chouette254/Sashay.git
+        git clone https://github.com/viewerdiscretion/Sashay.git
 
 2. Change directory:
 
