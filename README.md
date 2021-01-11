@@ -1,8 +1,8 @@
 # Sashay
-[![Sashay](core/Sashay_logo.png)](https://github.com/chouette254)
+[![Sashay](assets/Sashay.png)](https://github.com/viewerdiscretion)
 ---
 
-[![License](https://img.shields.io/github/license/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay)
+[![License](https://img.shields.io/github/license/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay)
 [![GitHub stars](https://img.shields.io/github/stars/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/issues)
@@ -52,7 +52,7 @@ Sashay works flawlessly on any of the following:<br>
 
 2. Change directory:
 
-        cd Sashay
+        cd sashay
 
 3. Execute:
      
