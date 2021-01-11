@@ -2,7 +2,7 @@
 #for more information on licensing and terms of use.
 #
 #
-__version__ = "3.2.3"
+__version__ = "2021.01.dev1"
 
 import os
 import sys
