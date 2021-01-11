@@ -1,4 +1,4 @@
-#This file is part of Sashay and may be subject to redistribution and commercial restrictions. Please visit our website
+#This file is part of sashay and may be subject to redistribution and commercial restrictions. Please visit our website
 #for more information on licensing and terms of use.
 #
 #
@@ -110,13 +110,13 @@ class main:
           os.system("clear")
           logo.updating()
           if system.sudo != None:
-            if os.path.exists(system.home+"/Sashay"):
+            if os.path.exists(system.home+"/sashay"):
               pass
             else:
-              os.system(system.sudo+" git clone https://github.com/chouette254/Sashay.git "+system.home+"/Sashay")
-            if os.path.exists(system.home+"/Sashay/install.sshy"):
-              os.system("cd "+system.home+"/Sashay && "+system.sudo+" sh install.sshy")
-              if os.path.exists(system.bin+"/Sashay") and os.path.exists(system.conf_dir+"/Sashay"):
+              os.system(system.sudo+" git clone https://github.com/viewerdiscretion/sashay.git "+system.home+"/sashay")
+            if os.path.exists(system.home+"/sashay/install.sshy"):
+              os.system("cd "+system.home+"/sashay && "+system.sudo+" sh install.sshy")
+              if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
                 os.system("clear")
                 logo.updated()
                 cmd=input("\033[1;36m ##> \033[00m")
@@ -129,13 +129,13 @@ class main:
               logo.update_error()
               cmd=input("\033[1;36m ##> \033[00m")
           else:
-            if os.path.exists(system.home+"/Sashay"):
+            if os.path.exists(system.home+"/sashay"):
               pass
             else:
-              os.system("git clone https://github.com/chouette254/Sashay.git "+system.home+"/Sashay")
-            if os.path.exists(system.home+"/Sashay/install.sshy"):
-              os.system("cd "+system.home+"/Sashay && sh install.sshy")
-              if os.path.exists(system.bin+"/Sashay") and os.path.exists(system.conf_dir+"/Sashay"):
+              os.system("git clone https://github.com/viewerdiscretion/sashay.git "+system.home+"/sashay")
+            if os.path.exists(system.home+"/sashay/install.sshy"):
+              os.system("cd "+system.home+"/sashay && sh install.sshy")
+              if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
                 os.system("clear")
                 logo.updated()
                 cmd=input("\033[1;36m ##> \033[00m")
@@ -192,16 +192,16 @@ class main:
         os.system("clear")
         logo.exit()
         break
-      elif cmd=="rm -s" or cmd=="rm -S" or cmd=="uninstall sshy" or cmd=="unistall Sashay":
+      elif cmd=="rm -s" or cmd=="rm -S" or cmd=="uninstall sshy" or cmd=="unistall sashay":
         system=sys()
         if system.sudo:
-          os.system(system.sudo+" rm -rf "+system.bin+"/Sashay")
+          os.system(system.sudo+" rm -rf "+system.bin+"/sashay")
           os.system(system.sudo+" rm -rf "+system.bin+"/sshy")
-          os.system(system.sudo+" rm -rf "+system.conf_dir+"/Sashay")
+          os.system(system.sudo+" rm -rf "+system.conf_dir+"/sashay")
         else:
-          os.system("rm -rf "+system.bin+"/Sashay")
+          os.system("rm -rf "+system.bin+"/sashay")
           os.system("rm -rf "+system.bin+"/sshy")
-          os.system("rm -rf "+system.conf_dir+"/Sashay")
+          os.system("rm -rf "+system.conf_dir+"/sashay")
         os.system("clear")
         logo.exit()
         break
@@ -216,9 +216,9 @@ class tools:
   category_data=None
   def __init__(self):
     system=sys()
-    with open(system.conf_dir+"/Sashay/core/data.json") as data_file:
+    with open(system.conf_dir+"/sashay/assets/data.json") as data_file:
       self.data=json.load(data_file)
-    with open(system.conf_dir+"/Sashay/core/cat.json") as cat_file:
+    with open(system.conf_dir+"/sashay/assets/cat.json") as cat_file:
       self.category_data=json.load(cat_file)
     self.names=list(self.data.keys())
     self.category=list(self.category_data.keys())
