@@ -2,12 +2,14 @@
 #for more information on licensing and terms of use.
 #
 #
+
+import quo
+
 class logo:
   @classmethod
   def tool_header(self):
-    print('''\007
-
-\033[1;33m                                                                                                            
+    quo.secho(f'
+                                                               
                          888                       
                          888                      
      .oooo.o    .oooo.o  888888bo.   ooo    ooo
@@ -15,7 +17,7 @@ class logo:
    `"Y88b.    `"Y88b.    888    888    `88..8'
    o.  )88b   o.  )88b   888    888     `888'
    8""888P'   8""888P'  o888o  o888o    "888"      d8'
-                                     .o...P'  \033[1;91mBy Gerrishon
+                                     .o...P' Gerrishon') 
 
 
 
