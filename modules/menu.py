@@ -114,8 +114,8 @@ class main:
               pass
             else:
               os.system(system.sudo+" git clone https://github.com/chouette254/Sashay.git "+system.home+"/Sashay")
-            if os.path.exists(system.home+"/Sashay/install.aex"):
-              os.system("cd "+system.home+"/Sashay && "+system.sudo+" sh install.aex")
+            if os.path.exists(system.home+"/Sashay/install.sshy"):
+              os.system("cd "+system.home+"/Sashay && "+system.sudo+" sh install.sshy")
               if os.path.exists(system.bin+"/Sashay") and os.path.exists(system.conf_dir+"/Sashay"):
                 os.system("clear")
                 logo.updated()
@@ -133,8 +133,8 @@ class main:
               pass
             else:
               os.system("git clone https://github.com/chouette254/Sashay.git "+system.home+"/Sashay")
-            if os.path.exists(system.home+"/Sashay/install.aex"):
-              os.system("cd "+system.home+"/Sashay && sh install.aex")
+            if os.path.exists(system.home+"/Sashay/install.sshy"):
+              os.system("cd "+system.home+"/Sashay && sh install.sshy")
               if os.path.exists(system.bin+"/Sashay") and os.path.exists(system.conf_dir+"/Sashay"):
                 os.system("clear")
                 logo.updated()
