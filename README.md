@@ -1,14 +1,14 @@
 # Sashay
-[![Sashay](assets/Sashay.png)](https://github.com/viewerdiscretion)
+[![Sashay](assets/sashay.png)](https://github.com/viewerdiscretion)
 ---
 
 [![License](https://img.shields.io/github/license/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay)
-[![GitHub stars](https://img.shields.io/github/stars/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/issues)
-[![GitHub watchers](https://img.shields.io/github/watchers/chouette254/Sashay.svg)](https://github.com/chouette254/Sashay/watchers)
+[![GitHub stars](https://img.shields.io/github/stars/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/issues)
+[![GitHub watchers](https://img.shields.io/github/watchers/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/watchers)
 [![Python](https://img.shields.io/badge/language-Python%203-blue.svg)](https://www.python.org)
-[![chouette254/DedSecTL](https://img.shields.io/badge/author-chouette254/DedSecTL-red.svg)](https://github.com/chouette254)
+[![chouette254/DedSecTL](https://img.shields.io/badge/author-viewerdiscretion/DedSecTL-red.svg)](https://github.com/viewerdiscretion)
 [![Twitter Follow](https://img.shields.io/twitter/follow/gerrishon_s?style=social)](https://twitter.com/gerrishon_s)
 
 
