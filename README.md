@@ -38,12 +38,6 @@ There are over 340 tools available.
 <img width="40%" src="core/categories.png"/>
 </p>
 
-### Requirements
-Sashay works flawlessly on any of the following:<br>
-• **Android** (Termux, androlinux, userLand etc) <br>
-• **Linux** (All Debian Based Systems) <br>
-
-
 ## Installation⬇️
 
 1. Clone the project files:
@@ -73,6 +67,11 @@ Each number represents a specific output:
 - (3) : Type **3** to  update Sashay
 - (4) : Type **4** to know more about Us
 - (x) : Type **x** to exit Sashay
+
+### Requirements
+Sashay works flawlessly on any of the following:<br>
+• **Android** (Termux, androlinux, userLand etc) <br>
+• **Linux** (All Debian Based Systems) <br
 
 ### Buy us a cup of coffee☕
 Btc address:
