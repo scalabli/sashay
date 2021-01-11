@@ -13,10 +13,27 @@
 
 
 ### Introduction
-> Sashay is an all in one automatic installer for useful Linux based tools.
+> Sashay is an all in one automatic installer for useful Linux based tools.There are over 340 tools available. 
 
-There are over 340 tools available. 
-### Tool Categories 
+## Installation⬇️
+
+1. Clone the project files:
+
+        git clone https://github.com/viewerdiscretion/Sashay.git
+
+2. Change directory:
+
+        cd sashay
+
+3. Execute:
+     
+        chmod +x install
+
+4. Run:
+
+        sh install or ./install
+
+## Tool Categories 
 `Information Gathering`
 `Vulnerability Scanner`
 `Exploitation Tools`
@@ -38,28 +55,12 @@ There are over 340 tools available.
 <img width="40%" src="core/categories.png"/>
 </p>
 
-## Installation⬇️
-
-1. Clone the project files:
-
-        git clone https://github.com/viewerdiscretion/Sashay.git
-
-2. Change directory:
-
-        cd sashay
-
-3. Execute:
-     
-        chmod +x install
-
-4. Run:
-
-        sh install or ./install
 
 
-### How to use👨‍💻
 
-Type **`Sashay`** or **`sshy`** in your terminal
+## How to use👨‍💻
+
+Type **`sashay`** or **`sshy`** from anywhere in your terminal
 
 Each number represents a specific output:
 - (1) : Type **1** to show all available tools. Type the number corresponding number of a tool which you want to install.
@@ -68,7 +69,7 @@ Each number represents a specific output:
 - (4) : Type **4** to know more about Us
 - (x) : Type **x** to exit Sashay
 
-### Requirements
+## Requirements
 Sashay works flawlessly on any of the following:<br>
 • **Android** (Termux, androlinux, userLand etc) <br>
 • **Linux** (All Debian Based Systems) <br
