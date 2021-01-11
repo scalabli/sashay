@@ -1,4 +1,4 @@
-#This file is part of Sashay and may be subject to redistribution and commercial restrictions. Please visit our website
+#This file is part of sashay and may be subject to redistribution and commercial restrictions. Please visit our website
 #for more information on licensing and terms of use.
 #
 #
@@ -37,7 +37,7 @@ class logo:
   def not_ins(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ x ]  \033[1;31mWe can't install Sashay at the moment.\033[1;m
+\033[1;31m  [ x ]  \033[1;31mWe can't install sashay at the moment.\033[1;m
 \033[1;31m  [ x ]  \033[1;31mAn error occurred.\033[1;m
 \033[1;31m  [ x ]  \033[1;31mPlease try again after some time.\033[1;m''')
     self.tool_footer()
@@ -60,15 +60,15 @@ class logo:
   def ins_sc(self):
     self.tool_header()
     print ('''
-\033[1;33m    [ ✓ ] \033[1;32mSashay is installed successfully.
-\033[1;33m    [ ✓ ] \033[1;32mType Sashay or sshy to run this tool in your terminal.''')
+\033[1;33m    [ ✓ ] \033[1;32msashay is installed successfully.
+\033[1;33m    [ ✓ ] \033[1;32mType sashay or sshy to run this tool in your terminal.''')
     self.tool_footer()
 
   @classmethod
   def update(self):
     self.tool_header()
     print ('''
-\033[1;33m  [ 1 ] \033[1;32mUpdate Sashay.
+\033[1;33m  [ 1 ] \033[1;32mUpdate sashay.
 \033[1;33m  [ 0 ] \033[1;32m<< Go Back.\033[00m''')
     self.tool_footer()
 
@@ -76,7 +76,7 @@ class logo:
   def updated(self):
     self.tool_header()
     print ('''
-\033[1;33m      [ ✓ ] \033[1;32mCongratulations!! Sashay has been updated successfully.
+\033[1;33m      [ ✓ ] \033[1;32mCongratulations!! sashay has been updated successfully.
 \033[1;33m      [ ✓ ] \033[1;32mPress Enter to continue.\033[00m''')
     self.tool_footer()
 
@@ -92,7 +92,7 @@ class logo:
   def update_error(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ x ]  \033[1;31mWe can't Update Sashay.\033[1;m
+\033[1;31m  [ x ]  \033[1;31mWe can't Update sashay.\033[1;m
 \033[1;31m  [ x ]  \033[1;31mPlease try again after some time.\033[00m''')
     self.tool_footer()
 
@@ -101,12 +101,12 @@ class logo:
   def about(self,total):
     self.tool_header()
     print (f'''
-\033[1;33m [✓] Sashay
+\033[1;33m [✓] sashay
 \033[1;33m [✓] By Gerrishon Sirere(chouette254)
 \033[1;3   [✓] "With great power comes great responsibility"
 \033[1;33  [✓] Total tools :- \033[1;32mtotal {total} tools.\033[1;m
 
-\033[1;33m [✓] \033[1;32mSashay is automatic tool installer.
+\033[1;33m [✓] \033[1;32msashay is automatic tool installer.
 \033[1;33m [✓] \033[1;32mMade for linux based systems.
 \033[1;31m [✓] This tool is provided as is, without warranties or guarantees of any kind"''')
     self.tool_footer()
@@ -154,7 +154,7 @@ class logo:
   @classmethod
   def updating(self):
     print ("""\033[01;33m =============================================
-\033[01;32m|______________ Updating Sashay ______________|
+\033[01;32m|______________ Updating sashay ______________|
  \033[01;33m=============================================\033[00m""")
 
   @classmethod
@@ -169,9 +169,9 @@ class logo:
     print (f'''
 \033[1;33m  [ 1 ] \033[1;32mShow all tools.\033[1;33m [ \033[1;91mAlmost {total} tools\033[1;33m ]
 \033[1;33m  [ 2 ] \033[1;32mShow all categories.
-\033[1;33m  [ 3 ] \033[1;32mUpdate Sashay.
+\033[1;33m  [ 3 ] \033[1;32mUpdate sashay.
 \033[1;33m  [ 4 ] \033[1;32mAbout Us.
-\033[1;33m  [ x ] \033[1;32mTo Exit Sashay.''')
+\033[1;33m  [ x ] \033[1;32mTo Exit sashay.''')
     self.tool_footer()
 
   @classmethod
