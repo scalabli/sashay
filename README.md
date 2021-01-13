@@ -19,7 +19,7 @@
 
 1. Clone the project files:
 
-        git clone https://github.com/viewerdiscretion/Sashay.git
+        git clone https://github.com/viewerdiscretion/sashay.git
 
 2. Change directory:
 
@@ -70,25 +70,7 @@ Each number represents a specific output:
 - (x) : Type **x** to exit Sashay
 
 ## Requirements
-Sashay works flawlessly on any of the following:<br>
-• **Android** (Termux, androlinux, userLand etc) <br>
-• **Linux** (All Debian Based Systems) <br
-
+* Python **2.7+**
 ### Buy us a cup of coffee☕
-Btc address:
-       
-     38q7AqzXnwhmKZzS7cNv3qDjwSoCa48CgU
-
-Paypal:
-
-    https://paypal.me/gerrishon
-
-## Community
-
-* Like our [Facebook Page](https://facebook.com/daringdiaries).
-* Ask a question on [Facebook](https://m.me/daringdiaries).
-* Get the latest updates to our project by sending us an [E-mail](https://daringdiariesnet.wordpress.com/contact/).
-
-
 
 ------------------------------------------------------------------------
