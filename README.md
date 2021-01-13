@@ -49,11 +49,6 @@
 `DDOS Attacks`
 `Web Servers`
 `Distros`
-<br>
-<p align="center">
-<img width="40%" src="core/homepage.png"/>
-<img width="40%" src="core/categories.png"/>
-</p>
 
 
 
@@ -71,6 +66,11 @@ Each number represents a specific output:
 
 ## Requirements
 * Python **2.7+**
-### Buy us a cup of coffee☕
+### Buy me a cup of coffee☕
+
+* <a href="https://www.buymeacoffee.com/gerrishon" target="_blank"><img src="https://res.cloudinary.com/edev/image/upload/v1583011476/button_y8hgt8.png" alt="Donate" style="width: 250px !important; height: 60px !important;" width="250" height="60"></a>
+* <a href="https://PayPal.me/gerrishon" target="_blank"><img src="https://raw.githubusercontent.com/aha999/DonateButtons/master/Paypal.png" alt="Donate" style="width: 250px !important; height: 60px !important;" width="250" height="60"></a>
+
+
 
 ------------------------------------------------------------------------
