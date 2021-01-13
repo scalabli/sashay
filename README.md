@@ -16,6 +16,10 @@
 > Sashay is an all in one automatic installer for useful Linux based tools.There are over 340 tools available. 
 
 ## Installation⬇️
+     
+   Install quo:
+       
+        pip install quo
 
 1. Clone the project files:
 
