@@ -102,7 +102,7 @@ class logo:
     self.tool_header()
     print (f'''
 \033[1;33m [✓] sashay
-\033[1;33m [✓] By Gerrishon Sirere(chouette254)
+\033[1;33m [✓] By Gerrishon Sirere(viewerdiscretion)
 \033[1;3   [✓] "With great power comes great responsibility"
 \033[1;33  [✓] Total tools :- \033[1;32mtotal {total} tools.\033[1;m
 
