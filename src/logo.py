@@ -3,7 +3,7 @@
 #
 #
 import quo
-quo.secho(f'GERRISHON SIRERE', fg='black', bg='cyan')
+quo.secho(f'CREATED BY GERRISHON SIRERE', fg='black', bg='cyan')
 
 class logo:
   @classmethod
@@ -31,7 +31,7 @@ class logo:
   @classmethod
   def tool_footer(self):
     print('''\033[1;36m
-==================================================\033[00m''')
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\033[00m''')
 
 
   @classmethod
@@ -156,7 +156,11 @@ class logo:
   def updating(self):
     print ("""\033[01;33m =============================================
 \033[01;32m|______________ Updating sashay ______________|
- \033[01;33m=============================================\033[00m""")
+ \033[01;33m#############################################\033[00m""")
+
+quo.secho(f'#############################################', fg='black', bg='cyan')
+quo.secho(f'//////////////////Updating///////////////////', fg='red', bg='white') 
+quo.secho(f'#############################################', fg='black', bg='cyan')
 
   @classmethod
   def installing(self):
