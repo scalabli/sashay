@@ -85,19 +85,19 @@ class main:
                   if int(tcmd) in range(1,int(cat_total)+1):
                     os.system("clear")
                     logo.installing()
-                    print("\033[01;32minstalling ....\033[00m")
+                    quo.secho(f'Installing.....', fg='blue', bg='black') 
                     tool.install(tmp_cat_tool[int(tcmd)-1])
                   else:
-                    print(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input !!\033[00m")
+                    print(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
                     sleep(1)
                 except ValueError:
-                  print(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input !!\033[00m")
+                  print(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
                   sleep(1)
           else:
-            print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
+            print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input! try again\033[00m")
             sleep(1)
         except ValueError:
-          print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
+          print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input! try again\033[00m")
           sleep(1)
 
   def update(self):
