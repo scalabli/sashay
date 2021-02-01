@@ -106,7 +106,7 @@ class logo:
 \033[1;3   [✓] "With great power comes great responsibility"
 \033[1;33  [✓] Total tools :- \033[1;32mtotal {total} tools.\033[1;m
 
-\033[1;33m [✓] \033[1;32msashay is automatic tool installer.
+\033[1;33m [✓] \033[1;32mAutomatic tool installer.
 \033[1;33m [✓] \033[1;32mMade for linux based systems.
 \033[1;31m [✓] This tool is provided as is, without warranties or guarantees of any kind"''')
     self.tool_footer()
