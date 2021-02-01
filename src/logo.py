@@ -30,7 +30,7 @@ class logo:
 
   @classmethod
   def tool_footer(self):
-    quo.secho(f'%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', fg='blue', bg='false') 
+    quo.secho(f'%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', fg='blue', bg='black') 
 
 
   @classmethod
@@ -92,8 +92,8 @@ class logo:
   def update_error(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ x ]  \033[1;31mWe can't Update sashay.\033[1;m
-\033[1;31m  [ x ]  \033[1;31mPlease try again after some time.\033[00m''')
+\033[1;31m  [ x ]  \033[1;33msshy can't be updated at this time.\033[1;m
+\033[1;31m  [ x ]  \033[1;31mPlease try again later.\033[00m''')
     self.tool_footer()
 
 
@@ -115,7 +115,7 @@ class logo:
   @classmethod
   def install_tools(self):
     quo.secho(f'#############################################', fg='black', bg='cyan')
-    quo.secho(f'//////////////SELECT YOUR TOOL///////////////', fg='red', bg='false') 
+    quo.secho(f'//////////////SELECT YOUR TOOL///////////////', fg='red', bg='white') 
     quo.secho(f'#############################################', fg='black', bg='cyan')
 
   @classmethod
@@ -147,20 +147,20 @@ class logo:
 
   @classmethod
   def back(self):
-    print ("""\033[01;36m =============================================
-\033[01;33m|  00) Back                                   |
- \033[01;36m=============================================\033[00m""")
+    quo.secho(f'#############################################', fg='black', bg='cyan')
+    quo.secho(f'00) Go back', fg='yellow', bg='black') 
+    quo.secho(f'#############################################', fg='black', bg='cyan')
 
   @classmethod
   def updating(self):
     quo.secho(f'#############################################', fg='black', bg='cyan')
-    quo.secho(f'//////////////////UPDATING///////////////////', fg='red', bg='false') 
+    quo.secho(f'//////////////////UPDATING///////////////////', fg='red', bg='white') 
     quo.secho(f'#############################################', fg='black', bg='cyan')
 
   @classmethod
   def installing(self):
     quo.secho(f'#############################################', fg='black', bg='cyan')
-    quo.secho(f'/////////////////INSTALLING//////////////////', fg='red', bg='false') 
+    quo.secho(f'/////////////////INSTALLING//////////////////', fg='red', bg='white') 
     quo.secho(f'#############################################', fg='black', bg='cyan')
 
   @classmethod
