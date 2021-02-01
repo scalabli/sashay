@@ -114,10 +114,9 @@ class logo:
 
   @classmethod
   def install_tools(self):
-    quo.secho(f'%%%%%=====
-    print ("""\033[01;33m =============================================
-\033[01;32m|_____________ Select your tool ______________|
- \033[01;33m=============================================\033[00m""")
+    quo.secho(f'#############################################', fg='black', bg='cyan')
+    quo.secho(f'//////////////SELECT YOUR TOOL///////////////', fg='red', bg='false') 
+    quo.secho(f'#############################################', fg='black', bg='cyan')
 
   @classmethod
   def already_installed(self,name):
@@ -161,7 +160,7 @@ class logo:
   @classmethod
   def installing(self):
     quo.secho(f'#############################################', fg='black', bg='cyan')
-    quo.secho(f'//////////////////INSTALLING///////////////////', fg='red', bg='false') 
+    quo.secho(f'/////////////////INSTALLING//////////////////', fg='red', bg='false') 
     quo.secho(f'#############################################', fg='black', bg='cyan')
 
   @classmethod
