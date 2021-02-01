@@ -32,6 +32,7 @@ class logo:
   def tool_footer(self):
     print('''\033[1;36m
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\033[00m''')
+    quo.secho(f'%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', fg='black', bg='cyan') 
 
 
   @classmethod
