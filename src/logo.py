@@ -25,11 +25,8 @@ class logo:
 
 
 \033[1;36m $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\033[1;m
-\033[1;33m             INSTALL USEFUL TOOLS     
+\033[1;33m |          INSTALL USEFUL TOOLS               |
 \033[1;36m $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\033[00m''')
-    quo.secho(f'$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$', bg='cyan', fg='black')
-    quo.secho(f'           INSTALL USEFULL TOOLS                 ', bg='false', fg='bred')
-    quo.secho(f'$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$', bg='cyan', fg='black') 
 
   @classmethod
   def tool_footer(self):
@@ -40,9 +37,9 @@ class logo:
   def not_ins(self):
     self.tool_header()
     print ('''
-\033[1;31m  [ x ]  \033[1;31mWe can't install sashay at the moment.\033[1;m
+\033[1;31m  [ x ]  \033[1;31mSashay can't be installed at the moment.\033[1;m
 \033[1;31m  [ x ]  \033[1;31mAn error occurred.\033[1;m
-\033[1;31m  [ x ]  \033[1;31mPlease try again after some time.\033[1;m''')
+\033[1;31m  [ x ]  \033[1;31mPlease try again later.\033[1;m''')
     self.tool_footer()
 
   @classmethod
@@ -64,7 +61,7 @@ class logo:
     self.tool_header()
     print ('''
 \033[1;33m    [ ✓ ] \033[1;32msashay is installed successfully.
-\033[1;33m    [ ✓ ] \033[1;32mType sashay or sshy to run this tool in your terminal.''')
+\033[1;33m    [ ✓ ] \033[1;32mType sashay or sshy to run this tool from anywhere in your terminal.''')
     self.tool_footer()
 
   @classmethod
@@ -117,6 +114,7 @@ class logo:
 
   @classmethod
   def install_tools(self):
+    quo.secho(f'%%%%%=====
     print ("""\033[01;33m =============================================
 \033[01;32m|_____________ Select your tool ______________|
  \033[01;33m=============================================\033[00m""")
@@ -156,19 +154,15 @@ class logo:
 
   @classmethod
   def updating(self):
-    print ("""\033[01;33m =============================================
-\033[01;32m|______________ Updating sashay ______________|
- \033[01;33m#############################################\033[00m""")
- 
     quo.secho(f'#############################################', fg='black', bg='cyan')
-    quo.secho(f'//////////////////Updating///////////////////', fg='red', bg='false') 
+    quo.secho(f'//////////////////UPDATING///////////////////', fg='red', bg='false') 
     quo.secho(f'#############################################', fg='black', bg='cyan')
 
   @classmethod
   def installing(self):
-    print ("""\033[01;33m =============================================
-\033[01;32m|________________ Installing _________________|
- \033[01;33m=============================================\033[00m""")
+    quo.secho(f'#############################################', fg='black', bg='cyan')
+    quo.secho(f'//////////////////INSTALLING///////////////////', fg='red', bg='false') 
+    quo.secho(f'#############################################', fg='black', bg='cyan')
 
   @classmethod
   def menu(self,total):
