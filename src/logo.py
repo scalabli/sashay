@@ -27,9 +27,9 @@ class logo:
 \033[1;36m $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\033[1;m
 \033[1;33m             INSTALL USEFUL TOOLS     
 \033[1;36m $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\033[00m''')
-quo.secho(f'$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$', bg='cyan', fg='black')
-quo.secho(f'           INSTALL USEFULL TOOLS                 ', bg='false', fg='bred')
-quo.secho(f'$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$', bg='cyan', fg='black') 
+    quo.secho(f'$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$', bg='cyan', fg='black')
+    quo.secho(f'           INSTALL USEFULL TOOLS                 ', bg='false', fg='bred')
+    quo.secho(f'$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$', bg='cyan', fg='black') 
 
   @classmethod
   def tool_footer(self):
