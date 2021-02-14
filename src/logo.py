@@ -99,7 +99,7 @@ class logo:
     quo.secho(f'[✓] By Gerrishon Sirere(viewerdiscretion)', fg='byellow', bg='black')
     quo.secho(f'[✓] With great power comes great responsibility', fg='black', bg='byellow')
     quo.secho(f'[✓] 360+ tools', fg='red', bg='black')
-    quo.secho(f'[✓] Made for Linux based systems', fg='byellow', bg='black') 
+    quo.secho(f'[✓] Made for Linux based systems', fg='black', bg='byellow') 
 
     self.tool_footer()
 
