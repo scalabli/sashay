@@ -47,6 +47,7 @@ class logo:
   @classmethod
   def ins_tnc(self):
     self.tool_header()
+    quo.secho(f'[ ✓ ] Use it at your own risk', fg='red', bg='black') 
     print ('''
 \033[1;33m  [ ✓ ] \033[1;32mUse It At Your Own Risk.
 \033[1;33m  [ ✓ ] \033[1;32mThis tool is provided as is, without warranties or guarantees of any kind.
