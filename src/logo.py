@@ -176,6 +176,6 @@ class logo:
   @classmethod
   def exit(self):
     self.tool_header()
-    quo.secho(f'We are sorry to see you go', fg='black', fg='red')
+    quo.secho(f'We are sorry to see you go', fg='black', bg='red')
     quo.secho(f'Goodbye....', fg='white', bg='black') 
     self.tool_footer()
