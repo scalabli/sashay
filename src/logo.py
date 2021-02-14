@@ -47,15 +47,13 @@ class logo:
   @classmethod
   def ins_tnc(self):
     self.tool_header() 
-    print ('''
-\033[1;33m  [ ✓ ] \033[1;32mUse It At Your Own Risk.
-\033[1;33m  [ ✓ ] \033[1;32mThis tool is provided as is, without warranties or guarantees of any kind.
-\033[1;33m  [ ✓ ] \033[1;32mUse it legal purpose only.
-\033[1;33m  [ ✓ ] \033[1;32mWe are not responsible for your actions.
-\033[1;33m  [ ✓ ] \033[1;32mDo not do things that are forbidden.
-
-\033[1;31m If you are installing this tool.
- that means you are agree with all terms.''')
+    quo.secho(f'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.', fg='black', bg='white')
+    quo.secho(Installing this tool means you agree with all terms', fg='black', bg='red') 
     self.tool_footer()
 
   @classmethod
