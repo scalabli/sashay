@@ -158,11 +158,11 @@ class logo:
   @classmethod
   def menu(self,total):
     self.tool_header()
-    quo.secho(f'[ 1 ] Show all tools', bg='cyan', fg='white')
-    quo.secho(f'[ 2 ] Show all categories', bg='white', fg='cyan')
-    quo.secho(f'[ 3 ] Update sashay', fg='byellow', bg='black')
+    quo.secho(f'[ 1 ] Show all tools', bg='byellow', fg='black')
+    quo.secho(f'[ 2 ] Show all categories', bg='byellow', fg='black')
+    quo.secho(f'[ 3 ] Update sashay', fg='black', bg='byellow')
     quo.secho(f'[ 4 ] About us', fg='black', bg='byellow')
-    quo.secho(f'[ x ] Exit sashay, fg='white', bg='black')
+    quo.secho(f'[ x ] Exit sashay, fg='black', bg='byellow')
     self.tool_footer()
 
   @classmethod
