@@ -176,7 +176,6 @@ class logo:
   @classmethod
   def exit(self):
     self.tool_header()
-    print ('''
-\033[1;33m         [ ✓ ] \033[1;32mHoping to see you back soon. 
-\033[1;33m         [ + ] \033[1;32mGood By..... :)\033[00m''')
+    quo.secho(f'We're sorry to see you go :-(', fg='black', fg='red')
+    quo.secho(f'Goodbye....', fg='white', bg='black') 
     self.tool_footer()
