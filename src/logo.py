@@ -103,16 +103,11 @@ class logo:
   def about(self,total):
     self.tool_header()
     quo.secho(f'[✓] sashay', fg='byellow', bg='black')
-    quo.secho(f'[✓] By Gerrishon Sirere(viewerdiscretion)', fg='blue', bg='white') 
-    print (f'''
-\033[1;33m [✓] sashay
-\033[1;33m [✓] By Gerrishon Sirere(viewerdiscretion)
-\033[1;3   [✓] "With great power comes great responsibility"
-\033[1;33  [✓] Total tools :- \033[1;32mtotal {total} tools.\033[1;m
+    quo.secho(f'[✓] By Gerrishon Sirere(viewerdiscretion)', fg='black', bg='blue')
+    quo.secho(f'[✓] With great power comes great responsibility', fg='black', bg='cyan')
+    quo.secho(f'[✓] 360+ tools', fg='red', bg='black')
+    quo.secho(f'[✓] Made for Linux based systems', fg='byellow', bg='black') 
 
-\033[1;33m [✓] \033[1;32mAutomatic tool installer.
-\033[1;33m [✓] \033[1;32mMade for linux based systems.
-\033[1;31m [✓] This tool is provided as is, without warranties or guarantees of any kind"''')
     self.tool_footer()
 
 
