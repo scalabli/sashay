@@ -95,9 +95,9 @@ class logo:
   @classmethod
   def about(self,total):
     self.tool_header()
-    quo.secho(f'[✓] sashay', fg='byellow', bg='black')
-    quo.secho(f'[✓] By Gerrishon Sirere(viewerdiscretion)', fg='black', bg='blue')
-    quo.secho(f'[✓] With great power comes great responsibility', fg='black', bg='cyan')
+    quo.secho(f'[✓] sashay', fg='black', bg='byellow')
+    quo.secho(f'[✓] By Gerrishon Sirere(viewerdiscretion)', fg='byellow', bg='black')
+    quo.secho(f'[✓] With great power comes great responsibility', fg='black', bg='byellow')
     quo.secho(f'[✓] 360+ tools', fg='red', bg='black')
     quo.secho(f'[✓] Made for Linux based systems', fg='byellow', bg='black') 
 
@@ -159,9 +159,9 @@ class logo:
   def menu(self,total):
     self.tool_header()
     quo.secho(f'[ 1 ] Show all tools', bg='byellow', fg='black')
-    quo.secho(f'[ 2 ] Show all categories', bg='byellow', fg='black')
+    quo.secho(f'[ 2 ] Show all categories', bg='black', fg='byellow')
     quo.secho(f'[ 3 ] Update sashay', fg='black', bg='byellow')
-    quo.secho(f'[ 4 ] About us', fg='black', bg='byellow')
+    quo.secho(f'[ 4 ] About us', fg='byellow', bg='black')
     quo.secho(f'[ x ] Exit sashay', fg='black', bg='byellow')
     self.tool_footer()
 
