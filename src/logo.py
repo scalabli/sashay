@@ -130,8 +130,8 @@ class logo:
   def installed(self,name):
     self.tool_header()
     print(f'''
-\033[1;33m  [ + ] \033[1;32mInstalled Successfully !!
-\033[1;33m  [ + ] \033[1;37m'{name}'\033[01;32m is Installed Successfully !!
+\033[1;33m  [ + ] \033[1;32mInstalled successfully !!
+\033[1;33m  [ + ] \033[1;37m'{name}'\033[01;32m has been installed Successfully! 
 ''')
     self.tool_footer()
 
@@ -140,7 +140,7 @@ class logo:
     self.tool_header()
     print(f'''
 \033[1;33m  [ + ] \033[1;31mSorry ??
-\033[1;33m  [ + ] \033[1;37m'{name}'\033[01;31m is not Installed !!
+\033[1;33m  [ + ] \033[1;37m'{name}'\033[01;31m has not been installed! 
 ''')
     self.tool_footer()
 
@@ -168,13 +168,8 @@ class logo:
     quo.secho(f'[ 1 ] Show all tools', bg='cyan', fg='white')
     quo.secho(f'[ 2 ] Show all categories', bg='white', fg='cyan')
     quo.secho(f'[ 3 ] Update sashay', fg='byellow', bg='black')
-    
-    print (f'''
-\033[1;33m  [ 1 ] \033[1;32mShow all tools.\033[1;33m [ \033[1;91mAlmost {total} tools\033[1;33m ]
-\033[1;33m  [ 2 ] \033[1;32mShow all categories.
-\033[1;33m  [ 3 ] \033[1;32mUpdate sashay.
-\033[1;33m  [ 4 ] \033[1;32mAbout Us.
-\033[1;33m  [ x ] \033[1;32mTo Exit sashay.''')
+    quo.secho(f'[ 4 ] About us', fg='black', bg='byellow')
+    quo.secho(f'[ x ] Exit sashay, fg='white', bg='black')
     self.tool_footer()
 
   @classmethod
