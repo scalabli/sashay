@@ -2,8 +2,10 @@
 #for more information on licensing and terms of use.
 #
 #
+import spinher
 import quo
-quo.secho(f'CREATED BY GERRISHON SIRERE', fg='black', bg='cyan')
+with spinher.whirl():
+  quo.secho(f'CREATED BY GERRISHON SIRERE', fg='black', bg='cyan')
 
 class logo:
   @classmethod
