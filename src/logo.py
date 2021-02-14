@@ -162,7 +162,7 @@ class logo:
     quo.secho(f'[ 2 ] Show all categories', bg='byellow', fg='black')
     quo.secho(f'[ 3 ] Update sashay', fg='black', bg='byellow')
     quo.secho(f'[ 4 ] About us', fg='black', bg='byellow')
-    quo.secho(f'[ x ] Exit sashay, fg='black', bg='byellow')
+    quo.secho(f'[ x ] Exit sashay', fg='black', bg='byellow')
     self.tool_footer()
 
   @classmethod
