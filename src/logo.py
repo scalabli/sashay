@@ -165,6 +165,10 @@ class logo:
   @classmethod
   def menu(self,total):
     self.tool_header()
+    quo.secho(f'[ 1 ] Show all tools', bg='cyan', fg='white')
+    quo.secho(f'[ 2 ] Show all categories', bg='white', fg='cyan')
+    quo.secho(f'[ 3 ] Update sashay', fg='byellow', bg='black')
+    
     print (f'''
 \033[1;33m  [ 1 ] \033[1;32mShow all tools.\033[1;33m [ \033[1;91mAlmost {total} tools\033[1;33m ]
 \033[1;33m  [ 2 ] \033[1;32mShow all categories.
