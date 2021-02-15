@@ -94,11 +94,11 @@ class logo:
   @classmethod
   def about(self,total):
     self.tool_header()
-    quo.secho(f'[✓] sashay', fg='black', bg='byellow')
-    quo.secho(f'[✓] By Gerrishon Sirere(viewerdiscretion)', fg='byellow', bg='black')
-    quo.secho(f'[✓] With great power comes great responsibility', fg='black', bg='byellow')
-    quo.secho(f'[✓] 360+ tools', fg='red', bg='black')
-    quo.secho(f'[✓] Made for Linux based systems', fg='black', bg='byellow') 
+    quo.secho(f'[✓] sashay', bold=True, fg='bblack', bg='byellow')
+    quo.secho(f'[✓] By Gerrishon Sirere(viewerdiscretion)', fg='bblue')
+    quo.secho(f'[✓] With great power comes great responsibility', underline=True, fg='bblue')
+    quo.secho(f'[✓] 360+ tools', fg='bred') 
+    quo.secho(f'[✓] Made for Linux based systems', fg='bblue') 
 
     self.tool_footer()
 
