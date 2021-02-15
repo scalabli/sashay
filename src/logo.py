@@ -32,7 +32,7 @@ class logo:
 
   @classmethod
   def tool_footer(self):
-    quo.secho(f'%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', fg='blue', bg='black') 
+    quo.secho(f'%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', fg='bblue') 
 
 
   @classmethod
@@ -47,16 +47,15 @@ class logo:
   @classmethod
   def ins_tnc(self):
     self.tool_header() 
-    quo.secho(f'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERRCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL I BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.', fg='black', bg='white')
-    quo.secho(f'Installing this tool means you agree with all terms', bold=True, fg='red', bg='black') 
+    quo.secho(f'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERRCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL I BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.', fg='bblack', bg='bwhite')
+    quo.secho(f'Installing this tool means you agree with all terms', bold=True, fg='bred') 
     self.tool_footer()
 
   @classmethod
   def ins_sc(self):
     self.tool_header()
-    print ('''
-\033[1;33m    [ ✓ ] \033[1;32msashay is installed successfully.
-\033[1;33m    [ ✓ ] \033[1;32mType sashay or sshy to run this tool from anywhere in your terminal.''')
+    quo.secho(f'[ ✓ ] sashay has been installed successfully', fg='bwhite')
+    quo.secho(f'[ ✓ ] Type sashay or sshy from anywhere in your terminal', fg='yellow') 
     self.tool_footer()
 
   @classmethod
@@ -69,9 +68,8 @@ class logo:
   @classmethod
   def updated(self):
     self.tool_header()
-    print ('''
-\033[1;33m      [ ✓ ] \033[1;32mCongratulations!! sashay has been updated successfully.
-\033[1;33m      [ ✓ ] \033[1;32mPress Enter to continue.\033[00m''')
+    quo.secho(f'[ ✓ ] Congratulations! sashay has been updated successfully', fg='bblack', bg='bgreen') 
+    quo.secho(f'[ ✓ ] Press enter to continue', fg='bgreen')
     self.tool_footer()
 
   @classmethod
