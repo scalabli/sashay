@@ -5,7 +5,7 @@
 import spinher
 import quo
 with spinher.whirl():
-  quo.secho(f'CREATED BY GERRISHON SIRERE', bold=True, fg='bblack', bg='bcyan')
+  quo.secho(f'CREATED BY GERRISHON SIRERE', bold=True, fg='bblack', bg='byellow')
 
 class logo:
   @classmethod
