@@ -48,7 +48,7 @@ class logo:
   def ins_tnc(self):
     self.tool_header() 
     quo.secho(f'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERRCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL I BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.', fg='black', bg='white')
-    quo.secho(f'Installing this tool means you agree with all terms', fg='red', bg='black') 
+    quo.secho(f'Installing this tool means you agree with all terms', bold=True, fg='red', bg='black') 
     self.tool_footer()
 
   @classmethod
