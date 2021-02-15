@@ -165,6 +165,6 @@ class logo:
   @classmethod
   def exit(self):
     self.tool_header()
-    quo.secho(f'We hope to see you back soon', fg='bblack', bg='bred')
+    quo.secho(f'We hope to see you back soon', fg='black', bg='bred')
     quo.secho(f'Goodbye for now...', fg='white') 
     self.tool_footer()
