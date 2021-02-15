@@ -38,7 +38,7 @@ class logo:
   @classmethod
   def not_ins(self):
     self.tool_header()
-    quo.echo(f'[ x ] sashay can't be installed at the moment')
+    quo.echo(f'[ x ] sashay cannot be installed at the moment')
     quo.echo(f'[ x ] An error occurred, please try again later')
     self.tool_footer()
 
