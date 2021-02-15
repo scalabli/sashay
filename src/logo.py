@@ -157,7 +157,7 @@ class logo:
   @classmethod
   def menu(self,total):
     self.tool_header()
-    quo.secho(f'[ 1 ] Show all tools', bold=True, bg='bbyellow', fg='bblack')
+    quo.secho(f'[ 1 ] Show all tools', bold=True, bg='byellow', fg='bblack')
     quo.secho(f'[ 2 ] Show all categories', bold=True, bg='bblack', fg='byellow')
     quo.secho(f'[ 3 ] Update sashay', bold=True, fg='bblack', bg='byellow')
     quo.secho(f'[ 4 ] About us', bold=True, fg='byellow', bg='bblack')
@@ -167,6 +167,6 @@ class logo:
   @classmethod
   def exit(self):
     self.tool_header()
-    quo.secho(f'We hope to see you back soon', fg='black', bg='red')
-    quo.secho(f'Goodbye for now...', fg='white', bg='black') 
+    quo.secho(f'We hope to see you back soon', fg='bblack', bg='bred')
+    quo.secho(f'Goodbye for now...', fg='white') 
     self.tool_footer()
