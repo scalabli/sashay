@@ -62,9 +62,8 @@ class logo:
   @classmethod
   def update(self):
     self.tool_header()
-    print ('''
-\033[1;33m  [ 1 ] \033[1;32mUpdate sashay.
-\033[1;33m  [ 0 ] \033[1;32m<< Go Back.\033[00m''')
+    quo.secho(f'[ 1 ] Update sashay', bold=True, fg='bblue')
+    quo.secho(f'[ 0 ] << Go back', bold=True, fg='byellow')
     self.tool_footer()
 
   @classmethod
@@ -139,30 +138,30 @@ class logo:
 
   @classmethod
   def back(self):
-    quo.secho(f'#############################################', fg='black', bg='cyan')
-    quo.secho(f'00) Go back', fg='yellow', bg='black') 
-    quo.secho(f'#############################################', fg='black', bg='cyan')
+    quo.secho(f'#############################################', fg='bblack', bg='bcyan')
+    quo.secho(f'00) Go back', bold=True, fg='byellow') 
+    quo.secho(f'#############################################', fg='bblack', bg='bcyan')
 
   @classmethod
   def updating(self):
-    quo.secho(f'#############################################', fg='black', bg='cyan')
-    quo.secho(f'//////////////////UPDATING///////////////////', fg='red', bg='white') 
-    quo.secho(f'#############################################', fg='black', bg='cyan')
+    quo.secho(f'#############################################', fg='bblack', bg='bcyan')
+    quo.secho(f'//////////////////UPDATING///////////////////', fg='bred', bg='bwhite') 
+    quo.secho(f'#############################################', fg='bblack', bg='bcyan')
 
   @classmethod
   def installing(self):
-    quo.secho(f'#############################################', fg='black', bg='cyan')
-    quo.secho(f'/////////////////INSTALLING//////////////////', fg='red', bg='white') 
-    quo.secho(f'#############################################', fg='black', bg='cyan')
+    quo.secho(f'#############################################', fg='bblack', bg='bcyan')
+    quo.secho(f'/////////////////INSTALLING//////////////////', fg='bred', bg='bwhite') 
+    quo.secho(f'#############################################', fg='bblack', bg='bcyan')
 
   @classmethod
   def menu(self,total):
     self.tool_header()
-    quo.secho(f'[ 1 ] Show all tools', bg='byellow', fg='black')
-    quo.secho(f'[ 2 ] Show all categories', bg='black', fg='byellow')
-    quo.secho(f'[ 3 ] Update sashay', fg='black', bg='byellow')
-    quo.secho(f'[ 4 ] About us', fg='byellow', bg='black')
-    quo.secho(f'[ x ] Exit sashay', fg='black', bg='byellow')
+    quo.secho(f'[ 1 ] Show all tools', bold=True, bg='bbyellow', fg='bblack')
+    quo.secho(f'[ 2 ] Show all categories', bold=True, bg='bblack', fg='byellow')
+    quo.secho(f'[ 3 ] Update sashay', bold=True, fg='bblack', bg='byellow')
+    quo.secho(f'[ 4 ] About us', bold=True, fg='byellow', bg='bblack')
+    quo.secho(f'[ x ] Exit sashay', bold=True, fg='bblack', bg='byellow')
     self.tool_footer()
 
   @classmethod
