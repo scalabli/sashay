@@ -38,10 +38,8 @@ class logo:
   @classmethod
   def not_ins(self):
     self.tool_header()
-    print ('''
-\033[1;31m  [ x ]  \033[1;31mSashay can't be installed at the moment.\033[1;m
-\033[1;31m  [ x ]  \033[1;31mAn error occurred.\033[1;m
-\033[1;31m  [ x ]  \033[1;31mPlease try again later.\033[1;m''')
+    quo.echo(f'[ x ] sashay can't be installed at the moment')
+    quo.echo(f'[ x ] An error occurred, please try again later')
     self.tool_footer()
 
   @classmethod
@@ -75,9 +73,8 @@ class logo:
   @classmethod
   def nonet(self):
     self.tool_header()
-    print ('''
-\033[1;31m  [ x ]  \033[1;31mNo network connectivity.\033[1;m
-\033[1;31m  [ x ]  \033[1;31mPlease try again after some time.\033[00m''')
+    quo.secho(f'[ x ] There is no network connectivity', bold=True, fg='white')
+    quo.secho(f'[ x ] Please try again later', fg='white')
     self.tool_footer()
 
   @classmethod
