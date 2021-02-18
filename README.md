@@ -72,6 +72,11 @@ Each number represents a specific output:
 ## Contributing
 
 If you run into an issue, we would be very happy if you would file a bug on the [issue tracker](https://github.com/viewerdiscretion/sashay/issues).
+
+## License
+
+sashay is released under a [CC BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+
  
 
 
