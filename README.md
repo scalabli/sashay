@@ -68,6 +68,13 @@ Each number represents a specific output:
 
 ## Requirements
 * Python **2.7+**
+
+## Contributing
+
+If you run into an issue, we would be very happy if you would file a bug on the [issue tracker](https://github.com/viewerdiscretion/sashay/issues).
+ 
+
+
 ### Buy me a cup of coffee☕
 
 * <a href="https://www.buymeacoffee.com/gerrishon" target="_blank"><img src="https://res.cloudinary.com/edev/image/upload/v1583011476/button_y8hgt8.png" alt="Donate" style="width: 250px !important; height: 60px !important;" width="250" height="60"></a>
