@@ -60,11 +60,16 @@
 Type **`sashay`** or **`sshy`** from anywhere in your terminal
 
 Each number represents a specific output:
-- (1) : Type **1** to show all available tools. Type the number corresponding number of a tool which you want to install.
-- (2) : Type **2** to show tools categories
-- (3) : Type **3** to  update Sashay
-- (4) : Type **4** to know more about Us
-- (x) : Type **x** to exit Sashay
+
+:bulb: Type `1` to show all available tools. Type the number corresponding number of a tool which you want to install.
+
+:bulb: Type `2` to show tools categories
+
+:bulb: Type `3` to  update sashay
+
+:bulb: Type `4` to know more about sashay
+
+:bulb: Type `x` to exit Sashay
 
 ## Requirements
 * Python **2.7+**
