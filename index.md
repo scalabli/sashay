@@ -1,4 +1,5 @@
-# Sashay
+<h1>Sashay<img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
+
 [![Sashay](assets/sashay.png)](https://github.com/viewerdiscretion)
 ---
 
@@ -13,7 +14,7 @@
 
 
 ### Introduction
-> Sashay is an all in one automatic installer for useful Linux based tools.There are over 340 tools available. 
+> :information_source: Sashay is an all in one automatic installer for useful Linux based tools.There are over 340 tools available. 
 
 ## Installation⬇️
  
@@ -59,15 +60,32 @@
 Type **`sashay`** or **`sshy`** from anywhere in your terminal
 
 Each number represents a specific output:
-- (1) : Type **1** to show all available tools. Type the number corresponding number of a tool which you want to install.
-- (2) : Type **2** to show tools categories
-- (3) : Type **3** to  update Sashay
-- (4) : Type **4** to know more about Us
-- (x) : Type **x** to exit Sashay
+
+:bulb: Type `1` to show all available tools. Type the number corresponding number of a tool which you want to install.
+
+:bulb: Type `2` to show tools categories
+
+:bulb: Type `3` to  update sashay
+
+:bulb: Type `4` to know more about sashay
+
+:bulb: Type `x` to exit Sashay
 
 ## Requirements
 * Python **2.7+**
-### Buy me a cup of coffee☕
+
+## Contributing
+
+If you run into an issue, we would be very happy if you would file a bug on the [issue tracker](https://github.com/viewerdiscretion/sashay/issues).
+
+## License
+
+sashay is released under a [CC BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+
+ 
+
+
+### Donate
 
 * <a href="https://www.buymeacoffee.com/gerrishon" target="_blank"><img src="https://res.cloudinary.com/edev/image/upload/v1583011476/button_y8hgt8.png" alt="Donate" style="width: 250px !important; height: 60px !important;" width="250" height="60"></a>
 * <a href="https://PayPal.me/gerrishon" target="_blank"><img src="https://raw.githubusercontent.com/aha999/DonateButtons/master/Paypal.png" alt="Donate" style="width: 250px !important; height: 60px !important;" width="250" height="60"></a>
