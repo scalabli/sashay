@@ -4,7 +4,7 @@
 import os
 import sys
 from time import sleep
-from src.logo import *
+from src.outlook import *
 from src.system import *
 
 class tool:
