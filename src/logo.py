@@ -133,15 +133,15 @@ class logo:
 
   @classmethod
   def back(self):
-    quo.flair(f'#############################################', fg='bblack', bg='bcyan')
+    quo.flair(f'#############################################', fg='vivid_black', bg='vivid_cyan')
     quo.flair(f'00) Go back', bold=True, fg='vivid_yellow') 
-    quo.flair(f'#############################################', fg='bblack', bg='bcyan')
+    quo.flair(f'#############################################', fg='vivid_black', bg='vivid_cyan')
 
   @classmethod
   def updating(self):
-    quo.flair(f'#############################################', fg='bblack', bg='bcyan')
-    quo.flair(f'//////////////////UPDATING///////////////////', fg='bred', bg='bwhite') 
-    quo.flair(f'#############################################', fg='bblack', bg='bcyan')
+    quo.flair(f'#############################################', fg='vivid_black', bg='vivid_cyan')
+    quo.flair(f'//////////////////UPDATING///////////////////', fg='vivid_red', bg='vivid_white') 
+    quo.flair(f'#############################################', fg='vivid_black', bg='vivid_cyan')
 
   @classmethod
   def installing(self):
