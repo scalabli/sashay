@@ -5,7 +5,7 @@
 import spinher
 import quo
 with spinher.whirl():
-  quo.flair(f'CREATED BY GERRISHON SIRERE', bold=True, fg='bblack', bg='byellow')
+  quo.flair(f'CREATED BY GERRISHON SIRERE', bold=True, fg='vivid_black', bg='vivid_yellow')
 
 class logo:
   @classmethod
