@@ -134,7 +134,7 @@ class logo:
   @classmethod
   def back(self):
     quo.flair(f'#############################################', fg='bblack', bg='bcyan')
-    quo.flair(f'00) Go back', bold=True, fg='byellow') 
+    quo.flair(f'00) Go back', bold=True, fg='vivid_yellow') 
     quo.flair(f'#############################################', fg='bblack', bg='bcyan')
 
   @classmethod
@@ -145,23 +145,23 @@ class logo:
 
   @classmethod
   def installing(self):
-    quo.flair(f'#############################################', fg='bblack', bg='bcyan')
-    quo.flair(f'/////////////////INSTALLING//////////////////', fg='bred', bg='bwhite') 
-    quo.flair(f'#############################################', fg='bblack', bg='bcyan')
+    quo.flair(f'#############################################', fg='vivid_black', bg='vivid_cyan')
+    quo.flair(f'/////////////////INSTALLING//////////////////', fg='vivid_red', bg='vivid_white') 
+    quo.flair(f'#############################################', fg='vivid_black', bg='vivid_cyan')
 
   @classmethod
   def menu(self,total):
     self.tool_header()
-    quo.flair(f'[ 1 ] Show all tools', bold=True, bg='byellow', fg='bblack')
-    quo.flair(f'[ 2 ] Show all categories', bold=True, bg='bblack', fg='byellow')
-    quo.flair(f'[ 3 ] Update sashay', bold=True, fg='bblack', bg='byellow')
-    quo.flair(f'[ 4 ] About us', bold=True, fg='byellow', bg='bblack')
-    quo.flair(f'[ x ] Exit sashay', bold=True, fg='bblack', bg='byellow')
+    quo.flair(f'[ 1 ] Show all tools', bold=True, bg='vivid_yellow', fg='vivid_black')
+    quo.flair(f'[ 2 ] Show all categories', bold=True, bg='vivid_black', fg='vivid_yellow')
+    quo.flair(f'[ 3 ] Update sashay', bold=True, fg='vivid_black', bg='vivid_yellow')
+    quo.flair(f'[ 4 ] About us', bold=True, fg='vivid_yellow', bg='vivid_black')
+    quo.flair(f'[ x ] Exit sashay', bold=True, fg='vivid_black', bg='vivid_yellow')
     self.tool_footer()
 
   @classmethod
   def exit(self):
     self.tool_header()
-    quo.flair(f'We hope to see you back soon', fg='black', bg='bred')
+    quo.flair(f'We hope to see you back soon', fg='black', bg='vivid_red')
     quo.flair(f'Goodbye for now...', fg='white') 
     self.tool_footer()
