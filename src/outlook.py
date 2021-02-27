@@ -92,8 +92,16 @@ class logo:
     quo.flair(f'[✓] By Gerrishon Sirere(viewerdiscretion)', fg='vivid_blue')
     quo.flair(f'[✓] With great power comes great responsibility', underline=True, fg='vivid_blue')
     quo.flair(f'[✓] 360+ tools', fg='red') 
-    quo.flair(f'[✓] Made for Linux based systems', fg='blue') 
-
+    quo.flair(f'[✓] Made for Linux based systems', fg='blue')
+    quo.flair(f'Social media [yn] ', fg="cyan", nl=False)
+    c = quo.interpose()
+    quo.echo()
+    if c == 'y':
+        quo.launch('https://linktr.ee/secretum')
+    elif c == 'n':
+          quo.flair(f':-', fg="yellow")
+    else:
+        quo.echo('Invalid input :(')
     self.tool_footer()
 
 
