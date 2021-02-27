@@ -35,6 +35,13 @@
 
         sh install or ./install
 
+<br>
+<p align="center">
+<img width="40%" src="assets/terms.png"/>
+<img width="28.8%" src="assets/home.png"/>
+<img width="23.4%" src="assets/categories.png"/>
+</p>
+
 ## Tool Categories 
 `Information Gathering`
 `Vulnerability Scanner`
