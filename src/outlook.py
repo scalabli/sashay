@@ -57,15 +57,15 @@ class logo:
   @classmethod
   def update(self):
     self.tool_header()
-    quo.flair(f'[ 1 ] Update sashay', bold=True, fg='vivid_blue')
-    quo.flair(f'[ 0 ] << Go back', bold=True, fg='vivid_yellow')
+    quo.flair(f'[ 1 ] Update sashay', bold=True, fg='vblue')
+    quo.flair(f'[ 0 ] << Go back', bold=True, fg='vyellow')
     self.tool_footer()
 
   @classmethod
   def updated(self):
     self.tool_header()
-    quo.flair(f'[ ✓ ] Congratulations! sashay has been updated successfully', fg='vivid_black', bg='vivid_green') 
-    quo.flair(f'[ ✓ ] Press enter to continue', fg='vivid_green')
+    quo.flair(f'[ ✓ ] Congratulations! sashay has been updated successfully', fg='vblack', bg='vgreen') 
+    quo.flair(f'[ ✓ ] Press enter to continue', fg='vgreen')
     self.tool_footer()
 
   @classmethod
@@ -87,9 +87,9 @@ class logo:
   @classmethod
   def about(self,total):
     self.tool_header()
-    quo.flair(f'[✓] sashay', bold=True, fg='vivid_black', bg='vivid_yellow')
-    quo.flair(f'[✓] By Gerrishon Sirere(viewerdiscretion)', fg='vivid_blue')
-    quo.flair(f'[✓] With great power comes great responsibility', underline=True, fg='vivid_blue')
+    quo.flair(f'[✓] sashay', bold=True, fg='vblack', bg='vyellow')
+    quo.flair(f'[✓] By Gerrishon Sirere(viewerdiscretion)', fg='vblue')
+    quo.flair(f'[✓] With great power comes great responsibility', underline=True, fg='vblue')
     quo.flair(f'[✓] 360+ tools', fg='red') 
     quo.flair(f'[✓] Made for Linux based systems', fg='blue')
     quo.flair(f'Social media [yn] ', fg="cyan", nl=False)
@@ -139,9 +139,9 @@ class logo:
 
   @classmethod
   def back(self):
-    quo.flair(f'#############################################', fg='vivid_black', bg='vivid_cyan')
-    quo.flair(f'00) Go back', bold=True, fg='vivid_yellow') 
-    quo.flair(f'#############################################', fg='vivid_black', bg='vivid_cyan')
+    quo.flair(f'#############################################', fg='vblack', bg='vcyan')
+    quo.flair(f'00) Go back', bold=True, fg='vyellow') 
+    quo.flair(f'#############################################', fg='vblack', bg='vcyan')
 
   @classmethod
   def updating(self):
