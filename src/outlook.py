@@ -2,10 +2,9 @@
 #for more information on licensing and terms of use.
 #
 #
-import spinher
+
 import quo
-with spinher.whirl():
-  quo.flair(f'CREATED BY GERRISHON SIRERE', bold=True, fg='vivid_black', bg='vivid_yellow')
+quo.flair(f'CREATED BY GERRISHON SIRERE', bold=True, fg='vblack', bg='vyellow')
 
 class logo:
   @classmethod
@@ -44,8 +43,8 @@ class logo:
   @classmethod
   def ins_tnc(self):
     self.tool_header() 
-    quo.flair(f'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERRCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL I BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.', fg='vivid_black', bg='vivid_white')
-    quo.flair(f'Installing this tool means you agree with all terms', bold=True, fg='vivid_red') 
+    quo.flair(f'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERRCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL I BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.', fg='vblack', bg='vwhite')
+    quo.flair(f'Installing this tool means you agree with all terms', bold=True, fg='vred') 
     self.tool_footer()
 
   @classmethod
