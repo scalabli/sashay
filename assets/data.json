@@ -199,7 +199,7 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "Crips" : { 
+  "Crips: This Tools is a collection of online IP Tools that can be used to quickly get information about IP Address's, Web Pages and DNS records" : { 
     "name" : "Crips",
     "package_name" : "Crips",
     "category" : ["information_gathering"],
@@ -263,7 +263,7 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "Devploit" : { 
+  "Devploit: Information gathering tool" : { 
     "name" : "Devploit",
     "package_name" : "Devploit",
     "category" : ["information_gathering"],
@@ -327,7 +327,7 @@
     "package_manager" : "git",
     "dependency" : ["git"]
   },
-  "EvilURL" : { 
+  "EvilURL: Generate unicode evil domains for IDN Homograph Attack and detect them" : { 
     "name" : "EvilURL",
     "package_name" : "EvilURL",
     "category" : ["information_gathering"],
@@ -495,7 +495,7 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "Infoga" : { 
+  "Infoga: Tool for Gathering Email Accounts Informations" : { 
     "name" : "Infoga",
     "package_name" : "Infoga",
     "category" : ["information_gathering"],
@@ -631,7 +631,7 @@
     "package_manager" : "git",
     "dependency" : ["git"]
   },
-  "OSIF" : { 
+  "OSIF: Open Source Information Facebook" : { 
     "name" : "OSIF",
     "package_name" : "OSIF",
     "category" : ["information_gathering"],
@@ -743,10 +743,10 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "ReconDog" : { 
+  "ReconDog: Information Gathering and Vulnerability Scanner tool" : { 
     "name" : "ReconDog",
     "package_name" : "ReconDog",
-    "category" : ["information_gathering"],
+    "category" : ["information_gathering", "vulnerability_scanner"],
     "url" : "https://github.com/UltimateHackers/ReconDog.git",
     "package_manager" : "git",
     "dependency" : ["python","git"]
@@ -879,7 +879,7 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "Striker" : { 
+  "Striker: Recon & Vulnerability Scanning Suite" : { 
     "name" : "Striker",
     "package_name" : "Striker",
     "category" : ["vulnerability_scanner"],
@@ -1063,7 +1063,7 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "Xshell" : { 
+  "Xshell: Toolkit" : { 
     "name" : "Xshell",
     "package_name" : "Xshell",
     "category" : ["vulnerability_scanner","web_hacking"],
@@ -1455,7 +1455,7 @@
     "package_manager" : "git",
     "dependency" : ["clang","gcc","git"]
   },
-  "dnsrecon" : { 
+  "dnsrecon: Security assessment and network troubleshooting" : { 
     "name" : "dnsrecon",
     "package_name" : "dnsrecon",
     "category" : ["information_gathering"],
@@ -2135,7 +2135,7 @@
     "package_manager" : "git",
     "dependency" : ["git"]
   },
-  "nmap" : { 
+  "Nmap: Utility for network discovery and security auditing" : { 
     "name" : "nmap",
     "package_name" : "nmap",
     "category" : ["information_gathering","vulnerability_scanner"],
@@ -2519,7 +2519,7 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "sqlmap" : { 
+  "sql: Automatic SQL injection and database takeover tool. " : { 
     "name" : "sqlmap",
     "package_name" : "sqlmap",
     "category" : ["information_gathering","vulnerability_scanner","exploitation_tools","web_hacking"],
@@ -2527,7 +2527,7 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "sqlmate" : { 
+  "sqlmate: A friend of SQLmap which will do what you always expected from SQLmap" : { 
     "name" : "sqlmate",
     "package_name" : "sqlmate",
     "category" : ["information_gathering","vulnerability_scanner","web_hacking"],
@@ -2767,10 +2767,10 @@
     "package_manager" : "git",
     "dependency" : ["python","git"]
   },
-  "weeman" : { 
+  "weeman: HTTP server for phishing in python" : { 
     "name" : "weeman",
     "package_name" : "weeman",
-    "category" : [null],
+    "category" : ["information_gathering", "exploitation_tools"],
     "url" : "https://github.com/evait-security/weeman.git",
     "package_manager" : "git",
     "dependency" : ["python","git"]
