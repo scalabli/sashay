@@ -50,7 +50,7 @@ class main:
       logo.tool_header()
       print("")
       for cat in tool.category:
-        print (f"  \033[01;32m[ \033[01;37m{num} \033[01;32m] \033[01;33m{tool.category_data[cat]}\033[00m")
+        quo.flair(f'{num} {tool.category_data[cat]}', bold=True, fg="vblue") )
         num+=1
       print("")
       logo.back()
