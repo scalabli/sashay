@@ -19,7 +19,7 @@ class main:
       logo.install_tools()
       print("\007")
       for tool_name in tool.names:
-        print (f" \033[01;32m[ \033[01;37m{num} \033[01;32m] \033[01;33minstall \033[01;32m{tool_name}\033[00m")
+        quo.flair(f'{num} install {tool_name}', bold=True, fg="vblue")
         num+=1
       print("")
       logo.back()
