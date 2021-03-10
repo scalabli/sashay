@@ -83,7 +83,7 @@ Each number represents a specific output:
 
 ## Contributing
 
-If you run into an issue, we would be very happy if you would file a bug on the [issue tracker](https://github.com/viewerdiscretion/sashay/issues).
+If you run into an issue, we would be very happy if you would file a bug on the [issue tracker](https://github.com/viewerdiscretion/sashay/issues). You can also contribute by adding more tools by creating a pull request
 
 ## License
 
