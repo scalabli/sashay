@@ -9,7 +9,7 @@ quo.flair(f'CREATED BY GERRISHON SIRERE', bold=True, fg='vblack', bg='vyellow')
 class logo:
   @classmethod
   def tool_header(self):
-    print('''\007
+    quo.flair('''\00Secretum Inc.
 
 \033[1;33m                                                                                                            
                          888                       
