@@ -4,7 +4,7 @@
 #
 
 import quo
-quo.flair(f'CREATED BY GERRISHON SIRERE', bold=True, fg='vblack', bg='vyellow')
+quo.flair(f'CREATED BY GERRISHON SIRERE', fg='vblack', bg='vyellow')
 
 class logo:
   @classmethod
@@ -44,7 +44,7 @@ class logo:
   def ins_tnc(self):
     self.tool_header() 
     quo.flair(f'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERRCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL I BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.', fg='vblack', bg='vwhite')
-    quo.flair(f'Installing this tool means you agree with all terms', bold=True, fg='vred') 
+    quo.flair(f'Installing this tool means you agree with all terms', fg='vred') 
     self.tool_footer()
 
   @classmethod
@@ -57,8 +57,8 @@ class logo:
   @classmethod
   def update(self):
     self.tool_header()
-    quo.flair(f'[ 1 ] Update sashay', bold=True, fg='vblue')
-    quo.flair(f'[ 0 ] << Go back', bold=True, fg='vyellow')
+    quo.flair(f'[ 1 ] Update sashay', fg='vblue')
+    quo.flair(f'[ 0 ] << Go back', fg='vyellow')
     self.tool_footer()
 
   @classmethod
@@ -87,7 +87,7 @@ class logo:
   @classmethod
   def about(self,total):
     self.tool_header()
-    quo.flair(f'[✓] sashay', bold=True, fg='vblack', bg='vyellow')
+    quo.flair(f'[✓] sashay', fg='vblack', bg='vyellow')
     quo.flair(f'[✓] By Gerrishon Sirere(viewerdiscretion)', fg='vblue')
     quo.flair(f'[✓] With great power comes great responsibility', underline=True, fg='vblue')
     quo.flair(f'[✓] 360+ tools', fg='red') 
@@ -100,7 +100,7 @@ class logo:
     elif c == 'n':
           quo.flair(f':-', fg="yellow")
     else:
-        quo.echo('Invalid input :(')
+        quo.echo('Invalid input :(',)
     self.tool_footer()
 
 
@@ -158,11 +158,11 @@ class logo:
   @classmethod
   def menu(self,total):
     self.tool_header()
-    quo.flair(f'[ 1 ] Show all tools', bold=True, bg='vyellow', fg='vblack')
-    quo.flair(f'[ 2 ] Show all categories', bold=True, bg='vblack', fg='vyellow')
-    quo.flair(f'[ 3 ] Update sashay', bold=True, fg='vblack', bg='vyellow')
-    quo.flair(f'[ 4 ] About us', bold=True, fg='vyellow', bg='vblack')
-    quo.flair(f'[ x ] Exit sashay', bold=True, fg='vblack', bg='vyellow')
+    quo.flair(f'[ 1 ] Show all tools', bg='vyellow', fg='vblack')
+    quo.flair(f'[ 2 ] Show all categories', bg='vblack', fg='vyellow')
+    quo.flair(f'[ 3 ] Update sashay', fg='vblack', bg='vyellow')
+    quo.flair(f'[ 4 ] About us', fg='vyellow', bg='vblack')
+    quo.flair(f'[ x ] Exit sashay', fg='vblack', bg='vyellow')
     self.tool_footer()
 
   @classmethod
