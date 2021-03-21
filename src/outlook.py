@@ -2,9 +2,19 @@
 #for more information on licensing and terms of use.
 #
 #
-
+import os
+import asyncio
 import quo
-quo.flair(f'CREATED BY GERRISHON SIRERE', fg='vblack', bg='vyellow')
+
+cmd = 'date'
+os.system(cmd)
+async def main():
+    quo.flair(f'MADE WITH <3 BY', bold=True, fg="vyellow")
+    await asyncio.sleep(1) 
+    quo.flair(f'GERRISHON SIRERE', bold=True, fg="vyellow")
+dedicate = main()
+dedicate
+asyncio.run(dedicate)
 
 class logo:
   @classmethod
