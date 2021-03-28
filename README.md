@@ -79,7 +79,7 @@ Each number represents a specific output:
 :bulb: Type `x` to exit Sashay
 
 ## Requirements
-* Python **2.7+**
+* Python **3.6+**
 
 ## Contributing
 
