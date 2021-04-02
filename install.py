@@ -14,7 +14,7 @@ class tool:
       system=sys()
       os.system("clear")
       logo.ins_tnc()
-      inp=input("quo.confirm("Do you want to install sashay?:", abort=True)
+      inp=input("quo.confirm("Do you want to install sashay?:") 
       if inp=="y" or inp=="Y":
         os.system("clear")
         logo.installing()
