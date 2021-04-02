@@ -73,7 +73,7 @@ class main:
                   cnt+=1
               print("")
               logo.back()
-              tcmd=input("\033[1;36m >>> \033[00m")
+              tcmd=quo.prompt("/>>>")
               if tcmd=="00" or tcmd=="back":
                 break
               else:
@@ -101,7 +101,7 @@ class main:
     while True:
       os.system("clear")
       logo.update()
-      cmd=input("\033[1;36m >>> \033[00m")
+      cmd=quo.prompt("/>>>")
       if cmd=="1":
         system=sys()
         if system.connection():
