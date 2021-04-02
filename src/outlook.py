@@ -122,7 +122,7 @@ class logo:
   @classmethod
   def already_installed(self,name):
     self.tool_header()
-    quo.flair(f"[ + ] Sorry, {name} is already installed!“, fg="cyan")
+    quo.flair(f"[ + ] Sorry, {name} is already installed!", fg="cyan")
     self.tool_footer()
 
   @classmethod
