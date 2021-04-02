@@ -32,10 +32,10 @@ class main:
           if int(cmd)>=1 and int(cmd)<=int(total):
             os.system("clear")
             logo.installing()
-            quo.flair("Installing...Good things come to those who wait", bold=True)
+            quo.flair(f"Installing...Good things come to those who wait", bold=True, fg="vgreen")
             tool.install(tool.names[int(cmd)-1])
           else:
-            print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
+            quo.flair(f"Sorry, '{cmd}' is an invalid input!", fg="vred") 
             sleep(1)
         except ValueError:
           print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
