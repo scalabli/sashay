@@ -36,7 +36,7 @@ class logo:
 
 
 \033[1;36m +---+---+---+---+---+---+---+---+---+---+---+\033[1;m
-\033[1;33m |   |   |   INSTALL USEFUL TOOLS   |   |   |
+\033[1;33m |   |   |   INSTALL USEFUL TOOLS   |   |    |
 \033[1;36m +---+---+---+---+---+---+---+---+---+---+---+\033[00m''')
 
   @classmethod
@@ -135,10 +135,7 @@ class logo:
   @classmethod
   def not_installed(self,name):
     self.tool_header()
-    print(f'''
-\033[1;33m  [ + ] \033[1;31mSorry ??
-\033[1;33m  [ + ] \033[1;37m'{name}'\033[01;31m has not been installed! 
-''')
+    quo.flair(f"[ x ] Sorry, {name} has not been installed!", fg="vred") 
     self.tool_footer()
 
   @classmethod
