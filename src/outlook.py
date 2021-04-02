@@ -169,6 +169,6 @@ class logo:
   @classmethod
   def exit(self):
     self.tool_header()
-    quo.flair(f'We hope to see you back soon', fg='black', bg='vred')
-    quo.flair(f'Goodbye for now...', fg='white') 
+    quo.flair(f'Geez...where are you going so soon?', fg='black', bg='vred')
+    quo.flair(f'Anyway, hope to see you back soon', bg="vred") 
     self.tool_footer()
