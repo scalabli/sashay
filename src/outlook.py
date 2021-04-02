@@ -1,7 +1,4 @@
-#This file is part of sashay and may be subject to redistribution and commercial restrictions. Please visit our website
-#for more information on licensing and terms of use.
-#
-#
+
 import os
 import asyncio
 import quo
@@ -84,16 +81,15 @@ class logo:
   @classmethod
   def nonet(self):
     self.tool_header()
-    quo.flair(f'[ x ] There is no network connectivity', bold=True, fg='white')
-    quo.flair(f'[ x ] Please try again later', fg='white')
+    quo.flair(f'[ x ] There is no network connectivity', bold=True, fg='cyan')
+    quo.flair(f'[ x ] Please try again later', fg='cyan')
     self.tool_footer()
 
   @classmethod
   def update_error(self):
     self.tool_header()
-    print ('''
-\033[1;31m  [ x ]  \033[1;33msshy can't be updated at this time.\033[1;m
-\033[1;31m  [ x ]  \033[1;31mPlease try again later.\033[00m''')
+    quo.flair(f"[ x ] ssshy can't be updated at this time", fg="cyan")
+    quo.flair(f"[ x ] Please try again later", fg="cyan") 
     self.tool_footer()
 
 
