@@ -1,6 +1,3 @@
-#This file is part of sashay and may be subject to redistribution and commercial restrictions. Please visit our website
-#for more information on licensing and terms of use.
-#
 #
 import os
 import quo
@@ -38,7 +35,7 @@ class main:
             quo.flair(f"Sorry, '{cmd}' is an invalid input!", fg="vred") 
             sleep(1)
         except ValueError:
-          print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
+          quo.flair(f"Sorry, '{cmd}' is an invalid input!", fg="vred")
           sleep(1)
 
   def category(self):
@@ -54,7 +51,7 @@ class main:
         num+=1
       print("")
       logo.back()
-      cmd=input("\033[1;36m >>> \033[00m")
+      cmd=quo.prompt("/>>>") 
       if cmd=="00" or cmd=="back":
         self.menu()
         break
