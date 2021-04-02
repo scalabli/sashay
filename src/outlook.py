@@ -147,7 +147,7 @@ class logo:
   @classmethod
   def updating(self):
     quo.flair(f'#############################################', fg='vblack', bg='vcyan')
-    quo.flair(f'//////////////////UPDATING///////////////////', fg='vivid_red', bg='vwhite') 
+    quo.flair(f'//////////////////UPDATING///////////////////', fg='vred', bg='vwhite') 
     quo.flair(f'#############################################', fg='vblack', bg='vcyan')
 
   @classmethod
