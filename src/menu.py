@@ -23,7 +23,7 @@ class main:
         num+=1
       print("")
       logo.back()
-      cmd=input("\033[1;36m >>> \033[00m")
+      cmd=quo.prompt("/>>>")
       if cmd=="00" or cmd=="back":
         self.menu()
         break
@@ -32,7 +32,7 @@ class main:
           if int(cmd)>=1 and int(cmd)<=int(total):
             os.system("clear")
             logo.installing()
-            print("\033[01;32minstalling ....\033[00m")
+            print("\033[01;32minstalling...Good things come to those who wait\033[00m")
             tool.install(tool.names[int(cmd)-1])
           else:
             print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
