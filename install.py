@@ -14,8 +14,8 @@ class tool:
       system=sys()
       os.system("clear")
       logo.ins_tnc()
-      inp=input("\033[1;33m Do you want to install sashay? [y/n]> \033[00m")
-      if inp=="y" or inp=="Y":
+      inp=quo.prompt("Do you want to install sashay? [y/n]:")
+      if inp=="y" or inp=="Y" or inp=="Yes" or inp=="yes":
         os.system("clear")
         logo.installing()
         if system.sudo is not None:
