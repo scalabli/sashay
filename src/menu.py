@@ -303,7 +303,7 @@ class tools:
         if os.path.exists(system.home+"/"+package_name):
           os.system("clear")
           logo.already_installed(name)
-          tmp=input("\033[1;36m >>> \033[00m")
+          tmp=quo.prompt("/>>>")
         else:
           if system.sudo != None:
             os.system(system.sudo+" curl "+url+" -o "+system.home+"/"+package_name)
@@ -313,12 +313,12 @@ class tools:
           if os.path.exists(system.home+"/"+package_name):
             os.system("clear")
             logo.installed(name)
-            tmp=input("\033[1;36m >>> \033[00m")
+            tmp=quo.prompt(/>>>")
           else:
             os.system("clear")
             logo.not_installed(name)
-            tmp=input("\033[1;36m >>> \033[00m")
+            tmp=quo.prompt("/>>>")
     else:
       os.system("clear")
       logo.nonet()
-      tmp=input("\033[1;36m >>> \033[00m")
+      tmp=quo.prompt("/>>>")
