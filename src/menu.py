@@ -297,7 +297,7 @@ class tools:
           else:
             os.system("clear")
             logo.not_installed(name)
-            tmp=input("\033[1;36m >>> \033[00m")
+            tmp=quo.prompt("/>>>")
 
       elif package_manager=="curl":
         if os.path.exists(system.home+"/"+package_name):
@@ -313,7 +313,7 @@ class tools:
           if os.path.exists(system.home+"/"+package_name):
             os.system("clear")
             logo.installed(name)
-            tmp=quo.prompt(/>>>")
+            tmp=quo.prompt("/>>>")
           else:
             os.system("clear")
             logo.not_installed(name)
