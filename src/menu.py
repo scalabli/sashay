@@ -82,7 +82,7 @@ class main:
                   if int(tcmd) in range(1,int(cat_total)+1):
                     os.system("clear")
                     logo.installing()
-                    quo.flair(f'Installing.....', fg='blue', bg='black') 
+                    quo.flair(f"Installing...Good things come to those who wait", fg="vgreen") 
                     tool.install(tmp_cat_tool[int(tcmd)-1])
                   else:
                     print(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
@@ -117,15 +117,15 @@ class main:
               if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
                 os.system("clear")
                 logo.updated()
-                cmd=input("\033[1;36m >>> \033[00m")
+                cmd=quo.prompt("/>>>")
               else:
                 os.system("clear")
                 logo.update_error()
-                cmd=input("\033[1;36m >>> \033[00m")
+                cmd=quo.prompt("/>>>")
             else:
               os.system("clear")
               logo.update_error()
-              cmd=input("\033[1;36m >>> \033[00m")
+              cmd=quo.prompt("/>>>")
           else:
             if os.path.exists(system.home+"/sashay"):
               pass
