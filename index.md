@@ -35,6 +35,13 @@
 
         sh install or ./install
 
+<br>
+<p align="center">
+<img width="40%" src="assets/terms.png"/>
+<img width="28.8%" src="assets/home.png"/>
+<img width="23.4%" src="assets/categories.png"/>
+</p>
+
 ## Tool Categories 
 `Information Gathering`
 `Vulnerability Scanner`
@@ -76,7 +83,7 @@ Each number represents a specific output:
 
 ## Contributing
 
-If you run into an issue, we would be very happy if you would file a bug on the [issue tracker](https://github.com/viewerdiscretion/sashay/issues).
+If you run into an issue, we would be very happy if you would file a bug on the [issue tracker](https://github.com/viewerdiscretion/sashay/issues). You can also contribute by adding more tools by creating a pull request
 
 ## License
 
@@ -87,9 +94,7 @@ sashay is released under a [CC BY-NC-SA License](https://creativecommons.org/lic
 
 ### Donate
 
-* <a href="https://www.buymeacoffee.com/gerrishon" target="_blank"><img src="https://res.cloudinary.com/edev/image/upload/v1583011476/button_y8hgt8.png" alt="Donate" style="width: 250px !important; height: 60px !important;" width="250" height="60"></a>
-* <a href="https://PayPal.me/gerrishon" target="_blank"><img src="https://raw.githubusercontent.com/aha999/DonateButtons/master/Paypal.png" alt="Donate" style="width: 250px !important; height: 60px !important;" width="250" height="60"></a>
-
+* <a href="https://www.paypal.com/donate?hosted_button_id=KP893BC2EKK54" target="_blank"><img src="https://res.cloudinary.com/edev/image/upload/v1583011476/button_y8hgt8.png" alt="Donate" style="width: 250px !important; height: 60px !important;" width="250" height="60"></a>
 
 
 ------------------------------------------------------------------------
