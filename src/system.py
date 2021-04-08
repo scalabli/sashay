@@ -6,16 +6,17 @@ __version__ = "2021.01.dev1"
 
 import os
 import sys
+import subprocess
 try:
   import requests
 except:
-  os.system("pip install requests")
-  os.system("pip3 install requests")
+  subprocess.call(['pip install requests'])
+  subprocess.call(['pip3 install requests'])
 try:
   import quo
 except:
-  os.system("pip install quo")
-  os.system("pip3 install quo") 
+  subprocess.call(['pip install quo'])
+  subprocess.call(['pip3 install quo']) 
 class sys:
   pac=None
   sys=None
