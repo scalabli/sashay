@@ -1,10 +1,18 @@
 
 import os
+import subprocess
 import asyncio
 import quo
 
-cmd = 'date'
-os.system(cmd)
+
+cmd = "date"
+
+# returns output as byte string
+returned_output = subprocess.check_output(cmd)
+
+# using decode() function to convert byte string to string
+quo.flair(f'Current date is: {returned_output.decode("utf-8")}')
+
 async def main():
     quo.flair(f'MADE WITH <3 BY', bold=True, fg="vyellow")
     await asyncio.sleep(1) 
