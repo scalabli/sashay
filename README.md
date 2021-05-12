@@ -9,7 +9,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/issues)
 [![GitHub watchers](https://img.shields.io/github/watchers/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/watchers)
 [![Python](https://img.shields.io/badge/language-Python%203-blue.svg)](https://www.python.org)
-[![chouette254/DedSecTL](https://img.shields.io/badge/author-viewerdiscretion/DedSecTL-red.svg)](https://github.com/viewerdiscretion)
+[![gerrishons/DedSecTL](https://img.shields.io/badge/author-gerrishons/DedSecTL-red.svg)](https://github.com/gerrishons)
 [![Twitter Follow](https://img.shields.io/twitter/follow/gerrishon_s?style=social)](https://twitter.com/gerrishon_s)
 
 
