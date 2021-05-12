@@ -1,18 +1,5 @@
 <h1>Sashay<img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
 
-
----
-
-[![License](https://img.shields.io/github/license/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay)
-[![GitHub stars](https://img.shields.io/github/stars/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/issues)
-[![GitHub watchers](https://img.shields.io/github/watchers/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/watchers)
-[![Python](https://img.shields.io/badge/language-Python%203-blue.svg)](https://www.python.org)
-[![chouette254/DedSecTL](https://img.shields.io/badge/author-viewerdiscretion/DedSecTL-red.svg)](https://github.com/viewerdiscretion)
-[![Twitter Follow](https://img.shields.io/twitter/follow/gerrishon_s?style=social)](https://twitter.com/gerrishon_s)
-
-
 ### Introduction
 > :information_source: Sashay is an all in one automatic installer for useful Linux based tools.There are over 340 tools available. 
 
