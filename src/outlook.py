@@ -136,8 +136,10 @@ class logo:
   @classmethod
   def installed(self,name):
     self.tool_header()
-    quo.flair(f"[ + ] Installed succefully!“, bold=True, fg="cyan")
-    quo.flair(f"[ + ] {name}, has been installed successfully!", fg="cyan")
+    print(f'''
+\033[1;33m  [ + ] \033[1;32mInstalled Successfully !!
+\033[1;33m  [ + ] \033[1;37m'{name}'\033[01;32m is Installed Successfully !!
+''')
     self.tool_footer()
 
   @classmethod
