@@ -3,7 +3,6 @@
 [![Sashay](assets/sashay.png)](https://github.com/viewerdiscretion)
 ---
 
-[![License](https://img.shields.io/github/license/secretum-inc/sashay.svg)](https://github.com/viewerdiscretion/sashay)
 [![GitHub stars](https://img.shields.io/github/stars/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/issues)
