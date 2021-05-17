@@ -3,11 +3,11 @@
 [![Sashay](assets/sashay.png)](https://github.com/viewerdiscretion)
 ---
 
-[![License](https://img.shields.io/github/license/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay)
+[![License](https://img.shields.io/github/license/secretum-inc/sashay.svg)](https://github.com/viewerdiscretion/sashay)
 [![GitHub stars](https://img.shields.io/github/stars/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/issues)
-[![GitHub watchers](https://img.shields.io/github/watchers/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/watchers)
+[![GitHub watchers](https://img.shields.io/github/watchers/secretum-inc/sashay.svg)](https://github.com/viewerdiscretion/sashay/watchers)
 [![Python](https://img.shields.io/badge/language-Python%203-blue.svg)](https://www.python.org)
 [![gerrishons/DedSecTL](https://img.shields.io/badge/author-gerrishons/DedSecTL-red.svg)](https://github.com/gerrishons)
 [![Twitter Follow](https://img.shields.io/twitter/follow/gerrishon_s?style=social)](https://twitter.com/gerrishon_s)
@@ -21,7 +21,7 @@
 
 1. Clone the project files:
 
-        git clone https://github.com/viewerdiscretion/sashay.git
+        git clone https://github.com/secretum-inc/sashay.git
 
 2. Change directory:
 
