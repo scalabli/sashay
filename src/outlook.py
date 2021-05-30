@@ -1,8 +1,9 @@
+#!/usr/bin/env/python3
 
 import os
+import quo
 import subprocess
 import asyncio
-import quo
 
 
 cmd = "date"
@@ -14,12 +15,16 @@ returned_output = subprocess.check_output(cmd)
 quo.flair(f'Current date is: {returned_output.decode("utf-8")}', fg="vgreen", bold=True)
 
 async def main():
-    quo.flair(f'MADE WITH <3 BY', bold=True, fg="vyellow")
+    quo.flair(f'Made with ♥', bold=True, fg="vyellow")
     await asyncio.sleep(1) 
-    quo.flair(f'GERRISHON SIRERE', bold=True, fg="vyellow")
+    quo.flair(f'Secretum Inc.', bold=True, fg="vyellow")
 dedicate = main()
 dedicate
 asyncio.run(dedicate)
+
+
+
+
 
 class logo:
   @classmethod
@@ -27,22 +32,15 @@ class logo:
     quo.flair('''\00Secretum Inc.
 
 \033[1;33m
-                              
-                         888                         
-                         888
-                         888                
-     .oooo.o    .oooo.o  888888bo.   ooo    ooo
-    d88(  "8   d88(  "8 o888888888b  `88.  .8'
-   `"Y88b.    `"Y88b.    888    888    `88..8'
-   o.  )88b   o.  )88b   888    888     `888'
-   8""888P'   8""888P'  o888o  o888o    "888" 
-   +---+---+---+---+                     d8'
-   | s | s | h | y |               .o...P' 
-   +---+---+---+---+
 
 
 
-
+░██████╗░█████╗░░██████╗██╗░░██╗░█████╗░██╗░░░██╗
+██╔════╝██╔══██╗██╔════╝██║░░██║██╔══██╗╚██╗░██╔╝
+╚█████╗░███████║╚█████╗░███████║███████║░╚████╔╝░
+░╚═══██╗██╔══██║░╚═══██╗██╔══██║██╔══██║░░╚██╔╝░░
+██████╔╝██║░░██║██████╔╝██║░░██║██║░░██║░░░██║░░░
+╚═════╝░╚═╝░░╚═╝╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░
 \033[1;36m +---+---+---+---+---+---+---+---+---+---+---+\033[1;m
 \033[1;33m |   |   |   INSTALL USEFUL TOOLS   |    |   |
 \033[1;36m +---+---+---+---+---+---+---+---+---+---+---+\033[00m''')
