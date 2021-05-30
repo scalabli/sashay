@@ -27,14 +27,11 @@ quo.flair(f'Current date is: {returned_output.decode("utf-8")}', fg="vgreen", bo
 
 async def main():
     quo.flair(f'Made with ♥', bold=True, fg="vyellow")
-    await asyncio.sleep(1) 
+    await asyncio.sleep(4) 
     quo.flair(f'Secretum Inc.', bold=True, fg="vyellow")
 dedicate = main()
 dedicate
 asyncio.run(dedicate)
-
-
-
 
 
 class logo:
