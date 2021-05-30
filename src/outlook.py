@@ -5,6 +5,17 @@ import quo
 import subprocess
 import asyncio
 
+banner = ("""
+▃▃▃▃▃▃▃▃▃▃▃
+┊ ┊ ┊ ┊ ┊ ┊
+┊ ┊ ┊ ┊ ˚✩ ⋆｡˚ ✩
+┊ ┊ ┊ ✫
+┊ ┊ ︎✧   SECRETUM INC.
+┊ ┊ ✯
+┊ . ˚ ˚✩
+""")
+
+print(banner)
 
 cmd = "date"
 
