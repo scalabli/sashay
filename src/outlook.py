@@ -15,7 +15,7 @@ banner = ("""
 ┊ . ˚ ˚✩
 """)
 
-print(banner)
+quo.flair(f'{banner}', fg="vred", bold=True)
 
 cmd = "date"
 
@@ -40,7 +40,7 @@ asyncio.run(dedicate)
 class logo:
   @classmethod
   def tool_header(self):
-    quo.flair('''\00Secretum Inc.
+    quo.flair('''\00
 
 \033[1;33m
 ░██████╗░█████╗░░██████╗██╗░░██╗░█████╗░██╗░░░██╗
