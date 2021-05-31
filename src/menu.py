@@ -130,7 +130,7 @@ class main:
             if os.path.exists(system.home+"/sashay"):
               pass
             else:
-              os.system("git clone https://github.com/viewerdiscretion/sashay.git "+system.home+"/sashay")
+              os.system("git clone https://github.com/secretum-inc/sashay.git "+system.home+"/sashay")
             if os.path.exists(system.home+"/sashay/install.sshy"):
               os.system("cd "+system.home+"/sashay && sh install.sshy")
               if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
