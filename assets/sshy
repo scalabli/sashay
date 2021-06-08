@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 if [ -d /data/data/com.termux/files/usr/etc ]; then
