@@ -14,11 +14,11 @@ class main:
       total=len(tool.names)
       os.system("clear")
       logo.install_tools()
-      print("\007")
+      quo.echo("\007")
       for tool_name in tool.names:
         quo.flair(f'{num} install {tool_name}', bold=True, fg="vblue")
         num+=1
-      print("")
+      quo.echo("")
       logo.back()
       cmd=quo.prompt("/>>>")
       if cmd=="00" or cmd=="back":
@@ -45,11 +45,11 @@ class main:
       num=1
       os.system("clear")
       logo.tool_header()
-      print("")
+      quo.echo("")
       for cat in tool.category:
         quo.flair(f'{num} {tool.category_data[cat]}', bold=True, fg="vblue")
         num+=1
-      print("")
+      quo.echo("")
       logo.back()
       cmd=quo.prompt("/>>>") 
       if cmd=="00" or cmd=="back":
@@ -64,7 +64,7 @@ class main:
               cnt=1
               os.system("clear")
               logo.tool_header()
-              print("")
+              quo.echo("")
               tmp_cat_tool=[]
               for i in tool.names:
                 if tool.category[int(cmd)-1] in tool.data[i]["category"]:
@@ -88,7 +88,7 @@ class main:
                     print(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
                     sleep(1)
                 except ValueError:
-                  print(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
+                  quo.echo(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
                   sleep(1)
           else:
             print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input! try again\033[00m")
@@ -111,7 +111,7 @@ class main:
             if os.path.exists(system.home+"/sashay"):
               pass
             else:
-              os.system(system.sudo+" git clone https://github.com/viewerdiscretion/sashay.git "+system.home+"/sashay")
+              os.system(system.sudo+" git clone https://github.com/secretum-inc/sashay.git "+system.home+"/sashay")
             if os.path.exists(system.home+"/sashay/install.sshy"):
               os.system("cd "+system.home+"/sashay && "+system.sudo+" sh install.sshy")
               if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
@@ -153,7 +153,7 @@ class main:
         self.menu()
         break
       else:
-        print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
+        quo.echo(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
         sleep(1)
 
   def about(self):
