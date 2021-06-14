@@ -17,15 +17,11 @@
 ## Installation⬇️
  
 
-1. Clone the project files:
+1. Clone the project files and cd into the directory:
 
-        git clone https://github.com/secretum-inc/sashay.git
+        git clone https://github.com/secretum-inc/sashay && cd sashay
 
-2. Change directory:
-
-        cd sashay
-
-3. Execute:
+2. Execute:
      
         chmod +x install
 
