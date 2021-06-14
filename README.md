@@ -21,13 +21,10 @@
 
         git clone https://github.com/secretum-inc/sashay && cd sashay
 
-2. Execute:
+2. Run:
      
-        chmod +x install
+        python3 sshy.py
 
-4. Run:
-
-        sh install or ./install
 
 <br>
 <p align="center">
