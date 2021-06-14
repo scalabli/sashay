@@ -26,6 +26,10 @@
         python3 sshy.py
 
 
+
+Type `sashay` or `sshy` from anywhere in your terminal
+
+
 <br>
 <p align="center">
 <img width="40%" src="assets/terms.png"/>
