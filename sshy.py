@@ -13,8 +13,7 @@ os.system(perm)
 quo.pause()
 
 os.system(inst1)
-else:
-  os.system(inst2)
+os.system(inst2)
   
 quo.flair(f"You're all set", fg='vcyan')
 pass
