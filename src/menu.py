@@ -16,7 +16,7 @@ class main:
       logo.install_tools()
       quo.echo("\007")
       for tool_name in tool.names:
-        quo.flair(f'{num} install {tool_name}', bold=True, fg="vblue")
+        quo.flair(f'{num} install {tool_name}', bold=True, foreground="vblue")
         num+=1
       quo.echo("")
       logo.back()
@@ -29,13 +29,13 @@ class main:
           if int(cmd)>=1 and int(cmd)<=int(total):
             os.system("clear")
             logo.installing()
-            quo.flair(f"Installing...Good things come to those who wait", bold=True, fg="vgreen")
+            quo.flair(f"Installing...Good things come to those who wait", bold=True, foreground="vgreen")
             tool.install(tool.names[int(cmd)-1])
           else:
-            quo.flair(f"Sorry, '{cmd}' is an invalid input!", fg="vred") 
+            quo.flair(f"Sorry, '{cmd}' is an invalid input!", foreground="vred") 
             sleep(1)
         except ValueError:
-          quo.flair(f"Sorry, '{cmd}' is an invalid input!", fg="vred")
+          quo.flair(f"Sorry, '{cmd}' is an invalid input!", foreground="vred")
           sleep(1)
 
   def category(self):
@@ -47,7 +47,7 @@ class main:
       logo.tool_header()
       quo.echo("")
       for cat in tool.category:
-        quo.flair(f'{num} {tool.category_data[cat]}', bold=True, fg="vblue")
+        quo.flair(f'{num} {tool.category_data[cat]}', bold=True, foreground="vblue")
         num+=1
       quo.echo("")
       logo.back()
@@ -82,7 +82,7 @@ class main:
                   if int(tcmd) in range(1,int(cat_total)+1):
                     os.system("clear")
                     logo.installing()
-                    quo.flair(f"Installing...Good things come to those who wait", fg="vgreen") 
+                    quo.flair(f"Installing...Good things come to those who wait", foreground="vgreen") 
                     tool.install(tmp_cat_tool[int(tcmd)-1])
                   else:
                     print(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
