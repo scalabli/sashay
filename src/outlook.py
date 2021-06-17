@@ -15,7 +15,7 @@ banner = ("""
 ┊ . ˚ ˚✩
 """)
 
-quo.flair(f'{banner}', fg="vred", bold=True)
+quo.flair(f'{banner}', foreground="vred", bold=True)
 
 cmd = "date"
 
@@ -23,12 +23,12 @@ cmd = "date"
 returned_output = subprocess.check_output(cmd)
 
 # using decode() function to convert byte string to string
-quo.flair(f'Current date is: {returned_output.decode("utf-8")}', fg="vgreen", bold=True)
+quo.flair(f'Current date is: {returned_output.decode("utf-8")}', foreground="vgreen", bold=True)
 
 async def main():
-    quo.flair(f'Made with ♥', bold=True, fg="vyellow")
+    quo.flair(f'Made with ♥', bold=True, foreground="vyellow")
     await asyncio.sleep(4) 
-    quo.flair(f'Secretum Inc.', bold=True, fg="vyellow")
+    quo.flair(f'Secretum Inc.', bold=True, foreground="vyellow")
 dedicate = main()
 dedicate
 asyncio.run(dedicate)
@@ -64,61 +64,61 @@ class logo:
   @classmethod
   def ins_tnc(self):
     self.tool_header() 
-    quo.flair(f'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERRCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL I BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.', fg='vblack', bg='vwhite')
-    quo.flair(f'Installing this tool means you agree with all terms', fg='vred') 
+    quo.flair(f'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERRCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL I BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.', foreground='vblack', background='vwhite')
+    quo.flair(f'Installing this tool means you agree with all terms', foreground='vred') 
     self.tool_footer()
 
   @classmethod
   def ins_sc(self):
     self.tool_header()
-    quo.flair(f'[ ✓ ] sashay has been installed successfully', fg='white')
-    quo.flair(f'[ ✓ ] Type sashay or sshy from anywhere in your terminal', fg='yellow') 
+    quo.flair(f'[ ✓ ] sashay has been installed successfully', foreground='white')
+    quo.flair(f'[ ✓ ] Type sashay or sshy from anywhere in your terminal', foreground='yellow') 
     self.tool_footer()
 
   @classmethod
   def update(self):
     self.tool_header()
-    quo.flair(f'[ 1 ] Update sashay', fg='vblue')
-    quo.flair(f'[ 0 ] << Go back', fg='vyellow')
+    quo.flair(f'[ 1 ] Update sashay', foreground='vblue')
+    quo.flair(f'[ 0 ] << Go back', foreground='vyellow')
     self.tool_footer()
 
   @classmethod
   def updated(self):
     self.tool_header()
-    quo.flair(f'[ ✓ ] Congratulations! sashay has been updated successfully', fg='vblack', bg='vgreen') 
-    quo.flair(f'[ ✓ ] Press enter to continue', fg='vgreen')
+    quo.flair(f'[ ✓ ] Congratulations! sashay has been updated successfully', foreground='vblack', background='vgreen') 
+    quo.flair(f'[ ✓ ] Press enter to continue', foreground='vgreen')
     self.tool_footer()
 
   @classmethod
   def nonet(self):
     self.tool_header()
-    quo.flair(f'[ x ] There is no network connectivity', bold=True, fg='cyan')
-    quo.flair(f'[ x ] Please try again later', fg='cyan')
+    quo.flair(f'[ x ] There is no network connectivity', bold=True, foreground='cyan')
+    quo.flair(f'[ x ] Please try again later', foreground='cyan')
     self.tool_footer()
 
   @classmethod
   def update_error(self):
     self.tool_header()
-    quo.flair(f"[ x ] ssshy can't be updated at this time", fg="cyan")
-    quo.flair(f"[ x ] Please try again later", fg="cyan") 
+    quo.flair(f"[ x ] ssshy can't be updated at this time", foreground="cyan")
+    quo.flair(f"[ x ] Please try again later", foreground="cyan") 
     self.tool_footer()
 
 
   @classmethod
   def about(self,total):
     self.tool_header()
-    quo.flair(f'[✓] sashay', fg='vblack', bg='vyellow')
-    quo.flair(f'[✓] By Gerrishon Sirere(code-plug)', fg='vblue')
-    quo.flair(f'[✓] With great power comes great responsibility', underline=True, fg='vblue')
-    quo.flair(f'[✓] 360+ tools', fg='red') 
-    quo.flair(f'[✓] Made for Linux based systems', fg='blue')
-    quo.flair(f'Social media [yn] ', fg="cyan", nl=False)
+    quo.flair(f'[✓] sashay', foreground='vblack', background='vyellow')
+    quo.flair(f'[✓] By Gerrishon Sirere(code-plug)', foreground='vblue')
+    quo.flair(f'[✓] With great power comes great responsibility', underline=True, foreground='vblue')
+    quo.flair(f'[✓] 360+ tools', foreground='red') 
+    quo.flair(f'[✓] Made for Linux based systems', foreground='blue')
+    quo.flair(f'Social media [yn] ', foreground="cyan", nl=False)
     c = quo.interpose()
     quo.echo()
     if c == 'y':
         quo.launch('https://linktr.ee/secretum')
     elif c == 'n':
-          quo.flair(f':-', fg="yellow")
+          quo.flair(f':-', foreground="yellow")
     else:
         quo.echo('Invalid input :(',)
     self.tool_footer()
@@ -126,14 +126,14 @@ class logo:
 
   @classmethod
   def install_tools(self):
-    quo.flair(f'#############################################', fg='black', bg='cyan')
-    quo.flair(f'//////////////SELECT YOUR TOOL///////////////', fg='red', bg='white') 
-    quo.flair(f'#############################################', fg='black', bg='cyan')
+    quo.flair(f'#############################################', foreground='black', background='cyan')
+    quo.flair(f'//////////////SELECT YOUR TOOL///////////////', foreground='red', background='white') 
+    quo.flair(f'#############################################', foreground='black', background='cyan')
 
   @classmethod
   def already_installed(self,name):
     self.tool_header()
-    quo.flair(f"[ + ] Sorry, {name} is already installed!", fg="cyan")
+    quo.flair(f"[ + ] Sorry, {name} is already installed!", foreground="cyan")
     self.tool_footer()
 
   @classmethod
@@ -148,40 +148,40 @@ class logo:
   @classmethod
   def not_installed(self,name):
     self.tool_header()
-    quo.flair(f"[ x ] Sorry, {name} has not been installed!", fg="vred") 
+    quo.flair(f"[ x ] Sorry, {name} has not been installed!", foreground="vred") 
     self.tool_footer()
 
   @classmethod
   def back(self):
-    quo.flair(f'#############################################', fg='vblack', bg='vcyan')
-    quo.flair(f'00) Go back', bold=True, fg='vyellow') 
-    quo.flair(f'#############################################', fg='vblack', bg='vcyan')
+    quo.flair(f'#############################################', foreground='vblack', background='vcyan')
+    quo.flair(f'00) Go back', bold=True, foreground='vyellow') 
+    quo.flair(f'#############################################', foreground='vblack', background='vcyan')
 
   @classmethod
   def updating(self):
-    quo.flair(f'#############################################', fg='vblack', bg='vcyan')
-    quo.flair(f'//////////////////UPDATING///////////////////', fg='vred', bg='vwhite') 
-    quo.flair(f'#############################################', fg='vblack', bg='vcyan')
+    quo.flair(f'#############################################', foreground='vblack', background='vcyan')
+    quo.flair(f'//////////////////UPDATING///////////////////', foreground='vred', background='vwhite') 
+    quo.flair(f'#############################################', foreground='vblack', background='vcyan')
 
   @classmethod
   def installing(self):
-    quo.flair(f'#############################################', fg='vblack', bg='vcyan')
-    quo.flair(f'/////////////////INSTALLING//////////////////', fg='vred', bg='vwhite') 
-    quo.flair(f'#############################################', fg='vblack', bg='vcyan')
+    quo.flair(f'#############################################', foreground='vblack', background='vcyan')
+    quo.flair(f'/////////////////INSTALLING//////////////////', foreground='vred', background='vwhite') 
+    quo.flair(f'#############################################', foreground='vblack', background='vcyan')
 
   @classmethod
   def menu(self,total):
     self.tool_header()
-    quo.flair(f'[ 1 ] Show all tools', bg='vyellow', fg='vblack')
-    quo.flair(f'[ 2 ] Show all categories', bg='vblack', fg='vyellow')
-    quo.flair(f'[ 3 ] Update sashay', fg='vblack', bg='vyellow')
-    quo.flair(f'[ 4 ] About us', fg='vyellow', bg='vblack')
-    quo.flair(f'[ x ] Exit sashay', fg='vblack', bg='vyellow')
+    quo.flair(f'[ 1 ] Show all tools', background='vyellow', foreground='vblack')
+    quo.flair(f'[ 2 ] Show all categories', background='vblack', foreground='vyellow')
+    quo.flair(f'[ 3 ] Update sashay', foreground='vblack', background='vyellow')
+    quo.flair(f'[ 4 ] About us', foreground='vyellow', background='vblack')
+    quo.flair(f'[ x ] Exit sashay', foreground='vblack', background='vyellow')
     self.tool_footer()
 
   @classmethod
   def exit(self):
     self.tool_header()
-    quo.flair(f'Geez...where are you going so soon?', fg='black', bg='vred')
-    quo.flair(f'Anyway, hope to see you back soon', bg="vred") 
+    quo.flair(f'Geez...where are you going so soon?', foreground='black', background='vred')
+    quo.flair(f'Anyway, hope to see you back soon', background="vred") 
     self.tool_footer()
