@@ -1,18 +1,21 @@
-
 import os
-import quo
 
 crl = "clear"
 perm = "chmod +x install"
 inst1 = "sh install" 
 inst2 = "./install"
-siri1 = "pip install quo"
-siri2 = "pip3 install quo"
 
-os.system(siri1)
-os.system(siri2)
+import subprocess
+try:
+  import quo
+except:
+  subprocess.call(['pip install quo'])
+  subprocess.call(['pip3 install quo'])
+
 os.system(crl)
 os.system(perm)
+
+import quo
 quo.pause()
 
 os.system(inst1)
