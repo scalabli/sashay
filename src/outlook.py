@@ -108,7 +108,7 @@ class logo:
   def about(self,total):
     self.tool_header()
     quo.flair(f'[✓] sashay', foreground='vblack', background='vyellow')
-    quo.flair(f'[✓] By Gerrishon Sirere(code-plug)', foreground='vblue')
+    quo.flair(f'[✓] By Gerrishon Sirere(gerrishon-s)', foreground='vblue')
     quo.flair(f'[✓] With great power comes great responsibility', underline=True, foreground='vblue')
     quo.flair(f'[✓] 360+ tools', foreground='red') 
     quo.flair(f'[✓] Made for Linux based systems', foreground='blue')
