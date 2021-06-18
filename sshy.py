@@ -7,9 +7,10 @@ perm = "chmod +x install"
 inst1 = "sh install" 
 inst2 = "./install"
 siri1 = "pip install quo"
-siri1 = "pip3 install quo"
+siri2 = "pip3 install quo"
 
-
+os.system(siri1)
+os.system(siri2)
 os.system(crl)
 os.system(perm)
 quo.pause()
@@ -17,5 +18,5 @@ quo.pause()
 os.system(inst1)
 os.system(inst2)
   
-quo.flair(f"You're all set", fg='vcyan')
+quo.flair(f"You're all set", foreground="cyan")
 pass
