@@ -112,7 +112,7 @@ class logo:
     quo.flair(f'[✓] With great power comes great responsibility', underline=True, foreground='vblue')
     quo.flair(f'[✓] 360+ tools', foreground='red') 
     quo.flair(f'[✓] Made for Linux based systems', foreground='blue')
-    quo.flair(f'Social media [yn] ', foreground="cyan", nl=False)
+    quo.flair(f'Social media [yn] ', foreground="cyan", newline=False)
     c = quo.interpose()
     quo.echo()
     if c == 'y':
