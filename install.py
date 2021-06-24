@@ -1,6 +1,4 @@
-#This file is part of sashay and may be subject to redistribution and commercial restrictions. Please visit our website
-#for more information on licensing and terms of use.
-
+import quo
 import os
 import sys
 from time import sleep
