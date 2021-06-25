@@ -27,7 +27,7 @@ quo.flair(f'Current date is: {returned_output.decode("utf-8")}', foreground="vgr
 
 async def main():
     quo.flair(f'Made with ♥', bold=True, foreground="vyellow")
-    await asyncio.sleep(4) 
+    await asyncio.sleep(3) 
     quo.flair(f"\N{ESC}[31mSecretum\u001b[0mInc.", bold=True)
 dedicate = main()
 dedicate
