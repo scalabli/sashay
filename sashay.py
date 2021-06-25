@@ -1,4 +1,4 @@
-
+import quo
 import os
 import sys
 from src.menu import *
@@ -8,5 +8,5 @@ if __name__ == "__main__":
     main.menu()
   except KeyboardInterrupt:
     os.system("clear")
-    os.system("echo Exitting...")
+    quo.flair(f"Exitting...", foreground="vred")
     logo.exit()
