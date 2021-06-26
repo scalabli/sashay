@@ -34,7 +34,7 @@ Type `sashay` or `sshy` from anywhere in your terminal
 <p align="center">
 <img width="40%" src="assets/terms.png"/>
 <img width="28.8%" src="pics/home.png"/>
-<img width="23.4%" src="assets/categories.png"/>
+<img width="23.4%" src="pics/categories.png"/>
 </p>
 
 ## Tool Categories 
