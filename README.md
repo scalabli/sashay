@@ -1,9 +1,9 @@
 <h1>Sashay<img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
 
-[![Sashay](assets/sashay.png)](https://github.com/gerrishons)
+[![Sashay](assets/sashay.png)](https://github.com/gerrishon-s)
 ---
 
-[![GitHub stars](https://img.shields.io/github/stars/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/secretum-inc/sashay.svg)](https://github.com/viewerdiscretion/sashay/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/issues)
 [![GitHub watchers](https://img.shields.io/github/watchers/secretum-inc/sashay.svg)](https://github.com/viewerdiscretion/sashay/watchers)
@@ -33,7 +33,7 @@ Type `sashay` or `sshy` from anywhere in your terminal
 <br>
 <p align="center">
 <img width="40%" src="assets/terms.png"/>
-<img width="28.8%" src="assets/home.png"/>
+<img width="28.8%" src="pics/home.png"/>
 <img width="23.4%" src="assets/categories.png"/>
 </p>
 
