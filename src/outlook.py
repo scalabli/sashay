@@ -4,6 +4,8 @@ import os
 import quo
 import subprocess
 import asyncio
+import sys
+import time
 
 banner = ("""
 ▃▃▃▃▃▃▃▃▃▃▃
@@ -27,7 +29,7 @@ quo.flair(f'Current date is: {returned_output.decode("utf-8")}', foreground="vgr
 
 async def main():
     quo.flair(f'Made with ♥', bold=True, foreground="vyellow")
-    await asyncio.sleep(3) 
+    await asyncio.sleep(2) 
     quo.flair(f"\N{ESC}[31mSecretum\u001b[0mInc.", bold=True)
 dedicate = main()
 dedicate
@@ -107,20 +109,28 @@ class logo:
   @classmethod
   def about(self,total):
     self.tool_header()
-    quo.flair(f'[✓] sashay', foreground='vblack', background='vyellow')
-    quo.flair(f'[✓] By Gerrishon Sirere(gerrishon-s)', foreground='vblue')
-    quo.flair(f'[✓] With great power comes great responsibility', underline=True, foreground='vblue')
-    quo.flair(f'[✓] 360+ tools', foreground='red') 
-    quo.flair(f'[✓] Made for Linux based systems', foreground='blue')
-    quo.flair(f'Social media [yn] ', foreground="cyan", newline=False)
-    c = quo.interpose()
-    quo.echo()
-    if c == 'y':
-        quo.launch('https://linktr.ee/secretum')
-    elif c == 'n':
-          quo.flair(f':-', foreground="yellow")
-    else:
-        quo.echo('Invalid input :(',)
+    for i in range(3):
+        quo.flair(f"{i}",  foreground="red", bold=True, background="white")
+        sys.stdout.flush()
+        time.sleep(1)
+    __banner__ = """
+       +=======================================+
+       |.................sashay................|
+       +---------------------------------------+
+       |Author: Gerrishon Sirere               |
+       |Contact: secretum.inc@pm.me            |
+       |[+]sshy is an automatic tool installer |
+       |[+] 370+ tools                         |
+       |[+] Python 3.6+                        |
+       +---------------------------------------+
+       |................sashay.................|
+       +=======================================+
+       """
+
+
+
+    quo.flair(f"{__banner__}", foreground="green", bold=True)
+    quo.flair(f'[✓] With great power comes great responsibility', foreground="blue", bold=True)
     self.tool_footer()
 
 
