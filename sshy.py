@@ -5,10 +5,9 @@ perm = "chmod +x install"
 inst1 = "sh install" 
 inst2 = "./install"
 
-import subprocess
-try:
-  subprocess.call(['pip install quo'])
-  subprocess.call(['pip3 install quo'])
+
+os.system("install quo")
+os.system("pip3 install quo")
 
 os.system(crl)
 os.system(perm)
