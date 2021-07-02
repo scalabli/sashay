@@ -7,8 +7,6 @@ inst2 = "./install"
 
 import subprocess
 try:
-  import quo
-except:
   subprocess.call(['pip install quo'])
   subprocess.call(['pip3 install quo'])
 
