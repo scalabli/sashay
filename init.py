@@ -13,10 +13,11 @@ os.system(crl)
 os.system(perm)
 
 import quo
-quo.pause()
+from quo import echo, pause
+pause()
 
 os.system(inst1)
 os.system(inst2)
   
-quo.flair(f"You're all set", foreground="cyan")
+echo(f"You're all set", foreground="cyan")
 pass
