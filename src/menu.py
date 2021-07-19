@@ -17,7 +17,7 @@ class main:
       logo.install_tools()
       echo("\007")
       for tool_name in tool.names:
-        echo(f'{num} install {tool_name}', bold=True, foreground="vblue")
+        echo(f'{num} install {tool_name}', bold=True, fg="vblue")
         num+=1
       echo("")
       logo.back()
@@ -30,13 +30,13 @@ class main:
           if int(cmd)>=1 and int(cmd)<=int(total):
             os.system("clear")
             logo.installing()
-            echo(f"Installing...Good things come to those who wait", bold=True, foreground="vgreen")
+            echo(f"Installing...Good things come to those who wait", bold=True, fg="vgreen")
             tool.install(tool.names[int(cmd)-1])
           else:
-            echo(f"Sorry, '{cmd}' is an invalid input!", foreground="vred") 
+            echo(f"Sorry, '{cmd}' is an invalid input!", fg="vred") 
             sleep(1)
         except ValueError:
-          echo(f"Sorry, '{cmd}' is an invalid input!", foreground="vred")
+          echo(f"Sorry, '{cmd}' is an invalid input!", fg="vred")
           sleep(1)
 
   def category(self):
@@ -48,7 +48,7 @@ class main:
       logo.tool_header()
       echo("")
       for cat in tool.category:
-        echo(f'{num} {tool.category_data[cat]}', bold=True, foreground="vblue")
+        echo(f'{num} {tool.category_data[cat]}', bold=True, fg="vblue")
         num+=1
       echo("")
       logo.back()
@@ -83,7 +83,7 @@ class main:
                   if int(tcmd) in range(1,int(cat_total)+1):
                     os.system("clear")
                     logo.installing()
-                    echo(f"Installing...Good things come to those who wait", foreground="vgreen") 
+                    echo(f"Installing...Good things come to those who wait", fg="vgreen") 
                     tool.install(tmp_cat_tool[int(tcmd)-1])
                   else:
                     print(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
