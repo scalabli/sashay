@@ -3,6 +3,7 @@ import os
 import quo
 import json
 from time import sleep
+from quo import echo, prompt
 from .outlook import *
 from .system import *
 
@@ -14,13 +15,13 @@ class main:
       total=len(tool.names)
       os.system("clear")
       logo.install_tools()
-      quo.echo("\007")
+      echo("\007")
       for tool_name in tool.names:
-        quo.flair(f'{num} install {tool_name}', bold=True, foreground="vblue")
+        echo(f'{num} install {tool_name}', bold=True, foreground="vblue")
         num+=1
-      quo.echo("")
+      echo("")
       logo.back()
-      cmd=quo.prompt("/>>>")
+      cmd=prompt("/>>>")
       if cmd=="00" or cmd=="back":
         self.menu()
         break
@@ -29,13 +30,13 @@ class main:
           if int(cmd)>=1 and int(cmd)<=int(total):
             os.system("clear")
             logo.installing()
-            quo.flair(f"Installing...Good things come to those who wait", bold=True, foreground="vgreen")
+            echo(f"Installing...Good things come to those who wait", bold=True, foreground="vgreen")
             tool.install(tool.names[int(cmd)-1])
           else:
-            quo.flair(f"Sorry, '{cmd}' is an invalid input!", foreground="vred") 
+            echo(f"Sorry, '{cmd}' is an invalid input!", foreground="vred") 
             sleep(1)
         except ValueError:
-          quo.flair(f"Sorry, '{cmd}' is an invalid input!", foreground="vred")
+          echo(f"Sorry, '{cmd}' is an invalid input!", foreground="vred")
           sleep(1)
 
   def category(self):
@@ -45,13 +46,13 @@ class main:
       num=1
       os.system("clear")
       logo.tool_header()
-      quo.echo("")
+      echo("")
       for cat in tool.category:
-        quo.flair(f'{num} {tool.category_data[cat]}', bold=True, foreground="vblue")
+        echo(f'{num} {tool.category_data[cat]}', bold=True, foreground="vblue")
         num+=1
-      quo.echo("")
+      echo("")
       logo.back()
-      cmd=quo.prompt("/>>>") 
+      cmd=prompt("/>>>") 
       if cmd=="00" or cmd=="back":
         self.menu()
         break
@@ -64,7 +65,7 @@ class main:
               cnt=1
               os.system("clear")
               logo.tool_header()
-              quo.echo("")
+              echo("")
               tmp_cat_tool=[]
               for i in tool.names:
                 if tool.category[int(cmd)-1] in tool.data[i]["category"]:
@@ -73,7 +74,7 @@ class main:
                   cnt+=1
               print("")
               logo.back()
-              tcmd=quo.prompt("/>>>")
+              tcmd=prompt("/>>>")
               if tcmd=="00" or tcmd=="back":
                 break
               else:
@@ -82,13 +83,13 @@ class main:
                   if int(tcmd) in range(1,int(cat_total)+1):
                     os.system("clear")
                     logo.installing()
-                    quo.flair(f"Installing...Good things come to those who wait", foreground="vgreen") 
+                    echo(f"Installing...Good things come to those who wait", foreground="vgreen") 
                     tool.install(tmp_cat_tool[int(tcmd)-1])
                   else:
                     print(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
                     sleep(1)
                 except ValueError:
-                  quo.echo(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
+                  echo(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
                   sleep(1)
           else:
             print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input! try again\033[00m")
@@ -101,7 +102,7 @@ class main:
     while True:
       os.system("clear")
       logo.update()
-      cmd=quo.prompt("/>>>")
+      cmd=prompt("/>>>")
       if cmd=="1":
         system=sys()
         if system.connection():
@@ -117,15 +118,15 @@ class main:
               if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
                 os.system("clear")
                 logo.updated()
-                cmd=quo.prompt("/>>>")
+                cmd=prompt("/>>>")
               else:
                 os.system("clear")
                 logo.update_error()
-                cmd=quo.prompt("/>>>")
+                cmd=prompt("/>>>")
             else:
               os.system("clear")
               logo.update_error()
-              cmd=quo.prompt("/>>>")
+              cmd=prompt("/>>>")
           else:
             if os.path.exists(system.home+"/sashay"):
               pass
@@ -153,7 +154,7 @@ class main:
         self.menu()
         break
       else:
-        quo.echo(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
+        echo(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
         sleep(1)
 
   def about(self):
@@ -297,13 +298,13 @@ class tools:
           else:
             os.system("clear")
             logo.not_installed(name)
-            tmp=quo.prompt("/>>>")
+            tmp=prompt("/>>>")
 
       elif package_manager=="curl":
         if os.path.exists(system.home+"/"+package_name):
           os.system("clear")
           logo.already_installed(name)
-          tmp=quo.prompt("/>>>")
+          tmp=prompt("/>>>")
         else:
           if system.sudo != None:
             os.system(system.sudo+" curl "+url+" -o "+system.home+"/"+package_name)
@@ -313,12 +314,12 @@ class tools:
           if os.path.exists(system.home+"/"+package_name):
             os.system("clear")
             logo.installed(name)
-            tmp=quo.prompt("/>>>")
+            tmp=prompt("/>>>")
           else:
             os.system("clear")
             logo.not_installed(name)
-            tmp=quo.prompt("/>>>")
+            tmp=prompt("/>>>")
     else:
       os.system("clear")
       logo.nonet()
-      tmp=quo.prompt("/>>>")
+      tmp=prompt("/>>>")
