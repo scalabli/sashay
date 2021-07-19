@@ -23,7 +23,7 @@
 
 2. Run:
      
-        python3 sshy.py
+        python3 init.py
 
 
 
