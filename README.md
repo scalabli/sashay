@@ -93,3 +93,7 @@ sashay is released under a [CC BY-NC-SA License](https://creativecommons.org/lic
 
 
 ------------------------------------------------------------------------
+
+Check out Debonair
+
+Check out our other CLI, [Debonair](https://github.com/secretum-inc/debonair). 
