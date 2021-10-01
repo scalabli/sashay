@@ -1,13 +1,13 @@
 import quo
 import os
 import sys
-from quo import echo
+from quo import clear, echo
 from src.menu import *
 
 if __name__ == "__main__":
   try:
     main.menu()
   except KeyboardInterrupt:
-    os.system("clear")
+    clear()
     echo(f"Exitting...", foreground="vred")
     logo.exit()
