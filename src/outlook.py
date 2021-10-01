@@ -32,7 +32,7 @@ async def main():
     echo(f'Made with ♥', bold=True, fg="vyellow")
     await asyncio.sleep(2) 
     echo(f"Secretum ",fg="red", nl=False, bold=True)
-    time.sleep(1)
+    time.sleep(0.5)
     echo(f"Inc.", bold=True)
 dedicate = main()
 dedicate
