@@ -31,7 +31,8 @@ echo(f'Current date is: {returned_output.decode("utf-8")}', fg="vgreen", bold=Tr
 async def main():
     echo(f'Made with ♥', bold=True, fg="vyellow")
     await asyncio.sleep(2) 
-    echo(f"\N{ESC}[31mSecretum\u001b[0mInc.", bold=True)
+    echo(f"Secretum ",fg="red", nl=False, bold=True) 
+    echo(f"Inc.", bold=True)
 dedicate = main()
 dedicate
 asyncio.run(dedicate)
