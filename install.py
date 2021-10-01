@@ -1,4 +1,4 @@
-import quo
+from quo import clear, echo, prompt
 import os
 import sys
 from time import sleep
@@ -10,11 +10,11 @@ class tool:
   def install(self):
     while True:
       system=sys()
-      os.system("clear")
+      clear() 
       logo.ins_tnc()
-      inp=quo.prompt("Do you want to install sashay? [y/n]")
+      inp=prompt("Do you want to install sashay? [y/n]")
       if inp=="y" or inp=="Y" or inp=="Yes" or inp=="yes":
-        os.system("clear")
+        clear() 
         logo.installing()
         if system.sudo is not None:
           #require root permission
@@ -29,12 +29,12 @@ class tool:
           os.system(system.sudo+" chmod +x "+system.bin+"/sshy")
           os.system("cd .. && "+system.sudo+" rm -rf sashay")
           if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
-            os.system("clear")
+            clear() 
             logo.ins_sc()
             tmp=input("\033[1;36m ##> \033[00m")
             break
           else:
-            os.system("clear")
+            clear()
             logo.not_ins()
             tmp=input("\033[1;36m ##> \033[00m")
             break
@@ -50,12 +50,12 @@ class tool:
           os.system("chmod +x "+system.bin+"/sshy")
           os.system("cd .. && rm -rf sashay")
           if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
-            os.system("clear")
+            clear()
             logo.ins_sc()
             tmp=input("\033[1;36m ##> \033[00m")
             break
           else:
-            os.system("clear")
+            clear() 
             logo.not_ins()
             tmp=input("\033[1;36m ##> \033[00m")
             break
@@ -66,5 +66,5 @@ if __name__=="__main__":
   try:
     tool.install()
   except KeyboardInterrupt:
-    os.system("clear")
+    clear()
     logo.exit()
