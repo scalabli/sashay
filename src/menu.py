@@ -1,11 +1,17 @@
-#
 import os
-import quo
 import json
+from quo import clear, echo
+from quo.color import *
 from time import sleep
-from quo import clear, echo, prompt
 from .outlook import *
 from .system import *
+
+red="\033[1;31m"
+green="\033[1;32m"
+yellow="\033[1;33m"
+blue="\033[1;34m"
+violate="\033[1;37m"
+nc="\033[00m"
 
 class main:
   def install_tools(self):
@@ -13,30 +19,36 @@ class main:
       tool=tools()
       num=1
       total=len(tool.names)
-      clear() 
+      clear()
       logo.install_tools()
-      echo("\007")
+      echo("sshy", hidden=True)
       for tool_name in tool.names:
-        echo(f'{num} install {tool_name}', bold=True, fg="vblue")
+        echo(f"[ ", fg=aquamarine, nl=False, bold=True)
+        echo(f"{num}", fg="green", bg=teal, nl=False, bold=True)
+        echo(f" ]", fg=aquamarine, nl=False, bold=True)
+        echo(f" Install ", fg=plum, nl=False)
+        echo(f"{tool_name} {nc}", fg=gold)
         num+=1
-      echo("")
+      echo(f"")
       logo.back()
-      cmd=prompt("/>>>")
+      cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
       if cmd=="00" or cmd=="back":
         self.menu()
         break
       else:
         try:
           if int(cmd)>=1 and int(cmd)<=int(total):
-            clear() 
+            clear()
             logo.installing()
-            echo(f"Installing...Good things come to those who wait", bold=True, fg="vgreen")
+            print(f"{green}Installing ....{nc}")
             tool.install(tool.names[int(cmd)-1])
           else:
-            echo(f"Sorry, '{cmd}' is an invalid input!", fg="vred") 
+            echo(f"Sorry, ", fg="red", nl=False)
+            echo(f"{cmd}", nl=False)
+            echo(" is an invalid input {nc}", fg="red")
             sleep(1)
         except ValueError:
-          echo(f"Sorry, '{cmd}' is an invalid input!", fg="vred")
+          print(f"\007{red}Sorry,{violate} '{cmd}' {blue}: {red}invalid input !!{nc}")
           sleep(1)
 
   def category(self):
@@ -44,15 +56,18 @@ class main:
       tool=tools()
       total=len(tool.category)
       num=1
-      clear() 
+      clear()
       logo.tool_header()
-      echo("")
+      echo(f"")
       for cat in tool.category:
-        echo(f'{num} {tool.category_data[cat]}', bold=True, fg="vblue")
+        echo(f"[ ", fg=aquamarine, nl=False, bold=True)
+        echo(f"{num}", fg=brown, nl=False, bold=True)
+        echo(f" ]", fg=aquamarine, nl=False, bold=True)
+        echo(f" {tool.category_data[cat]}{nc}", fg=gold)
         num+=1
-      echo("")
+      echo(f"")
       logo.back()
-      cmd=prompt("/>>>") 
+      cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
       if cmd=="00" or cmd=="back":
         self.menu()
         break
@@ -63,50 +78,50 @@ class main:
               print(int(cmd)-1)
               print(tool.category[int(cmd)-1])
               cnt=1
-              clear() 
+              clear()
               logo.tool_header()
-              echo("")
+              print(f"")
               tmp_cat_tool=[]
               for i in tool.names:
                 if tool.category[int(cmd)-1] in tool.data[i]["category"]:
                   tmp_cat_tool.append(tool.data[i]['name'])
-                  print(f" \033[01;32m[ \033[00m{cnt} \033[01;32m] \033[01;33minstall \033[01;32m{tool.data[i]['name']}\033[00m")
+                  print(f" {green}[ {violate}{cnt} {green}] {yellow}Install {green}{tool.data[i]['name']}{nc}")
                   cnt+=1
-              print("")
+              echo(f"")
               logo.back()
-              tcmd=prompt("/>>>")
+              tcmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
               if tcmd=="00" or tcmd=="back":
                 break
               else:
                 try:
                   cat_total=len(tmp_cat_tool)
                   if int(tcmd) in range(1,int(cat_total)+1):
-                    clear() 
+                    clear()
                     logo.installing()
-                    echo(f"Installing...Good things come to those who wait", fg="vgreen") 
+                    print(f"{green}Installing ....{nc}")
                     tool.install(tmp_cat_tool[int(tcmd)-1])
                   else:
-                    print(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
+                    print(f"\007{red}Sorry,{violate} '{tcmd}' {blue}: {red}invalid input !!{nc}")
                     sleep(1)
                 except ValueError:
-                  echo(f"\007\033[01;31mSorry \033[01;37m: '{tcmd}' \033[01;31minvalid input! try again\033[00m")
+                  print(f"\007{red}Sorry,{violate} '{tcmd}' {blue}: {red}invalid input !!{nc}")
                   sleep(1)
           else:
-            print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input! try again\033[00m")
+            print(f"\007{red}Sorry,{violate} '{cmd}' {blue}: {red}invalid input !!{nc}")
             sleep(1)
         except ValueError:
-          print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input! try again\033[00m")
+          print(f"\007{red}Sorry,{violate} '{cmd}' {blue}: {red}invalid input !!{nc}")
           sleep(1)
 
   def update(self):
     while True:
-      clear() 
+      clear()
       logo.update()
-      cmd=prompt("/>>>")
+      cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
       if cmd=="1":
         system=sys()
         if system.connection():
-          clear() 
+          clear()
           logo.updating()
           if system.sudo != None:
             if os.path.exists(system.home+"/sashay"):
@@ -116,17 +131,17 @@ class main:
             if os.path.exists(system.home+"/sashay/install.sshy"):
               os.system("cd "+system.home+"/sashay && "+system.sudo+" sh install.sshy")
               if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
-                clear() 
+                clear()
                 logo.updated()
-                cmd=prompt("/>>>")
+                cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
               else:
-                clear() 
+                os.system("clear")
                 logo.update_error()
-                cmd=prompt("/>>>")
+                cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
             else:
-              clear() 
+              clear()
               logo.update_error()
-              cmd=prompt("/>>>")
+              cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
           else:
             if os.path.exists(system.home+"/sashay"):
               pass
@@ -135,35 +150,35 @@ class main:
             if os.path.exists(system.home+"/sashay/install.sshy"):
               os.system("cd "+system.home+"/sashay && sh install.sshy")
               if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
-                clear() 
+                clear()
                 logo.updated()
-                cmd=input("\033[1;36m >>> \033[00m")
+                cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
               else:
-                clear() 
+                clear()
                 logo.update_error()
-                cmd=input("\033[1;36m >>> \033[00m")
+                cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
             else:
-              clear() 
+              clear()
               logo.update_error()
-              cmd=input("\033[1;36m >>> \033[00m")
+              cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
         else:
-          clear() 
+          clear()
           logo.nonet()
-          tmp=input("\033[1;36m >>> \033[00m")
+          tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
       elif cmd=="0" or cmd=="back":
         self.menu()
         break
       else:
-        echo(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
+        print(f"\007{red}Sorry,{violate} '{cmd}' {blue}: {red}invalid input !!{nc}")
         sleep(1)
 
   def about(self):
     while True:
       tool=tools()
       total=len(tool.names)
-      clear() 
+      clear()
       logo.about(total)
-      cmd=input("\033[1;36m >>> \033[00m")
+      cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
       self.menu()
       break
 
@@ -172,9 +187,9 @@ class main:
     while True:
       tool=tools()
       total=len(tool.names)
-      clear() 
+      os.system("clear")
       logo.menu(total)
-      cmd=input("\033[1;36m >>> \033[00m")
+      cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
       if cmd == "1":
         self.install_tools(self)
         break
@@ -188,10 +203,10 @@ class main:
         self.about(self)
         break
       elif cmd=="x" or cmd=="X" or cmd=="exit":
-        clear() 
+        clear()
         logo.exit()
         break
-      elif cmd=="rm -s" or cmd=="rm -S" or cmd=="uninstall sshy" or cmd=="unistall sashay":
+      elif cmd=="rm -sashay" or cmd=="rm -sshy" or cmd=="uninstall sashay" or cmd=="unistall sshy":
         system=sys()
         if system.sudo:
           os.system(system.sudo+" rm -rf "+system.bin+"/sashay")
@@ -201,11 +216,11 @@ class main:
           os.system("rm -rf "+system.bin+"/sashay")
           os.system("rm -rf "+system.bin+"/sshy")
           os.system("rm -rf "+system.conf_dir+"/sashay")
-        clear() 
+        clear()
         logo.exit()
         break
       else:
-        print(f"\007\033[01;31mSorry \033[01;37m: '{cmd}' \033[01;31minvalid input !!\033[00m")
+        print(f"\007{red}Sorry,{violate} '{cmd}' {blue}: {red}invalid input !!{nc}")
         sleep(1)
 
 class tools:
@@ -242,9 +257,9 @@ class tools:
 
       if package_manager=="package_manager":
         if os.path.exists(system.bin+"/"+package_name):
-          clear() 
+          os.system("clear")
           logo.already_installed(name)
-          tmp=input("\033[1;36m >>> \033[00m")
+          tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
         else:
           if system.sudo != None:
             os.system(system.sudo+" "+system.pac+" install "+package_name+" -y")
@@ -252,19 +267,19 @@ class tools:
             os.system(system.pac+" install "+package_name+" -y")
           # check tool is installed or not
           if os.path.exists(system.bin+"/"+package_name):
-            clear() 
+            os.system("clear")
             logo.installed(name)
-            tmp=input("\033[1;36m >>> \033[00m")
+            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
           else:
-            clear() 
+            os.system("clear")
             logo.not_installed(name)
-            tmp=input("\033[1;36m >>> \033[00m")
+            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
 
       elif package_manager=="git":
         if os.path.exists(system.home+"/"+package_name):
-          clear() 
+          os.system("clear")
           logo.already_installed(name)
-          tmp=input("\033[1;36m >>> \033[00m")
+          tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
         else:
           if system.sudo != None:
             os.system(system.sudo+" git clone "+url+" "+system.home+"/"+package_name)
@@ -272,19 +287,19 @@ class tools:
             os.system("git clone "+url+" "+system.home+"/"+package_name)
           # check tool is installed or not
           if os.path.exists(system.home+"/"+package_name):
-            clear() 
+            os.system("clear")
             logo.installed(name)
-            tmp=input("\033[1;36m >>> \033[00m")
+            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
           else:
-            clear() 
+            os.system("clear")
             logo.not_installed(name)
-            tmp=input("\033[1;36m >>> \033[00m")
+            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
 
       elif package_manager=="wget":
         if os.path.exists(system.home+"/"+package_name):
-          clear() 
+          os.system("clear")
           logo.already_installed(name)
-          tmp=input("\033[1;36m >>> \033[00m")
+          tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
         else:
           if system.sudo != None:
             os.system(system.sudo+" wget "+url+" -o "+system.home+"/"+package_name)
@@ -292,19 +307,19 @@ class tools:
             os.system("wget "+url+" -o "+system.home+"/"+package_name)
           # check tool is installed or not
           if os.path.exists(system.home+"/"+package_name):
-            clear() 
+            os.system("clear")
             logo.installed(name)
-            tmp=input("\033[1;36m >>> \033[00m")
+            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
           else:
-            clear() 
+            os.system("clear")
             logo.not_installed(name)
-            tmp=prompt("/>>>")
+            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
 
       elif package_manager=="curl":
         if os.path.exists(system.home+"/"+package_name):
-          clear() 
+          os.system("clear")
           logo.already_installed(name)
-          tmp=prompt("/>>>")
+          tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
         else:
           if system.sudo != None:
             os.system(system.sudo+" curl "+url+" -o "+system.home+"/"+package_name)
@@ -312,14 +327,14 @@ class tools:
             os.system("curl "+url+" -o "+system.home+"/"+package_name)
           # check tool is installed or not
           if os.path.exists(system.home+"/"+package_name):
-            clear() 
+            os.system("clear")
             logo.installed(name)
-            tmp=prompt("/>>>")
+            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
           else:
-            clear() 
+            os.system("clear")
             logo.not_installed(name)
-            tmp=prompt("/>>>")
+            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
     else:
-      clear() 
+      clear()
       logo.nonet()
-      tmp=prompt("/>>>")
+      tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")

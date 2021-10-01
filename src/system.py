@@ -1,22 +1,11 @@
-#This file is part of Sashay and may be subject to redistribution and commercial restrictions. Please visit our website
-#for more information on licensing and terms of use.
-#
-#
-__version__ = "2021.01.dev1"
-
 import os
 import sys
-import subprocess
 try:
   import requests
 except:
-  subprocess.call(['pip install requests'])
-  subprocess.call(['pip3 install requests'])
-try:
-  import quo
-except:
-  subprocess.call(['pip install quo'])
-  subprocess.call(['pip3 install quo']) 
+  os.system("pip install requests")
+  os.system("pip3 install requests")
+
 class sys:
   pac=None
   sys=None
@@ -26,7 +15,7 @@ class sys:
   conf_dir=None
   def __init__(self):
 
-    # root access 
+    # checking for system root access
     if os.path.exists("/usr/lib/sudo"):
       self.sudo="sudo"
     elif os.path.exists("/lib/sudo"):
@@ -40,7 +29,7 @@ class sys:
     elif os.path.exists("/sbin/sudo"):
       self.sudo="sudo"
 
-    # configuration directories
+    # checking for configuration dir
     if os.path.exists("/usr/etc"):
       self.conf_dir="/usr/etc"
     elif os.path.exists("/data/data/com.termux/files/usr/etc"):
@@ -48,7 +37,7 @@ class sys:
     elif os.path.exists("/etc"):
       self.conf_dir="/etc"
 
-    # dir, system bin, and system pkg manager
+    # checking for system bin dir and system package manager
     if os.path.exists("/usr/bin/yum"):
       self.sys="linux"
       self.bin="/usr/bin"
@@ -109,7 +98,7 @@ class sys:
 
   def connection(self):
     try:
-      if requests.get("https://www.github.com").ok:
+      if requests.get("https://www.google.com").ok:
         return True
     except:
       return False
