@@ -1,4 +1,4 @@
-from quo import clear, echo, prompt
+from quo import clear, confirm, echo, prompt
 import os
 import sys
 from time import sleep
@@ -12,7 +12,7 @@ class tool:
       system=sys()
       clear() 
       logo.ins_tnc()
-      inp=prompt("Do you want to install sashay? [y/n]")
+      inp=confirm("Do you want to install sashay? [y/n]")
       if inp=="y" or inp=="Y" or inp=="Yes" or inp=="yes":
         clear() 
         logo.installing()
