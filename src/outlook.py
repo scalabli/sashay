@@ -31,7 +31,8 @@ echo(f'Current date is: {returned_output.decode("utf-8")}', fg="vgreen", bold=Tr
 async def main():
     echo(f'Made with ♥', bold=True, fg="vyellow")
     await asyncio.sleep(2) 
-    echo(f"Secretum ",fg="red", nl=False, bold=True) 
+    echo(f"Secretum ",fg="red", nl=False, bold=True)
+    time.sleep(1)
     echo(f"Inc.", bold=True)
 dedicate = main()
 dedicate
@@ -68,7 +69,18 @@ class logo:
   @classmethod
   def ins_tnc(self):
     self.tool_header() 
-    echo(f'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERRCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL I BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.', fg='vblack', bg='vwhite')
+    echo(f"THE SOFTWARE IS PROVIDED", fg="vblack", nl=False)
+    time.sleep(0.25)
+    echo(f"'AS IS'", fg="vred", bg="vwhite", nl=False)
+    echo(f"WITHOUT WARRANTY OF ANY KIND", fg="vblack", bg="vwhite", nl=False)
+    time.sleep(0.25)
+    echo(f"INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF", fg="vblack", bg="vwhite", nl=False)
+    time.sleep(0.25)
+    echo(f"MERRCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE", fg="vblack", bg="vwhite", italic=True, nl=False) 
+    echo(F"AND", fg="vblack", bg="vwhite", nl=False)
+    echo(f"NONINFRINGEMENT.", fg="vblack", bg="vwhite", italic=True, nl=False)
+    time.sleep(0.25)
+    echo(f"IN NO EVENT SHALL I BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."", fg='vblack', bg='vwhite')
     echo(f'Installing this tool means you agree with all terms', fg='vred') 
     self.tool_footer()
 
