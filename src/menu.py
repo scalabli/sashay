@@ -135,7 +135,7 @@ class main:
                 logo.updated()
                 cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
               else:
-                os.system("clear")
+                clear() 
                 logo.update_error()
                 cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
             else:
@@ -187,7 +187,7 @@ class main:
     while True:
       tool=tools()
       total=len(tool.names)
-      os.system("clear")
+      clear() 
       logo.menu(total)
       cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
       if cmd == "1":
@@ -257,7 +257,7 @@ class tools:
 
       if package_manager=="package_manager":
         if os.path.exists(system.bin+"/"+package_name):
-          os.system("clear")
+          clear() 
           logo.already_installed(name)
           tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
         else:
@@ -267,17 +267,17 @@ class tools:
             os.system(system.pac+" install "+package_name+" -y")
           # check tool is installed or not
           if os.path.exists(system.bin+"/"+package_name):
-            os.system("clear")
+            clear() 
             logo.installed(name)
             tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
           else:
-            os.system("clear")
+            clear() 
             logo.not_installed(name)
             tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
 
       elif package_manager=="git":
         if os.path.exists(system.home+"/"+package_name):
-          os.system("clear")
+          clear() 
           logo.already_installed(name)
           tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
         else:
@@ -287,17 +287,17 @@ class tools:
             os.system("git clone "+url+" "+system.home+"/"+package_name)
           # check tool is installed or not
           if os.path.exists(system.home+"/"+package_name):
-            os.system("clear")
+            clear() 
             logo.installed(name)
             tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
           else:
-            os.system("clear")
+            clear() 
             logo.not_installed(name)
             tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
 
       elif package_manager=="wget":
         if os.path.exists(system.home+"/"+package_name):
-          os.system("clear")
+          clear() 
           logo.already_installed(name)
           tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
         else:
@@ -307,17 +307,17 @@ class tools:
             os.system("wget "+url+" -o "+system.home+"/"+package_name)
           # check tool is installed or not
           if os.path.exists(system.home+"/"+package_name):
-            os.system("clear")
+            clear() 
             logo.installed(name)
             tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
           else:
-            os.system("clear")
+            clear() 
             logo.not_installed(name)
             tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
 
       elif package_manager=="curl":
         if os.path.exists(system.home+"/"+package_name):
-          os.system("clear")
+          clear() 
           logo.already_installed(name)
           tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
         else:
@@ -327,11 +327,11 @@ class tools:
             os.system("curl "+url+" -o "+system.home+"/"+package_name)
           # check tool is installed or not
           if os.path.exists(system.home+"/"+package_name):
-            os.system("clear")
+            clear() 
             logo.installed(name)
             tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
           else:
-            os.system("clear")
+            clear() 
             logo.not_installed(name)
             tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
     else:
