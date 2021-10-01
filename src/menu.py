@@ -3,7 +3,7 @@ import os
 import quo
 import json
 from time import sleep
-from quo import echo, prompt
+from quo import clear, echo, prompt
 from .outlook import *
 from .system import *
 
@@ -13,7 +13,7 @@ class main:
       tool=tools()
       num=1
       total=len(tool.names)
-      os.system("clear")
+      clear() 
       logo.install_tools()
       echo("\007")
       for tool_name in tool.names:
@@ -28,7 +28,7 @@ class main:
       else:
         try:
           if int(cmd)>=1 and int(cmd)<=int(total):
-            os.system("clear")
+            clear() 
             logo.installing()
             echo(f"Installing...Good things come to those who wait", bold=True, fg="vgreen")
             tool.install(tool.names[int(cmd)-1])
@@ -44,7 +44,7 @@ class main:
       tool=tools()
       total=len(tool.category)
       num=1
-      os.system("clear")
+      clear() 
       logo.tool_header()
       echo("")
       for cat in tool.category:
@@ -63,7 +63,7 @@ class main:
               print(int(cmd)-1)
               print(tool.category[int(cmd)-1])
               cnt=1
-              os.system("clear")
+              clear() 
               logo.tool_header()
               echo("")
               tmp_cat_tool=[]
@@ -81,7 +81,7 @@ class main:
                 try:
                   cat_total=len(tmp_cat_tool)
                   if int(tcmd) in range(1,int(cat_total)+1):
-                    os.system("clear")
+                    clear() 
                     logo.installing()
                     echo(f"Installing...Good things come to those who wait", fg="vgreen") 
                     tool.install(tmp_cat_tool[int(tcmd)-1])
@@ -100,13 +100,13 @@ class main:
 
   def update(self):
     while True:
-      os.system("clear")
+      clear() 
       logo.update()
       cmd=prompt("/>>>")
       if cmd=="1":
         system=sys()
         if system.connection():
-          os.system("clear")
+          clear() 
           logo.updating()
           if system.sudo != None:
             if os.path.exists(system.home+"/sashay"):
@@ -116,15 +116,15 @@ class main:
             if os.path.exists(system.home+"/sashay/install.sshy"):
               os.system("cd "+system.home+"/sashay && "+system.sudo+" sh install.sshy")
               if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
-                os.system("clear")
+                clear() 
                 logo.updated()
                 cmd=prompt("/>>>")
               else:
-                os.system("clear")
+                clear() 
                 logo.update_error()
                 cmd=prompt("/>>>")
             else:
-              os.system("clear")
+              clear() 
               logo.update_error()
               cmd=prompt("/>>>")
           else:
@@ -135,19 +135,19 @@ class main:
             if os.path.exists(system.home+"/sashay/install.sshy"):
               os.system("cd "+system.home+"/sashay && sh install.sshy")
               if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
-                os.system("clear")
+                clear() 
                 logo.updated()
                 cmd=input("\033[1;36m >>> \033[00m")
               else:
-                os.system("clear")
+                clear() 
                 logo.update_error()
                 cmd=input("\033[1;36m >>> \033[00m")
             else:
-              os.system("clear")
+              clear() 
               logo.update_error()
               cmd=input("\033[1;36m >>> \033[00m")
         else:
-          os.system("clear")
+          clear() 
           logo.nonet()
           tmp=input("\033[1;36m >>> \033[00m")
       elif cmd=="0" or cmd=="back":
@@ -161,7 +161,7 @@ class main:
     while True:
       tool=tools()
       total=len(tool.names)
-      os.system("clear")
+      clear() 
       logo.about(total)
       cmd=input("\033[1;36m >>> \033[00m")
       self.menu()
@@ -172,7 +172,7 @@ class main:
     while True:
       tool=tools()
       total=len(tool.names)
-      os.system("clear")
+      clear() 
       logo.menu(total)
       cmd=input("\033[1;36m >>> \033[00m")
       if cmd == "1":
@@ -188,7 +188,7 @@ class main:
         self.about(self)
         break
       elif cmd=="x" or cmd=="X" or cmd=="exit":
-        os.system("clear")
+        clear() 
         logo.exit()
         break
       elif cmd=="rm -s" or cmd=="rm -S" or cmd=="uninstall sshy" or cmd=="unistall sashay":
@@ -201,7 +201,7 @@ class main:
           os.system("rm -rf "+system.bin+"/sashay")
           os.system("rm -rf "+system.bin+"/sshy")
           os.system("rm -rf "+system.conf_dir+"/sashay")
-        os.system("clear")
+        clear() 
         logo.exit()
         break
       else:
@@ -242,7 +242,7 @@ class tools:
 
       if package_manager=="package_manager":
         if os.path.exists(system.bin+"/"+package_name):
-          os.system("clear")
+          clear() 
           logo.already_installed(name)
           tmp=input("\033[1;36m >>> \033[00m")
         else:
@@ -252,17 +252,17 @@ class tools:
             os.system(system.pac+" install "+package_name+" -y")
           # check tool is installed or not
           if os.path.exists(system.bin+"/"+package_name):
-            os.system("clear")
+            clear() 
             logo.installed(name)
             tmp=input("\033[1;36m >>> \033[00m")
           else:
-            os.system("clear")
+            clear() 
             logo.not_installed(name)
             tmp=input("\033[1;36m >>> \033[00m")
 
       elif package_manager=="git":
         if os.path.exists(system.home+"/"+package_name):
-          os.system("clear")
+          clear() 
           logo.already_installed(name)
           tmp=input("\033[1;36m >>> \033[00m")
         else:
@@ -272,17 +272,17 @@ class tools:
             os.system("git clone "+url+" "+system.home+"/"+package_name)
           # check tool is installed or not
           if os.path.exists(system.home+"/"+package_name):
-            os.system("clear")
+            clear() 
             logo.installed(name)
             tmp=input("\033[1;36m >>> \033[00m")
           else:
-            os.system("clear")
+            clear() 
             logo.not_installed(name)
             tmp=input("\033[1;36m >>> \033[00m")
 
       elif package_manager=="wget":
         if os.path.exists(system.home+"/"+package_name):
-          os.system("clear")
+          clear() 
           logo.already_installed(name)
           tmp=input("\033[1;36m >>> \033[00m")
         else:
@@ -292,17 +292,17 @@ class tools:
             os.system("wget "+url+" -o "+system.home+"/"+package_name)
           # check tool is installed or not
           if os.path.exists(system.home+"/"+package_name):
-            os.system("clear")
+            clear() 
             logo.installed(name)
             tmp=input("\033[1;36m >>> \033[00m")
           else:
-            os.system("clear")
+            clear() 
             logo.not_installed(name)
             tmp=prompt("/>>>")
 
       elif package_manager=="curl":
         if os.path.exists(system.home+"/"+package_name):
-          os.system("clear")
+          clear() 
           logo.already_installed(name)
           tmp=prompt("/>>>")
         else:
@@ -312,14 +312,14 @@ class tools:
             os.system("curl "+url+" -o "+system.home+"/"+package_name)
           # check tool is installed or not
           if os.path.exists(system.home+"/"+package_name):
-            os.system("clear")
+            clear() 
             logo.installed(name)
             tmp=prompt("/>>>")
           else:
-            os.system("clear")
+            clear() 
             logo.not_installed(name)
             tmp=prompt("/>>>")
     else:
-      os.system("clear")
+      clear() 
       logo.nonet()
       tmp=prompt("/>>>")
