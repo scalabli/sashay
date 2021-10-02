@@ -11,7 +11,6 @@ green="\033[1;32m"
 yellow="\033[1;33m"
 blue="\033[1;34m"
 violate="\033[1;37m"
-nc="\033[00m"
 
 class main:
   def install_tools(self):
@@ -137,9 +136,9 @@ class main:
             if os.path.exists(system.home+"/sashay"):
               pass
             else:
-              os.system(system.sudo+" git clone https://github.com/rajkumardusad/sashay.git "+system.home+"/sashay")
-            if os.path.exists(system.home+"/sashay/install.aex"):
-              os.system("cd "+system.home+"/sashay && "+system.sudo+" sh install.aex")
+              os.system(system.sudo+" git clone https://github.com/secretum-inc/sashay.git "+system.home+"/sashay")
+            if os.path.exists(system.home+"/sashay/install.sshy"):
+              os.system("cd "+system.home+"/sashay && "+system.sudo+" sh install.sshy")
               if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
                 clear()
                 logo.updated()
@@ -156,9 +155,9 @@ class main:
             if os.path.exists(system.home+"/Tool-X"):
               pass
             else:
-              os.system("git clone https://github.com/rajkumardusad/sashay.git "+system.home+"/sashay")
-            if os.path.exists(system.home+"/sashay/install.aex"):
-              os.system("cd "+system.home+"/sashay && sh install.aex")
+              os.system("git clone https://github.com/secretum-inc/sashay.git "+system.home+"/sashay")
+            if os.path.exists(system.home+"/sashay/install.sshy"):
+              os.system("cd "+system.home+"/sashay && sh install.sshy")
               if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
                 clear()
                 logo.updated()
@@ -303,7 +302,11 @@ class tools:
           else:
             clear()
             logo.not_installed(name)
-            tmp=input(f"{blue}sshy@{blue}space {yellow}$ ")
+            echo(f"sshy", fg="green",nl=False, italic=True)
+            echo(f"@", fg="red", nl=False, italic=True)
+            echo(f"space", fg="blue", nl=False, italic=True)
+            echo(f"$", fg="yellow", nl=True, italic=True)
+            tmp=input(f" ")
 
       elif package_manager=="wget":
         if os.path.exists(system.home+"/"+package_name):
