@@ -7,6 +7,7 @@ import asyncio
 import sys
 import time
 from quo import echo
+from quo.color import *
 
 banner = ("""
 ▃▃▃▃▃▃▃▃▃▃▃
@@ -39,6 +40,7 @@ dedicate
 asyncio.run(dedicate)
 
 
+
 class logo:
   @classmethod
   def tool_header(self):
@@ -57,12 +59,45 @@ class logo:
 
   @classmethod
   def tool_footer(self):
-    echo(b'\xe2\x99\x88\xe2\x99\x89\xe2\x99\x8a\xe2\x99\x8b\xe2\x99\x8c\xe2\x99\x8d\xe2\x99\x8e\xe2\x99\x8f\xe2\x99\x90\xe2\x99\x91\xe2\x99\x92\xe2\x99\x93\xe2\x99\x88\xe2\x99\x89\xe2\x99\x8a\xe2\x99\x8b\xe2\x99\x8c\xe2\x99\x8d\xe2\x99\x8e\xe2\x99\x8f\xe2\x99\x90\xe2\x99\x91\xe2\x99\x92')
+    echo(f"  ", hidden=True)
+    echo(f"  ", bg="red", nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg="yellow", nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg="green", nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg="blue", nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg="white", nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg="magenta", nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg="cyan", nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg=gold, nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg=aquamarine, nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg=crimson, nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg=khaki, nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg=lime, nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg=silver, nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg=indigo, nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg=maroon, nl=False)
+    time.sleep(0.05)
+    echo(f"  ", bg=thistle, nl=False)
+    echo(f"  ", bg=salmon)
 
   @classmethod
   def not_ins(self):
     self.tool_header()
-    echo(f'[ x ] sashay cannot be installed at the moment')
+    echo(f"[ x ]", fg=aquamarine, nl=False)
+    echo(f" sashay cannot be installed at the moment")
     echo(f'[ x ] An error occurred, please try again later')
     self.tool_footer()
 
@@ -84,7 +119,7 @@ class logo:
     echo(f" ANY CLAIM, DAMAGES OR OTHER LIABILITY,", fg="vblack", bg="vwhite", nl=True) 
     echo(f" WHETHER IN AN ACTION OF CONTRACT,OR OTHERWISE, ARISING FROM, OUT OF OR", fg="vblack", bg="vwhite", nl=False)
     time.sleep(0.25)
-    echo(f" IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.", fg='vblack', bg='vwhite')
+    echo(f" IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.", fg='vblack', bg="vwhite",nl=False)
     echo(f'Installing this tool means you agree with all terms', fg='vred') 
     self.tool_footer()
 
@@ -112,8 +147,11 @@ class logo:
   @classmethod
   def nonet(self):
     self.tool_header()
-    echo(f'[ x ] There is no network connectivity', bold=True, fg='cyan')
-    echo(f'[ x ] Please try again later', fg='cyan')
+    echo(f"[ * ]", fg="vred", nl=False, bold=True)
+    echo(f" There is no network connectivity", bold=True, fg="cyan")
+
+    echo(f"[ * ]", fg="vred", nl=False, bold=True)
+    echo(f" Please try again later", fg="cyan", bold=True)
     self.tool_footer()
 
   @classmethod
@@ -127,27 +165,22 @@ class logo:
   @classmethod
   def about(self,total):
     self.tool_header()
-    for i in range(3):
-        echo(f"{i}",  fg="red", bold=True, bg="white")
-        sys.stdout.flush()
-        time.sleep(1)
-    __banner__ = """
-       +=======================================+
-       |.................sashay................|
-       +---------------------------------------+
-       |Author: Gerrishon Sirere               |
-       |Contact: secretum.inc@pm.me            |
-       |[+]sshy is an automatic tool installer |
-       |[+] 370+ tools                         |
-       |[+] Python 3.6+                        |
-       +---------------------------------------+
-       |................sashay.................|
-       +=======================================+
-       """
+    from quo.tabulate import tabular
 
+    table = [
+            ["Title", "Author", "Contact"],
+            ["sashay", "Gerrishon Sirere", "secretum.inc@pm.me"]
+            ]
 
-
-    echo(f"{__banner__}", fg="green", bold=True)
+    features = [
+            ["Features"],
+            ["[ + ] Automatic tool installer"],
+            ["[ + ] 370+ tools"],
+            ["[ + ] Requires python 3.6+"]
+            ]
+    echo(tabular(table))
+    echo(f" ", hidden=True)
+    echo(tabular(features))
     echo(f'[✓] With great power comes great responsibility', fg="blue", bold=True)
     self.tool_footer()
 
@@ -167,10 +200,16 @@ class logo:
   @classmethod
   def installed(self,name):
     self.tool_header()
-    print(f'''
-\033[1;33m  [ + ] \033[1;32mInstalled Successfully !!
-\033[1;33m  [ + ] \033[1;37m'{name}'\033[01;32m is Installed Successfully !!
-''')
+    echo(f"[ + ] ", fg="blue", nl=False)
+    echo(f">", fg=aquamarine, nl=False, bold=True)
+    time.sleep(0.02)
+    echo(f">", fg=khaki, nl=False, bold=True)
+    time.sleep(0.02)
+    echo(f">", fg=gold, nl=False, bold=True)
+    echo(f"[ + ] ", fg="blue", nl=False, bold=True)
+    echo(f"Installed Succefully!", nl=False, bold=True)
+    echo(f"[ + ] ", fg="blue", nl=False)
+    echo(f"{name} has been installed succefully!")
     self.tool_footer()
 
   @classmethod
@@ -200,11 +239,21 @@ class logo:
   @classmethod
   def menu(self,total):
     self.tool_header()
-    echo(f'[ 1 ] Show all tools', bg='vyellow', fg='vblack')
-    echo(f'[ 2 ] Show all categories', bg='vblack', fg='vyellow')
-    echo(f'[ 3 ] Update sashay', fg='vblack', bg='vyellow')
-    echo(f'[ 4 ] About us', fg='vyellow', bg='vblack')
-    echo(f'[ x ] Exit sashay', fg='vblack', bg='vyellow')
+    echo(f"[ 1 ]", fg="vyellow", bg="vblack", nl=False)
+    echo(f" ", hidden=True, nl=False)
+    echo(f"Show all tools", bg='vyellow', fg='vblack')
+    echo(f"[ 2 ]", bg="vyellow", fg="vblack", nl=False)
+    echo(f" ", hidden=True, nl=False)
+    echo(f"Show all categories", bg='vblack', fg='vyellow')
+    echo(f"[ 3 ]", fg="vyellow", bg="vblack", nl=False)
+    echo(f" ", hidden=True, nl=False)
+    echo(f"Update sashay", fg='vblack', bg='vyellow')
+    echo(f"[ 4 ]", fg="vblack", bg="vyellow", nl=False)
+    echo(f" ", hidden=True, nl=False)
+    echo(f"About us", fg='vyellow', bg='vblack')
+    echo(f"[ x ]", fg="vyellow", bg="vblack", nl=False)
+    echo(f" ", hidden=True, nl=False)
+    echo(f"Exit sashay", fg='vblack', bg='vyellow')
     self.tool_footer()
 
   @classmethod
