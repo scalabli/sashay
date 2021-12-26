@@ -8,8 +8,7 @@ import sys
 import time
 
 from quo.color import *
-#from quo.panel import Panel
-
+from quo import echo
 
 kb = quo.keys.KeyBinder()
 
