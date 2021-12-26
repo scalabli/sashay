@@ -1,6 +1,6 @@
 import quo
 import os
-import syso
+import sys
 from src.menu import *
 
 if __name__ == "__main__":
