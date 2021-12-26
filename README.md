@@ -25,6 +25,7 @@
      
         python3 init.py
 or
+
         sh install
 
 
