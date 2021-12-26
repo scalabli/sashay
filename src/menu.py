@@ -84,10 +84,10 @@ class main:
         num+=1
       print(f"")
       logo.back()
-      session = quo.Prompt(bottom_toolbar=quo.text.HTML(' <b>List of</b> <u>all</u> a <style bg="red">tools</style>'), placeholder=quo.text.HTML('<style color="#888888">(please type something)</style>'))
+      session = quo.Prompt(bottom_toolbar=quo.text.HTML(' <b>List of</b> <u>all</u> tools in <style bg="red">categories</style>'), placeholder=quo.text.HTML('<style color="#888888">(please type something)</style>'))
       cmd = session.prompt("")
 
-    #  cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+   
       if cmd=="00" or cmd=="back":
         self.menu()
         break
@@ -110,10 +110,10 @@ class main:
               print(f"")
               logo.back()
 
-              session = quo.Prompt(bottom_toolbar=quo.text.HTML(' <b>List of</b> <u>all</u> a <style bg="red">tools</style>'), placeholder=quo.text.HTML('<style color="#888888">(please type something)</style>'))
+              session = quo.Prompt(bottom_toolbar=quo.text.HTML(' <b>List of</b> <u>all</u> tools in <style bg="red">categories</style>'), placeholder=quo.text.HTML('<style color="#888888">(please type something)</style>'))
               tcmd = session.prompt("")
 
-             # tcmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+             # tcmd=inputc}@{blue}space {yellow}$ {nc}")
               if tcmd=="00" or tcmd=="back":
                 break
               else:
