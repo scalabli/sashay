@@ -43,7 +43,7 @@ class main:
      #     history.append_string('print("hello")')
      #     history.append_string('print("world")')
 
-      session = quo.Prompt(bottom_toolbar=quo.text.HTML(' <b>List of</b> <u>all</u> a <style bg="red">tools</style>'), placeholder=quo.text.HTML('<style color="#888888">(please type something)</style>'))
+      session = quo.Prompt(bottom_toolbar=quo.text.HTML(' <b>List of</b> <u>all</u> <style bg="red">tools</style>'), placeholder=quo.text.HTML('<style color="#888888">(please type something)</style>'))
                   #history=history, auto_suggest=quo.completion.AutoSuggestFromHistory(), enable_history_search=True)
         #  while True:
         #      try:
