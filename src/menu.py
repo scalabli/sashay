@@ -29,7 +29,7 @@ class main:
         quo.echo(f"{num} ", fg="vmagenta", italic=True, nl=False)
         quo.echo(f"]", fg="vyellow", bold=True, nl=False)
         quo.echo(f" Install ", nl=False)
-        time.sleep(0.001)
+        time.sleep(0.00000001)
         quo.echo(f"{tool_name}", fg=aquamarine, bold=True)
         num+=1
       quo.echo(f"")
