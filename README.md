@@ -24,6 +24,8 @@
 2. Run:
      
         python3 init.py
+or
+        sh install
 
 
 
@@ -94,6 +96,6 @@ sashay is released under a [CC BY-NC-SA License](https://creativecommons.org/lic
 
 ------------------------------------------------------------------------
 
-Check out Debonair
+## Check Secretum Inc tools
 
-Check out our other CLI, [Debonair](https://github.com/secretum-inc/debonair). 
+[Secretum Inc.](https://github.com/secretum-inc/). 

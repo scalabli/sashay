@@ -1,5 +1,5 @@
 requests>=2.24.0
-quo==2021.5.5.2
+quo
 
 # Dependencies of requests
 idna<3,>=2.5
