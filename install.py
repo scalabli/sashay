@@ -12,7 +12,7 @@ class tool:
       system=sys()
       quo.clear() 
       logo.ins_tnc()
-      session = quo.Prompt(bottom_toolbar=quo.text.HTML(' <b>Install</b> <u> </u> a <style bg="red">sashay</style>'), placeholder=quo.text.HTML('<style color="#888888">([y/n])</style>'))
+      session = quo.Prompt(bottom_toolbar=quo.text.HTML(' <b>Install</b> <u> </u> <style bg="red">sashay</style>'), placeholder=quo.text.HTML('<style color="#888888">([y/n])</style>'))
       inp= session.prompt("Do you want to install sashay?")
       if inp=="y" or inp=="Y" or inp=="Yes" or inp=="yes":
         quo.clear() 
