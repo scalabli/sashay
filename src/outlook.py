@@ -10,8 +10,11 @@ from . import __version__
 
 from quo.color import *
 from quo import echo
+from quo.keys import Bind
+from quo.text import Text
+from quo.widget import Frame, Label, TextArea
 
-kb = quo.keys.KeyBinder()
+bind = Bind()
 
 banner = ("""
 ▃▃▃▃▃▃▃▃▃▃▃
@@ -117,15 +120,15 @@ class logo:
   def update(self):
     self.tool_header()
     quo.container(
-            quo.widgets.Frame(
-                quo.widgets.TextArea(
+            Frame(
+                TextArea(
                     text="     UPDATES"),
-                title=quo.text.HTML('<style bg="blue" fg="white">sshy</style> '),)
+                title=Text('<style bg="blue" fg="white">sshy</style> '),)
             )
     quo.echo(f'[ 1 ] Update sashay', fg='vblue')
     quo.echo(f'[ 0 ] << Go back', fg='vyellow')
     self.tool_footer()
-  @kb.add("ctrl-b")
+  @bind.add("ctrl-b")
   def goback(event):
       event.app.quo.keys.focus.previous()
 
@@ -157,9 +160,9 @@ class logo:
   @classmethod
   def about(self,total):
     self.tool_header()
-    from quo.tabulate import tabular
+    from quo.table import Table
 
-    table = [
+    data = [
             ["Title", "Author", "Contact"],
             ["sashay", "Gerrishon Sirere", "secretum.inc@pm.me"]
             ]
@@ -170,9 +173,9 @@ class logo:
             ["[ + ] 370+ tools"],
             ["[ + ] Requires python 3.6+"]
             ]
-    quo.echo(tabular(table))
+    quo.echo(Table(data))
     quo.echo(f" ", hidden=True)
-    quo.echo(tabular(features))
+    quo.echo(Table(features))
     quo.echo(f'[✓] With great power comes great responsibility', fg="blue", bold=True)
     self.tool_footer()
 
@@ -214,8 +217,8 @@ class logo:
   def back(self):
       text = """𝟘𝟘) 𝔾𝕠 𝕓𝕒𝕔𝕜"""
       quo.container(
-              quo.widgets.Frame(
-                  quo.widgets.TextArea(text=text)
+              Frame(
+                  TextArea(text=text)
                   )
               )
 

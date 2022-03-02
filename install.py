@@ -1,7 +1,9 @@
-import quo
 import os
 import sys
 from time import sleep
+from quo import clear
+from quo.prompt import Prompt
+from quo.text import Text
 from src.outlook import *
 from src.system import *
 
@@ -12,10 +14,10 @@ class tool:
       system=sys()
       quo.clear() 
       logo.ins_tnc()
-      session = quo.Prompt(bottom_toolbar=quo.text.HTML(' <b>Install</b> <u> </u> <style bg="red">sashay</style>'), placeholder=quo.text.HTML('<style color="#888888">([y/n])</style>'))
+      session = Prompt(bottom_toolbar=Text(' <b>Install</b> <style bg="red">sashay</style>'), placeholder=Text(' <gray>([y/n])</gray>'))
       inp= session.prompt("Do you want to install sashay?")
       if inp=="y" or inp=="Y" or inp=="Yes" or inp=="yes":
-        quo.clear() 
+        clear() 
         logo.installing()
         if system.sudo is not None:
           #require root permission
@@ -30,12 +32,12 @@ class tool:
           os.system(system.sudo+" chmod +x "+system.bin+"/sshy")
           os.system("cd .. && "+system.sudo+" rm -rf sashay")
           if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
-            quo.clear() 
+            clear() 
             logo.ins_sc()
             tmp=input("\033[1;36m ##> \033[00m")
             break
           else:
-            quo.clear()
+            clear()
             logo.not_ins()
             tmp=input("\033[1;36m ##> \033[00m")
             break
@@ -51,12 +53,12 @@ class tool:
           os.system("chmod +x "+system.bin+"/sshy")
           os.system("cd .. && rm -rf sashay")
           if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
-            quo.clear()
+            clear()
             logo.ins_sc()
             tmp=input("\033[1;36m ##> \033[00m")
             break
           else:
-            quo.clear() 
+            clear() 
             logo.not_ins()
             tmp=input("\033[1;36m ##> \033[00m")
             break
@@ -67,5 +69,5 @@ if __name__=="__main__":
   try:
     tool.install()
   except KeyboardInterrupt:
-    quo.clear()
+    clear()
     logo.exit()

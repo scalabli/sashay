@@ -1,5 +1,5 @@
 import os
 
-os.system("sh install")
+os.system("./install")
 
 
