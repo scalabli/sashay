@@ -1,8 +1,9 @@
 requests>=2.24.0
-quo
+quo>=2022.2.2
 
 # Dependencies of requests
 idna<3,>=2.5
 certifi>=2017.4.17
 urllib3>=1.26.4
 chardet<4,>=3.0.2
+ 
