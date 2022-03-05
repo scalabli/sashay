@@ -9,12 +9,15 @@ import time
 from . import __version__
 
 from quo.color import *
-from quo import echo
+from quo import container, echo, print
+from quo.console import Console
 from quo.keys import Bind
 from quo.text import Text
-from quo.widget import Frame, Label, TextArea
+from quo.layout import FormattedTextControl, Window, WindowAlign as WA
+from quo.widget import Box, Frame, Label, Shadow, TextArea
 
 bind = Bind()
+console = Console()
 
 banner = ("""
 ▃▃▃▃▃▃▃▃▃▃▃
@@ -40,7 +43,11 @@ bann = ("""
 class logo:
   @classmethod
   def tool_header(self):
-      quo.echo(f"{bann}", fg="vyellow")
+      container(
+              Box(
+                  Label(f"{bann}", style="fg:yellow bold")
+                  )
+              )
 
   @classmethod
   def tool_footer(self):
@@ -76,7 +83,7 @@ class logo:
     quo.echo(f"  ", bg=maroon, nl=False)
     time.sleep(0.05)
     quo.echo(f"  ", bg=thistle, nl=False)
-    quo.echo(f"  ", bg=salmon)
+    print(Text('<aquamarine> </aquamarine><salmon> </salmon><brown> </brown>'))
 
   @classmethod
   def not_ins(self):
@@ -88,7 +95,11 @@ class logo:
 
   @classmethod
   def ins_tnc(self):
-    self.tool_header() 
+    self.tool_header()
+    from quo.dialog import MessageBox
+
+    #MessageBox(text=Text('<b>THE SOFTWARE IS PROVIDED <red>"AS IS"</red> WITHOUT WARRANTY OF ANY KIND\nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF <i>MERRCHANTABILITY,\n FITNESS FOR A PARTICULAR PURPOSE</i> AND <i>NONINFRINGEMENT.</i>.</b>')).run()
+
     quo.echo(f"THE SOFTWARE IS PROVIDED", fg="vblack", bg="vwhite", nl=False)
     time.sleep(0.25)
     quo.echo(f" 'AS IS'", fg="vred", bg="vwhite", nl=False)
@@ -106,7 +117,7 @@ class logo:
     time.sleep(0.25)
     quo.echo(f" IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.", fg='vblack', bg="vwhite")
     time.sleep(0.5)
-    quo.echo(f'Installing this tool means you agree with all terms', fg='vred') 
+    quo.echo(f'Installing this tool means you agree with all terms', bold=True, fg='vred') 
     self.tool_footer()
 
   @classmethod
@@ -119,12 +130,7 @@ class logo:
   @classmethod
   def update(self):
     self.tool_header()
-    quo.container(
-            Frame(
-                TextArea(
-                    text="     UPDATES"),
-                title=Text('<style bg="blue" fg="white">sshy</style> '),)
-            )
+    console.rule("UPDATES")
     quo.echo(f'[ 1 ] Update sashay', fg='vblue')
     quo.echo(f'[ 0 ] << Go back', fg='vyellow')
     self.tool_footer()
@@ -266,6 +272,10 @@ class logo:
   @classmethod
   def exit(self):
     self.tool_header()
+    container(
+            Window(
+                FormattedTextControl("See you soon"),style="fg:blue bold bg:white", align=WA.CENTER)
+                )
     quo.echo(f'Geez...where are you going so soon?', fg='black', bg='vred')
     quo.echo(f'Anyway, hope to see you back soon', bg="vred") 
     self.tool_footer()

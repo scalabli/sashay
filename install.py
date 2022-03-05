@@ -7,15 +7,16 @@ from quo.text import Text
 from src.outlook import *
 from src.system import *
 
+session = Prompt()
 class tool:
   @classmethod
   def install(self):
     while True:
       system=sys()
-      quo.clear() 
+      clear() 
       logo.ins_tnc()
       session = Prompt(bottom_toolbar=Text(' <b>Install</b> <style bg="red">sashay</style>'), placeholder=Text(' <gray>([y/n])</gray>'))
-      inp= session.prompt("Do you want to install sashay?")
+      inp= session.prompt("Do you want to install sashay?:")
       if inp=="y" or inp=="Y" or inp=="Yes" or inp=="yes":
         clear() 
         logo.installing()
@@ -34,12 +35,14 @@ class tool:
           if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
             clear() 
             logo.ins_sc()
-            tmp=input("\033[1;36m ##> \033[00m")
+            tmp = session.prompt("|>>")
+           # tmp=input("\033[1;36m ##> \033[00m")
             break
           else:
             clear()
             logo.not_ins()
-            tmp=input("\033[1;36m ##> \033[00m")
+            tmp = session.prompt("|>>")
+         #   tmp=input("\033[1;36m ##> \033[00m")
             break
         else:
           if os.path.exists(system.conf_dir+"/sashay"):
@@ -55,12 +58,14 @@ class tool:
           if os.path.exists(system.bin+"/sashay") and os.path.exists(system.conf_dir+"/sashay"):
             clear()
             logo.ins_sc()
-            tmp=input("\033[1;36m ##> \033[00m")
+            tmp = session.prompt("|>>")
+           # tmp=input("\033[1;36m ##> \033[00m")
             break
           else:
             clear() 
             logo.not_ins()
-            tmp=input("\033[1;36m ##> \033[00m")
+            tmp=session.prompt("|>>")
+        #    tmp=input("\033[1;36m ##> \033[00m")
             break
       else:
         break
