@@ -76,7 +76,7 @@ if [ -e  /usr/bin/apk ];then
      apk install python3 -y
    fi
 fi
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 python3 install.py
 exit
 
