@@ -83,7 +83,8 @@ class logo:
     quo.echo(f"  ", bg=maroon, nl=False)
     time.sleep(0.05)
     quo.echo(f"  ", bg=thistle, nl=False)
-    print(Text('<aquamarine> </aquamarine><salmon> </salmon><brown> </brown>'))
+    print(Text('<aquamarine> </aquamarine>'))
+    quo.echo(f"  ", bg=salmon)
 
   @classmethod
   def not_ins(self):
@@ -117,7 +118,7 @@ class logo:
     time.sleep(0.25)
     quo.echo(f" IN CONNECTION WITH THIS SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.", fg='vblack', bg="vwhite")
     time.sleep(0.5)
-    quo.echo(f'Installing this tool means you agree with all terms', bold=True, fg='vred') 
+    quo.echo(f'Installing this tool means you agree with all terms', fg='vred') 
     self.tool_footer()
 
   @classmethod
