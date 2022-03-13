@@ -3,7 +3,7 @@
 [![Sashay](assets/sashay.png)](https://github.com/gerrishons)
 ---
 
-[![GitHub stars](https://img.shields.io/github/stars/secretum-inc/sashay.svg)](https://github.com/viewerdiscretion/sashay/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/scalabli/sashay.svg)](https://github.com/scalabli/sashay/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/issues)
 [![GitHub watchers](https://img.shields.io/github/watchers/secretum-inc/sashay.svg)](https://github.com/viewerdiscretion/sashay/watchers)
@@ -19,14 +19,14 @@
 
 1. Clone the project files and cd into the directory:
 
-        git clone https://github.com/secretum-inc/sashay && cd sashay
+        git clone https://github.com/scalabli/sashay && cd sashay
 
 2. Run:
      
         python3 init.py
 or
 
-        sh install
+       ./install
 
 
 
