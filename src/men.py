@@ -7,7 +7,7 @@ from quo.color.rgb import aquamarine
 from quo.keys import bind
 from quo.prompt import Prompt
 from quo.text import Text
-from .outlook import logo
+from .out import *
 from .system import *
 
 red="\033[1;31m"
@@ -28,7 +28,7 @@ class Main:
       print(f" ")
       for tool_name in tool.names:
         echo(f"[", fg="vyellow", bold=True, nl=False)
-        echo(f" {num} ", fg="vmagenta", italic=True, nl=False)
+        echo(f"{num} ", fg="vmagenta", italic=True, nl=False)
         echo(f"]", fg="vyellow", bold=True, nl=False)
         echo(f" Install ", nl=False)
         echo(f"{tool_name}", fg=aquamarine, bold=True)
@@ -48,7 +48,7 @@ class Main:
                   #history=history, auto_suggest=quo.completion.AutoSuggestFromHistory(), enable_history_search=True)
         #  while True:
         #      try:
-      cmd = session.prompt("» ")
+      cmd = session.prompt(" ")
     #except KeyboardInterrupt:
       #            pass  # Ctrl-C pressed. Try again.
       #        else:
@@ -79,7 +79,7 @@ class Main:
       num=1
       clear()
       logo.tool_header()
-      echo(f"")
+      print("")
       for cat in tool.category:
         echo(f"[", fg="yellow", nl=False, bold=True)
         echo(f" {num} ", fg="magenta", nl=False, italic=True)

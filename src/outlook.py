@@ -6,17 +6,16 @@ import subprocess
 import asyncio
 import sys
 import time
-from . import __version__
-
+from . import __version__ as s_version
+from quo import __version__ as q_version
 from quo.color import *
-from quo import container, echo, print
+from quo import clear, container, echo, print
 from quo.console import Console
-from quo.keys import Bind
+from quo.keys import bind
+from quo.layout import FormattedTextControl, HSplit, Window
 from quo.text import Text
-from quo.layout import FormattedTextControl, Window, WindowAlign as WA
-from quo.widget import Box, Frame, Label, Shadow, TextArea
-
-bind = Bind()
+from quo.widget import Box, Frame, Label, Shadow, MenuContainer, MenuItem
+from quo.widget.core import Border
 console = Console()
 
 banner = ("""
@@ -29,9 +28,9 @@ banner = ("""
 ┊ . ˚ ˚✩
 """)
 
-quo.echo(f'{banner}', fg="vred", bold=True)
+#uo.echo(f'{banner}', fg="vred", bold=True)
 
-quo.echo(f"sashay 🆅{__version__} using quo 🆅 {quo.__version__}")
+#quo.echo(f"sashay 🆅{__version__} using quo 🆅 {quo.__version__}")
 bann = ("""
 ███████████████████████████████████
 █─▄▄▄▄██▀▄─██─▄▄▄▄█─█─██▀▄─██▄─█─▄█
@@ -40,14 +39,54 @@ bann = ("""
 
 """)
 
+#f"[ 1 ]", fg="vyellow", bg="vblack", nl=False)
+ #   quo.echo(f" ", hidden=True, nl=False)
+ #   show_all = """𝕊𝕙𝕠𝕨 𝕒𝕝𝕝 𝕥𝕠𝕠𝕝𝕤"""
+  #  quo.echo(f"{show_all}", bg='vyellow', fg='vblack')
+#    time.sleep(0.3)
+#    quo.echo(f"[ 2 ]", bg="vyellow", fg="vblack", nl=False)
+#    quo.echo(f" ", hidden=True, nl=False)
+#    show_a = """𝕊𝕙𝕠𝕨 𝕒𝕝𝕝 𝕔𝕒𝕥𝕖𝕘𝕠𝕣𝕚𝕖𝕤"""
+ #   quo.echo(f"{show_a}", bg='vblack', fg='vyellow')
+#    time.sleep(0.3)
+#    quo.echo(f"[ 3 ]", fg="vyellow", bg="vblack", nl=False)
+ #   quo.echo(f" ", hidden=True, nl=False)
+#    update = """𝕌𝕡𝕕𝕒𝕥𝕖 𝕊𝕒𝕤𝕙𝕒𝕪"""
+#    quo.echo(f"{update}", fg='vblack', bg='vyellow')
+  #  time.sleep(0.2)
+ #   quo.echo(f"[ 4 ]", fg="vblack", bg="vyellow", nl=False)
+ #   quo.echo(f" ", hidden=True, nl=False)
+#    about = """𝔸𝕓𝕠𝕦𝕥 𝕦𝕤"""
+#    quo.echo(f"{about}", fg='vyellow', bg='vblack')
+ #   time.sleep(0.2)
+#    quo.echo(f"[ x ]", fg="vyellow", bg="vblack", nl=False)
+#    quo.echo(f" ", hidden=True, nl=False)
+#    exit_s = """𝔼𝕩𝕚𝕥 𝕊𝕒𝕤𝕙𝕒𝕪"""
+ #   quo.echo(f"{exit_s}", fg='vblack', bg='vyellow')
+ #   self.tool_footer()
+
+#@bind.add("n")
+#def _(event):
+#    event.app.exit()
+
+body =  HSplit([
+            Window(FormattedTextControl(banner, style="fg:red")),
+            Window(height=1, char=Border.HORIZONTAL)])
+
+container(body, bind=False)
+
+content = Label(f"sashay v {s_version}, using quo v {q_version}")
+container(content, bind=False)
+
+from quo.layout import Dimension, ConditionalContainer
+from quo.filters import is_done
 class logo:
   @classmethod
   def tool_header(self):
-      container(
-              Box(
-                  Label(f"{bann}", style="fg:yellow bold")
-                  )
-              )
+      content = ConditionalContainer(
+              Window(FormattedTextControl(f"{bann}", style="fg:yellow bg:blue bold"),dont_extend_width=True, height=Dimension(min=1)), filter=is_done)
+
+      container(content, bind=False)
 
   @classmethod
   def tool_footer(self):
@@ -83,7 +122,7 @@ class logo:
     quo.echo(f"  ", bg=maroon, nl=False)
     time.sleep(0.05)
     quo.echo(f"  ", bg=thistle, nl=False)
-    print(Text('<aquamarine> </aquamarine>'))
+    print('<aquamarine> </aquamarine>', end="")
     quo.echo(f"  ", bg=salmon)
 
   @classmethod
@@ -97,8 +136,6 @@ class logo:
   @classmethod
   def ins_tnc(self):
     self.tool_header()
-    from quo.dialog import MessageBox
-
     #MessageBox(text=Text('<b>THE SOFTWARE IS PROVIDED <red>"AS IS"</red> WITHOUT WARRANTY OF ANY KIND\nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF <i>MERRCHANTABILITY,\n FITNESS FOR A PARTICULAR PURPOSE</i> AND <i>NONINFRINGEMENT.</i>.</b>')).run()
 
     quo.echo(f"THE SOFTWARE IS PROVIDED", fg="vblack", bg="vwhite", nl=False)
@@ -131,7 +168,7 @@ class logo:
   @classmethod
   def update(self):
     self.tool_header()
-    console.rule("UPDATES")
+    console.bar("UPDATES")
     quo.echo(f'[ 1 ] Update sashay', fg='vblue')
     quo.echo(f'[ 0 ] << Go back', fg='vyellow')
     self.tool_footer()
@@ -189,15 +226,20 @@ class logo:
 
   @classmethod
   def install_tools(self):
-    quo.echo(f'#############################################', fg='black', bg='cyan')
-    quo.echo(f'//////////////SELECT YOUR TOOL///////////////', fg='red', bg='white') 
-    quo.echo(f'#############################################', fg='black', bg='cyan')
+    console.bar("SELECT YOUR TOOL")
 
   @classmethod
   def already_installed(self,name):
-    self.tool_header()
-    echo(f"[ + ] Sorry, {name} is already installed!", fg="cyan")
-    self.tool_footer()
+      self.tool_header()
+
+      @bind.add("ctrl-c")
+      @bind.add("ctrl-b")
+      def _(event):
+          event.app.exit()
+
+      container(
+            Label(f"[ + ] Sorry, {name} is already installed!\nPress `ctrl-c` or `ctrl-b` to go back", style="fg:cyan"), bind=True, full_screen=True)
+      self.tool_footer()
 
   @classmethod
   def installed(self,name):
@@ -223,11 +265,11 @@ class logo:
   @classmethod
   def back(self):
       text = """𝟘𝟘) 𝔾𝕠 𝕓𝕒𝕔𝕜"""
-      quo.container(
-              Frame(
-                  TextArea(text=text)
-                  )
-              )
+      container(
+              Shadow(
+                  Label(text, style="reverse")
+                  ),
+              bind=False)
 
   @classmethod
   def updating(self):
@@ -275,8 +317,8 @@ class logo:
     self.tool_header()
     container(
             Window(
-                FormattedTextControl("See you soon"),style="fg:blue bold bg:white", align=WA.CENTER)
-                )
+                FormattedTextControl("See you soon"),style="fg:blue bold bg:white", align="center"),
+            bind=False)
     quo.echo(f'Geez...where are you going so soon?', fg='black', bg='vred')
     quo.echo(f'Anyway, hope to see you back soon', bg="vred") 
     self.tool_footer()
