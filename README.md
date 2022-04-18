@@ -2,18 +2,11 @@
 
 [![Sashay](assets/sashay.png)](https://github.com/gerrishons)
 ---
-[![Downloads](https://pepy.tech/badge/quo)](https://pepy.tech/project/quo)
-[![PyPI version](https://badge.fury.io/py/quo.svg)](https://badge.fury.io/py/quo)
-[![Wheel](https://img.shields.io/pypi/wheel/quo.svg)](https://pypi.com/project/quo)
-[![Windows Build Status](https://img.shields.io/appveyor/build/gerrishons/quo/master?logo=appveyor&cacheSeconds=600)](https://ci.appveyor.com/project/gerrishons/quo)
-[![pyimp](https://img.shields.io/pypi/implementation/quo.svg)](https://pypi.com/project/
-quo)
-[![RTD](https://readthedocs.org/projects/quo/badge/)](https://quo.readthedocs.io)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5848515.svg)](https://doi.org/10.528
-1/zenodo.5848515
-[![licence](https://img.shields.io/pypi/l/quo.svg)](https://opensource.org/licenses/MIT)
-[![Twitter Follow](https://img.shields.io/twitter/follow/gerrishon_s.svg?style=social)](https://twitter.com/gerrishon_s)
-                                                                                                                                                                                [![Logo](https://raw.githubusercontent.com/scalabli/quo/master/pics/quo.png)](https://github.com/scalabli/quo)
+[![Downloads](https://pepy.tech/badge/sashay)](https://pepy.tech/project/sashay)
+[![PyPI version](https://badge.fury.io/py/sashay.svg)](https://badge.fury.io/py/sashay)
+[![Wheel](https://img.shields.io/pypi/wheel/sashay.svg)](https://pypi.com/project/sashay)
+[![pyimp](https://img.shields.io/pypi/implementation/sashay.svg)](https://pypi.com/project/sashay)
+[![licence](https://img.shields.io/pypi/l/sashay.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/scalabli/sashay.svg)](https://github.com/scalabli/sashay/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/viewerdiscretion/sashay.svg)](https://github.com/viewerdiscretion/sashay/issues)
