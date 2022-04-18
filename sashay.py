@@ -5,8 +5,8 @@ from src.menu import *
 
 if __name__ == "__main__":
   try:
-    main.menu()
+    Main.menu()
   except KeyboardInterrupt:
     clear()
-    echo(f"Exitting...", reverse=True)
+    echo("Exitting...", reverse=True)
     logo.exit()

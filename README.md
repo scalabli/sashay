@@ -15,7 +15,14 @@
 > :information_source: Sashay is an all in one automatic installer for useful Linux based tools.There are over 340 tools available. 
 
 ## Installation⬇️
- 
+
+```console
+
+ pip -U install sashay
+
+```
+
+or
 
 1. Clone the project files and cd into the directory:
 
@@ -76,11 +83,11 @@ Each number represents a specific output:
 :bulb: Type `x` to exit Sashay
 
 ## Requirements
-* Python **3.6+**
+* Python **3.8+**
 
 ## Contributing
 
-If you run into an issue, we would be very happy if you would file a bug on the [issue tracker](https://github.com/viewerdiscretion/sashay/issues). You can also contribute by adding more tools by creating a pull request
+If you run into an issue, we would be very happy if you would file a bug on the [issue tracker](https://github.com/scalabli/sashay/issues). You can also contribute by adding more tools by creating a pull request
 
 ## License
 
@@ -96,6 +103,6 @@ sashay is released under a [CC BY-NC-SA License](https://creativecommons.org/lic
 
 ------------------------------------------------------------------------
 
-## Check Secretum Inc tools
+## Check more tools 
 
-[Secretum Inc.](https://github.com/secretum-inc/). 
+[Scalabli](https://github.com/scalabli/). 
