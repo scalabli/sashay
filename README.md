@@ -22,7 +22,7 @@
 
 ```console
 
- pip -U install sashay
+pip install -U sashay
 
 ```
 
