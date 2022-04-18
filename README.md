@@ -95,7 +95,7 @@ If you run into an issue, we would be very happy if you would file a bug on the 
 
 ## License
 
-sashay is released under a [CC BY-NC-SA License](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+sashay is released under MIT License
 
  
 
