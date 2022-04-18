@@ -9,7 +9,7 @@ except:
 class sys:
   pac=None
   sys=None
-  home=os.getenv("HOME")
+#  home=os.getenv("HOME")
   bin=None
   sudo=None
   conf_dir=None

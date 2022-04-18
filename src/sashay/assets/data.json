@@ -167,6 +167,15 @@
     "package_manager" : "git",
     "dependency" : ["ruby","git"]
   },
+
+  "Click" : {
+    "name" : "Click",
+    "package_name" : "click",
+    "url" : "click",
+    "category" : ["cli_toolkit"],
+    "package_manager" : "pip",
+    "dependency" : [null]
+  },
   "Clickjacking-Tester" : { 
     "name" : "Clickjacking-Tester",
     "package_name" : "Clickjacking-Tester",

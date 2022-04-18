@@ -14,7 +14,7 @@ from quo.console import Console
 from quo.keys import bind
 from quo.layout import FormattedTextControl, HSplit, Window
 from quo.text import Text
-from quo.widget import Box, Frame, Label, Shadow, MenuContainer, MenuItem
+from quo.widget import Box, Frame, Label
 from quo.widget.core import Border
 console = Console()
 
@@ -76,15 +76,11 @@ container(body)
 content = Label(f"sashay v {s_version}, using quo v {q_version}")
 container(content)
 
-from quo.layout import Dimension, ConditionalContainer
-from quo.filters import is_done
 class logo:
   @classmethod
   def tool_header(self):
-      content = ConditionalContainer(
-              Window(FormattedTextControl(f"{bann}", style="fg:yellow bg:blue bold"),dont_extend_width=True, height=Dimension(min=1)), filter=is_done)
-
-      container(content, bind=False)
+      content = Window(FormattedTextControl(f"{bann}", style="fg:yellow bg:blue bold"), align="center")
+      container(content)
 
   @classmethod
   def tool_footer(self):
@@ -134,7 +130,6 @@ class logo:
   @classmethod
   def ins_tnc(self):
     self.tool_header()
-    #MessageBox(text=Text('<b>THE SOFTWARE IS PROVIDED <red>"AS IS"</red> WITHOUT WARRANTY OF ANY KIND\nINCLUDING BUT NOT LIMITED TO THE WARRANTIES OF <i>MERRCHANTABILITY,\n FITNESS FOR A PARTICULAR PURPOSE</i> AND <i>NONINFRINGEMENT.</i>.</b>')).run()
 
     quo.echo(f"THE SOFTWARE IS PROVIDED", fg="vblack", bg="vwhite", nl=False)
     time.sleep(0.25)
@@ -230,13 +225,13 @@ class logo:
   def already_installed(self,name):
       self.tool_header()
 
-      @bind.add("ctrl-c")
-      @bind.add("ctrl-b")
+      @bind.add("<any>")
       def _(event):
           event.app.exit()
 
       container(
-            Label(f"[ + ] Sorry, {name} is already installed!\nPress `ctrl-c` or `ctrl-b` to go back", style="fg:cyan"), bind=True, full_screen=True)
+              Box(
+            Label(f"Sorry, {name} is already installed!\nPress any key to go back", style="fg:cyan")), bind=True, full_screen=True)
       self.tool_footer()
 
   @classmethod
@@ -264,10 +259,8 @@ class logo:
   def back(self):
       text = """𝟘𝟘) 𝔾𝕠 𝕓𝕒𝕔𝕜"""
       container(
-              Shadow(
                   Label(text, style="reverse")
-                  ),
-              bind=False)
+                  )
 
   @classmethod
   def updating(self):
@@ -283,31 +276,29 @@ class logo:
 
   @classmethod
   def menu(self,total):
-    self.tool_header()
-    quo.echo(f"[ 1 ]", fg="vyellow", bg="vblack", nl=False)
-    quo.echo(f" ", hidden=True, nl=False)
-    show_all = """𝕊𝕙𝕠𝕨 𝕒𝕝𝕝 𝕥𝕠𝕠𝕝𝕤"""
-    quo.echo(f"{show_all}", bg='vyellow', fg='vblack')
-    time.sleep(0.3)
-    quo.echo(f"[ 2 ]", bg="vyellow", fg="vblack", nl=False)
-    quo.echo(f" ", hidden=True, nl=False)
-    show_a = """𝕊𝕙𝕠𝕨 𝕒𝕝𝕝 𝕔𝕒𝕥𝕖𝕘𝕠𝕣𝕚𝕖𝕤"""
-    quo.echo(f"{show_a}", bg='vblack', fg='vyellow')
-    time.sleep(0.3)
-    quo.echo(f"[ 3 ]", fg="vyellow", bg="vblack", nl=False)
-    quo.echo(f" ", hidden=True, nl=False)
-    update = """𝕌𝕡𝕕𝕒𝕥𝕖 𝕊𝕒𝕤𝕙𝕒𝕪"""
-    quo.echo(f"{update}", fg='vblack', bg='vyellow')
-    time.sleep(0.2)
-    quo.echo(f"[ 4 ]", fg="vblack", bg="vyellow", nl=False)
-    quo.echo(f" ", hidden=True, nl=False)
-    about = """𝔸𝕓𝕠𝕦𝕥 𝕦𝕤"""
-    quo.echo(f"{about}", fg='vyellow', bg='vblack')
-    time.sleep(0.2)
-    quo.echo(f"[ x ]", fg="vyellow", bg="vblack", nl=False)
-    quo.echo(f" ", hidden=True, nl=False)
-    exit_s = """𝔼𝕩𝕚𝕥 𝕊𝕒𝕤𝕙𝕒𝕪"""
-    quo.echo(f"{exit_s}", fg='vblack', bg='vyellow')
+    from quo.spin import Spinner
+    with Spinner():
+        self.tool_header()
+
+        show_all = """      [1] 𝕊𝕙𝕠𝕨 𝕒𝕝𝕝 𝕥𝕠𝕠𝕝𝕤"""
+        console.bar(f"{show_all}", style="fg:black bg:#006B47")
+        time.sleep(0.3)
+
+        show_cat = """           [2] 𝕊𝕙𝕠𝕨 𝕒𝕝𝕝 𝕔𝕒𝕥𝕖𝕘𝕠𝕣𝕚𝕖𝕤"""
+        console.bar(f"{show_cat}", style="fg:black bg:#009965")
+        time.sleep(0.3)
+
+        update = """     [3] 𝕌𝕡𝕕𝕒𝕥𝕖 𝕊𝕒𝕤𝕙𝕒𝕪"""
+        console.bar(f"{update}", style="fg:black bg:#00C684")
+        time.sleep(0.2)
+
+        about = """[4] 𝔸𝕓𝕠𝕦𝕥 𝕦𝕤"""
+        console.bar(f"{about}", style="fg:black bg:#009965")
+        time.sleep(0.2)
+
+        exit_s = """   [x] 𝔼𝕩𝕚𝕥 𝕊𝕒𝕤𝕙𝕒𝕪"""
+        console.bar(f"{exit_s}", style="fg:black bg:#006B47")
+
     self.tool_footer()
 
   @classmethod

@@ -1,4 +1,5 @@
 {
+  "cli_toolkit" : "Commandline Toolkit",
   "information_gathering" : "Information Gathering",
   "vulnerability_scanner" : "Vulnerability Scanner",
   "exploitation_tools" : "Exploitation Tools",

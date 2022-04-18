@@ -244,11 +244,6 @@ class Main:
       clear()
       logo.menu(total)
 
-      @bind.add("ctrl-c")
-      def _(event):
-          event.app.exit()
-
-
       session = Prompt(bottom_toolbar=Text('<b>Main</b>  <style bg="red">menu</style>'), placeholder=Text('<style color="#888888">(please type something)</style>'))
       cmd = session.prompt("$» ")
       if cmd == "1":
@@ -293,16 +288,11 @@ class tools:
   session = Prompt(placeholder=Text("<grey>(please type something</grey>"))
 
   def __init__(self):
-    from pathlib import Path
+      from pathlib import Path
     system=sys()
-
-    data_path = Path(__file__).parent / "assets/data.json"
-    cat_path = Path(__file__).parent / "assets/cat.json"
-
-    with open(data_path) as data_file:
-        self.data=json.load(data_file)  
-
-    with open(cat_path) as cat_file:
+    with open(system.conf_dir+"/sashay/assets/data.json") as data_file:
+      self.data=json.load(data_file)
+    with open(system.conf_dir+"/sashay/assets/cat.json") as cat_file:
       self.category_data=json.load(cat_file)
     self.names=list(self.data.keys())
     self.category=list(self.category_data.keys())
