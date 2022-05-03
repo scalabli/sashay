@@ -8,6 +8,7 @@ import sys
 import time
 from . import __version__ as s_version
 from quo import __version__ as q_version
+from quo.accordance import WIN
 from quo.color import *
 from quo import clear, container, echo, print
 from quo.console import Console
@@ -16,14 +17,15 @@ from quo.layout import FormattedTextControl, HSplit, Window
 from quo.text import Text
 from quo.widget import Box, Frame, Label
 from quo.widget.core import Border
-console = Console()
+from quo.widget import TextField
 
+console = Console()
 banner = ("""
 ▃▃▃▃▃▃▃▃▃▃▃
 ┊ ┊ ┊ ┊ ┊ ┊
 ┊ ┊ ┊ ┊ ˚✩ ⋆｡˚ ✩
 ┊ ┊ ┊ ✫
-┊ ┊ ︎✧   SECRETUM INC.
+┊ ┊ ︎✧   SCALABLI.
 ┊ ┊ ✯
 ┊ . ˚ ˚✩
 """)
@@ -67,57 +69,67 @@ bann = ("""
 #def _(event):
 #    event.app.exit()
 
-body =  HSplit([
-            Window(FormattedTextControl(banner, style="fg:red")),
-            Window(height=1, char=Border.HORIZONTAL)])
+#body =  HSplit([
+ #           Window(FormattedTextControl(banner, style="fg:red")),
+          #  Window(height=1, char=Border.HORIZONTAL)])
 
-container(body)
+#container(body)
 
-content = Label(f"sashay v {s_version}, using quo v {q_version}")
-container(content)
+#content = Label(f"sashay v {s_version}, using quo v {q_version}")
+#container(content)
 
 class logo:
   @classmethod
   def tool_header(self):
       content = Window(FormattedTextControl(f"{bann}", style="fg:yellow bg:blue bold"), align="center")
-      container(content)
+      return container(content)
 
   @classmethod
   def tool_footer(self):
-    quo.echo(f"  ", hidden=True)
-    quo.echo(f"  ", bg="red", nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg="yellow", nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg="green", nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg="blue", nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg="white", nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg="magenta", nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg="cyan", nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg=gold, nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg=aquamarine, nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg=crimson, nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg=khaki, nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg=lime, nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg=silver, nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg=indigo, nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg=maroon, nl=False)
-    time.sleep(0.05)
-    quo.echo(f"  ", bg=thistle, nl=False)
-    print('<aquamarine> </aquamarine>', end="")
-    quo.echo(f"  ", bg=salmon)
+      echo(f"  ", hidden=True)
+      echo(f"  ", bg="red", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="yellow", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="green", nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg="blue", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="white", nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg="magenta", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="cyan", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg=gold, nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg=aquamarine, nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg=crimson, nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg=khaki, nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg=lime, nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg=silver, nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg=indigo, nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg=maroon, nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg=thistle, nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="yellow", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="green", nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg="blue", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="white", nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg="magenta", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="cyan")
 
   @classmethod
   def not_ins(self):
@@ -178,12 +190,22 @@ class logo:
 
   @classmethod
   def nonet(self):
-    self.tool_header()
-    quo.echo(f"[ * ]", fg="vred", nl=False, bold=True)
-    quo.echo(f" There is no network connectivity", bold=True, fg="cyan")
+    @bind.add("<any>")
+    def _(event):
+        event.app.exit()
 
-    quo.echo(f"[ * ]", fg="vred", nl=False, bold=True)
-    quo.echo(f" Please try again later", fg="cyan", bold=True)
+    self.tool_header()
+    container(
+            Box(
+                Window(
+                    FormattedTextControl(
+                        Text("<red>[ * ]</red> <cyan><b>There is no network connectivity</b></cyan>\n<red>[ * ]</red> <cyan><b>Please try again</b></cyan>\n\n<green>Press any key to go back</green>")
+                        )
+                    )
+                ),
+            bind=True,
+            full_screen=True
+            )
     self.tool_footer()
 
   @classmethod
@@ -196,8 +218,12 @@ class logo:
 
   @classmethod
   def about(self,total):
+    from quo.table import _Table
     self.tool_header()
-    from quo.table import Table
+
+    @bind.add("ctrl-b")
+    def _(event):
+        event.app.exit()
 
     data = [
             ["Title", "Author", "Contact"],
@@ -210,10 +236,25 @@ class logo:
             ["[ + ] 370+ tools"],
             ["[ + ] Requires python 3.8+"]
             ]
-    Table(data)
-    echo(f" ", hidden=True)
-    Table(features)
-    echo(f'[✓] With great power comes great responsibility', fg="blue", bold=True)
+    content =  HSplit([
+        Window(
+            FormattedTextControl(
+                banner, 
+                style="fg:red"
+                )
+            ),
+        Window(
+            height=1, 
+            char=Border.HORIZONTAL
+            ),
+        Label(f"sashay v {s_version}, using quo v {q_version}"
+),
+        Window(FormattedTextControl((_Table(data, theme="fancy_grid"))), align="center"),
+        Window(FormattedTextControl((_Table(features, theme="fancy_grid"))), align="center"),
+        Frame(Label("       https://github.com/scalabli/sashay")),
+        Window(FormattedTextControl(Text("\n\n<b><aquamarine>[</aquamarine> <red>»</red> <aquamarine>]</aquamarine> <cyan>With great power, comes great responsibility</cyan>\n\n<green>Press `ctrl-c` or `ctrl-b` to go back</green></b>")))
+        ])
+    container(content, bind=True, full_screen=True)
     self.tool_footer()
 
 
@@ -257,7 +298,10 @@ class logo:
 
   @classmethod
   def back(self):
-      text = """𝟘𝟘) 𝔾𝕠 𝕓𝕒𝕔𝕜"""
+      if WIN:
+          text = """00) Go Back"""
+      else:
+          text = """𝟘𝟘) 𝔾𝕠 𝕓𝕒𝕔𝕜"""
       container(
                   Label(text, style="reverse")
                   )
@@ -270,36 +314,40 @@ class logo:
 
   @classmethod
   def installing(self):
-    quo.echo(f'#############################################', fg='vblack', bg='vcyan')
-    quo.echo(f'/////////////////INSTALLING//////////////////', fg='vred', bg='vwhite') 
-    quo.echo(f'#############################################', fg='vblack', bg='vcyan')
+      echo("#############################################")
+             #     Label(
+            #          "/////////////////INSTALLING//////////////////")
+          #        Label(
+             #         "#############################################")
+             #     )
+        #      ])
+         #     )
 
   @classmethod
   def menu(self,total):
-    from quo.spin import Spinner
-    with Spinner():
-        self.tool_header()
-
-        show_all = """      [1] 𝕊𝕙𝕠𝕨 𝕒𝕝𝕝 𝕥𝕠𝕠𝕝𝕤"""
-        console.bar(f"{show_all}", style="fg:black bg:#006B47")
-        time.sleep(0.3)
-
-        show_cat = """           [2] 𝕊𝕙𝕠𝕨 𝕒𝕝𝕝 𝕔𝕒𝕥𝕖𝕘𝕠𝕣𝕚𝕖𝕤"""
-        console.bar(f"{show_cat}", style="fg:black bg:#009965")
-        time.sleep(0.3)
-
-        update = """     [3] 𝕌𝕡𝕕𝕒𝕥𝕖 𝕊𝕒𝕤𝕙𝕒𝕪"""
-        console.bar(f"{update}", style="fg:black bg:#00C684")
-        time.sleep(0.2)
-
-        about = """[4] 𝔸𝕓𝕠𝕦𝕥 𝕦𝕤"""
-        console.bar(f"{about}", style="fg:black bg:#009965")
-        time.sleep(0.2)
-
-        exit_s = """   [x] 𝔼𝕩𝕚𝕥 𝕊𝕒𝕤𝕙𝕒𝕪"""
-        console.bar(f"{exit_s}", style="fg:black bg:#006B47")
-
-    self.tool_footer()
+      self.tool_header()
+      if WIN:
+          show_all = """[1] Show all tools"""
+          show_cat = """[2] Show all categories"""
+          update = """[3] Update Sashay"""
+          about = """[4] About us"""
+          exit_s = """[x] Exit Sashay"""
+      else:
+          show_all = """ [1] 𝕊𝕙𝕠𝕨 𝕒𝕝𝕝 𝕥𝕠𝕠𝕝𝕤"""
+          show_cat = """ [2] 𝕊𝕙𝕠𝕨 𝕒𝕝𝕝 𝕔𝕒𝕥𝕖𝕘𝕠𝕣𝕚𝕖𝕤"""
+          update = """ [3] 𝕌𝕡𝕕𝕒𝕥𝕖 𝕊𝕒𝕤𝕙𝕒𝕪"""
+          about = """ [4] 𝔸𝕓𝕠𝕦𝕥 𝕦𝕤"""
+          exit_s = """ [x] 𝔼𝕩𝕚𝕥 𝕊𝕒𝕤𝕙𝕒𝕪"""
+      container(
+              HSplit([
+                  Window(FormattedTextControl(f"{show_all}", style="fg:black bg:#006B47"), align="center"),
+                  Window(FormattedTextControl(f"{show_cat}", style="fg:black bg:#009965"), align="center"),
+                  Window(FormattedTextControl(f"{update}", style="fg:black bg:#00C684"), align="center"),
+                  Window(FormattedTextControl(f"{about}", style="fg:black bg:#009965"), align="center"),
+                  Window(FormattedTextControl(f"{exit_s}", style="fg:black bg:#006B47"), align="center")
+                  ])
+              )
+      self.tool_footer()
 
   @classmethod
   def exit(self):

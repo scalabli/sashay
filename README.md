@@ -26,28 +26,13 @@ pip install -U sashay
 
 ```
 
-or
-
-1. Clone the project files and cd into the directory:
-
-        git clone https://github.com/scalabli/sashay && cd sashay
-
-2. Run:
-     
-        python3 init.py
-or
-
-       ./install
-
-
-
 Type `sashay` or `sshy` from anywhere in your terminal
 
 
 <br>
 <p align="center">
-<img width="50%" src="pics/home_2021.2.png"/>
-<img width="50%" src="pics/categories_2021.2.png"/>
+<img width="50%" src="pics/home_2022.3.png"/>
+<img width="50%" src="pics/categories_2022.3png"/>
 </p>
 
 ## Tool Categories 

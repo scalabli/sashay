@@ -22,12 +22,12 @@ class Main:
       logo.install_tools()
 
         #print(f" ")
-      for tool_name in tool.names:
+      for tool_name in tool.meta:
         echo(f"[", fg="vyellow", bold=True, nl=False)
         echo(f" {num} ", fg="vmagenta", italic=True, nl=False)
         echo(f"]", fg="vyellow", bold=True, nl=False)
         echo(f" Install ", nl=False)
-        echo(f"{tool_name}", fg=aquamarine, bold=True)
+        echo(f"{tool_name}",  fg=aquamarine, bold=True)
         num+=1
       echo(f"")
       logo.back()
@@ -100,6 +100,8 @@ class Main:
                   cnt+=1
               print(f"")
               logo.back()
+              if tool.category == "information_gathering":
+                  print("ddd")
 
               session =  Prompt(bottom_toolbar=Text(' <b>List of</b> <u>all</u> tools in <style bg="red">categories</style>'), placeholder=Text('<gray>(please type something)</gray>'))
               tcmd = session.prompt("$» ")
@@ -239,17 +241,65 @@ class Main:
   @classmethod
   def menu(self):
     while True:
+      from quo.completion import Completer, Completion
       tool=tools()
       total=len(tool.names)
       clear()
       logo.menu(total)
 
-      @bind.add("ctrl-c")
-      def _(event):
-          event.app.exit()
+      suggestions = [
+              "1",
+              "2",
+              "3",
+              "4",
+              "x"
+              ]
+      suggestions_family = {
+              "1" : "All tools",
+              "2" : "Categories",
+              "3" : "Updates",
+              "4" : "About us",
+              "x" : "Exit"
+              }
+
+      family_colors = {
+              "All tools": "magenta",
+              "Categories": "green",
+              "Updates": "red",
+              "About us": "yellow",
+              "Exit": "aquamarine",
+              }
+      meta = {
+              "1" : Text("A list of <green>all</green> tools"),
+              "2" : Text("A list of <purple>categories</purple>"),
+              "3" : Text("Check if a new <khaki>version</khaki> of sashay is available"),
+              "4" : Text("About sashay"),
+              "x" : Text("Exit sashay")
+              }
+      class SuggestionCompleter(Completer):
+          def get_completions(self, document, complete_event):
+              word = document.get_word_before_cursor()
+              for suggestion in suggestions:
+                  if suggestion.startswith(word):
+                      if suggestion in suggestions_family:
+                          family = suggestions_family[suggestion]
+                          family_color = family_colors.get(family, "default")
+                          display = Text(
+                                  "%s<b>:</b> <red>(<" + family_color + ">%s</" + family_color+ ">)</red>") % (suggestion, family)
+                      else:
+                          display = suggestion
+
+                      yield Completion(
+                              suggestion,
+                              start_position=-len(word),
+                              display=display,
+                              display_meta=meta.get(suggestion)
+                              )
 
 
-      session = Prompt(bottom_toolbar=Text('<b>Main</b>  <style bg="red">menu</style>'), placeholder=Text('<style color="#888888">(please type something)</style>'))
+
+      session = Prompt(bottom_toolbar=Text('<b>Main</b>  <style bg="red">menu</style>'), completer=SuggestionCompleter(), placeholder=Text('<style color="#888888">(please type something)</style>'))
+      
       cmd = session.prompt("$» ")
       if cmd == "1":
         self.install_tools(self)
@@ -300,7 +350,8 @@ class tools:
     cat_path = Path(__file__).parent / "assets/cat.json"
 
     with open(data_path) as data_file:
-        self.data=json.load(data_file)  
+        self.data=json.load(data_file)
+    self.meta = list(self.data.keys())
 
     with open(cat_path) as cat_file:
       self.category_data=json.load(cat_file)
@@ -405,6 +456,24 @@ class tools:
             clear()
             logo.not_installed(name)
             tmp=session.prompt("$» ")
+    if package_manager == "apt":
+        import apt
+        cache = apt.Cache()
+        if cache[package_name].is_installed:
+            clear()
+            logo.already_installed(name)
+            tmp=session.prompt("$» ")
+        else:
+            os.system("sudo apt install " + package_name)
+
+       # if os.path.exists(system.home+"/"+package_name):
+           # clear()
+         #   logo.already_installed(name)
+      #      tmp=session.prompt("$» ")
+     #   else:
+       #     if system.sudo != None:
+         #       print("dddd")
+            #    os.system(system.sudo+" apt " + package_name)
     else:
       clear()
       logo.nonet()

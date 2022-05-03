@@ -6,7 +6,7 @@ from setuptools import setup
 setup(
     name="sashay",
     install_requires=[
-        "quo>=2022.4.3",
+        "quo>=2022.5",
     ],
     package_data={
         # If any package contains *.txt files, include them:
