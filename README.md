@@ -32,7 +32,7 @@ Type `sashay` or `sshy` from anywhere in your terminal
 <br>
 <p align="center">
 <img width="50%" src="pics/home_2022.3.png"/>
-<img width="50%" src="pics/categories_2022.3png"/>
+<img width="50%" src="pics/categories_2022.3.png"/>
 </p>
 
 ## Tool Categories 
