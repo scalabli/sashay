@@ -28,6 +28,7 @@ pip install -U sashay
 
 Type `sashay` or `sshy` from anywhere in your terminal
 
+Press `[TAB]` to show completions
 
 <br>
 <p align="center">
