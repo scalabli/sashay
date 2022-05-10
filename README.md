@@ -26,10 +26,6 @@ pip install -U sashay
 
 ```
 
-Type `sashay` or `sshy` from anywhere in your terminal
-
-Press `[TAB]` to show completions
-
 <br>
 <p align="center">
 <img width="50%" src="pics/home_2022.3.png"/>
@@ -60,17 +56,19 @@ Press `[TAB]` to show completions
 
 Type **`sashay`** or **`sshy`** from anywhere in your terminal
 
-Each number represents a specific output:
+Press `[TAB]` to show  completion, each number represents a specific output:
 
-:bulb: Type `1` to show all available tools. Type the number corresponding number of a tool which you want to install.
+:bulb: `1` to show all available tools. Type the number corresponding number of a tool which you want to install.
 
-:bulb: Type `2` to show tools categories
+:bulb: `2` to show tools categories
 
-:bulb: Type `3` to  update sashay
+:bulb: `3` to  update sashay
 
-:bulb: Type `4` to know more about sashay
+:bulb: `4` to know more about sashay
 
-:bulb: Type `x` to exit Sashay
+:bulb: `x` to exit Sashay
+
+- You can also type the numbers manualy intested of pressing `[TAB]`
 
 ## Requirements
 * Python **3.8+**
