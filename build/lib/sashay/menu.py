@@ -298,7 +298,7 @@ class Main:
 
 
 
-      session = Prompt(bottom_toolbar=Text('<b>Main</b>  <style bg="red">menu</style>   |Press `[TAB]` for completion'), completer=SuggestionCompleter(), placeholder=Text('<style color="#888888">please type something</style>'))
+      session = Prompt(bottom_toolbar=Text('<b>Main</b>  <style bg="red">menu</style>'), completer=SuggestionCompleter(), placeholder=Text('<style color="#888888">(please type something)</style>'))
       
       cmd = session.prompt("$» ")
       if cmd == "1":
@@ -465,15 +465,6 @@ class tools:
             tmp=session.prompt("$» ")
         else:
             os.system("sudo apt install " + package_name)
-
-    if package_manager == "pip":
-        try:
-            import package_name
-            clear()
-            logo.already_installed(name)
-            tmp=session.prompt("$» ")
-        except ImportError:
-            os.system("pip install -U " + package_name)
 
        # if os.path.exists(system.home+"/"+package_name):
            # clear()

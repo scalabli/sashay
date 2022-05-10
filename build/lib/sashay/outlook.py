@@ -12,7 +12,7 @@ from quo.accordance import WIN
 from quo.color import *
 from quo import clear, container, echo, print
 from quo.console import Console
-from quo.keys import bind, focus
+from quo.keys import bind
 from quo.layout import FormattedTextControl, HSplit, Window
 from quo.text import Text
 from quo.widget import Box, Frame, Label
@@ -86,76 +86,50 @@ class logo:
 
   @classmethod
   def tool_footer(self):
-      from quo.color import ColorDepth
-      from quo.progress import formatters, ProgressBar
-
-      custom_formatters = [
-            #  formatters.Label(),
-             # formatters.Text(" "),
-              formatters.Rainbow(formatters.Bar()),
-             # formatters.Text(" left: "),
-             # formatters.Rainbow(formatters.TimeLeft())
-              ]
-
-      color_depth = ColorDepth.eight_bit
-
-      with ProgressBar(color_depth=color_depth, formatters=custom_formatters) as pb:
-          for i in pb(range(100)):
-              time.sleep(0.01)
-
       echo(f"  ", hidden=True)
-      container(
-              Box(
-              Window(
-                  FormattedTextControl(
-                      Text("<st bg='red'>   </st><ye bg='yellow'>   </ye><gr bg='green'>   </gr><bl bg='blue'>   </bl><wh bg='white'>   </wh><ma bg='magenta'>   </ma><cy bg='cyan'>   </cy><aq bg='aquamarine'>   </aq><cr bg='crimson'>   </cr><kh bg='khaki'>   </kh><in bg='indigo'>   </in><st bg='red'>   </st><ye bg='yellow'>   </ye><gr bg='green'>   </gr><bl bg='blue'>   </bl><wh bg='white'>   </wh><ma bg='magenta'>   </ma><cy bg='cyan'>   </cy>"                    )
-                      )
-                  )
-              )
-              )
-    #  echo(f"  ", bg="red", nl=False)
- #     time.sleep(0.0008)
-  #    echo("  ", bg="yellow", nl=False)
-     # time.sleep(0.0008)
-  #    echo("  ", bg="green", nl=False)
-    #  time.sleep(0.0008)
-    #  echo(f"  ", bg="blue", nl=False)
-   #   time.sleep(0.0008)
-  #    echo("  ", bg="white", nl=False)
-  #    time.sleep(0.0008)
-  #    echo(f"  ", bg="magenta", nl=False)
- #     time.sleep(0.0008)
-#      echo("  ", bg="cyan", nl=False)
-  #    time.sleep(0.0008)
- #     echo("  ", bg=gold, nl=False)
-   #   time.sleep(0.0008)
-#      echo("  ", bg=aquamarine, nl=False)
-   #   time.sleep(0.0008)
-   #   echo("  ", bg=crimson, nl=False)
-  #    time.sleep(0.0008)
-  #    echo("  ", bg=khaki, nl=False)
-    #  time.sleep(0.0008)
- #     echo(f"  ", bg=lime, nl=False)
-   #   time.sleep(0.0008)
-   #   echo(f"  ", bg=silver, nl=False)
-#      time.sleep(0.0008)
- #     echo(f"  ", bg=indigo, nl=False)
-   #   time.sleep(0.0008)
-  #    echo(f"  ", bg=maroon, nl=False)
-  #    time.sleep(0.0008)
-  #    echo(f"  ", bg=thistle, nl=False)
-  #    time.sleep(0.0008)
-   #   echo("  ", bg="yellow", nl=False)
-     # time.sleep(0.0008)
- #     echo("  ", bg="green", nl=False)
-   #   time.sleep(0.0008)
-   #   echo(f"  ", bg="blue", nl=False)
-     # time.sleep(0.0008)
-    #  echo("  ", bg="white", nl=False)
-   #   time.sleep(0.0008)
-  #   echo(f"  ", bg="magenta", nl=False)
-    #  time.sleep(0.0008)
-   #   echo("  ", bg="cyan")
+      echo(f"  ", bg="red", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="yellow", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="green", nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg="blue", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="white", nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg="magenta", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="cyan", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg=gold, nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg=aquamarine, nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg=crimson, nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg=khaki, nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg=lime, nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg=silver, nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg=indigo, nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg=maroon, nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg=thistle, nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="yellow", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="green", nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg="blue", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="white", nl=False)
+      time.sleep(0.0008)
+      echo(f"  ", bg="magenta", nl=False)
+      time.sleep(0.0008)
+      echo("  ", bg="cyan")
 
   @classmethod
   def not_ins(self):
@@ -286,7 +260,7 @@ class logo:
 
   @classmethod
   def install_tools(self):
-    console.bar("ALL TOOLS")
+    console.bar("SELECT YOUR TOOL")
 
   @classmethod
   def already_installed(self,name):
@@ -364,9 +338,7 @@ class logo:
           update = """ [3] 𝕌𝕡𝕕𝕒𝕥𝕖 𝕊𝕒𝕤𝕙𝕒𝕪"""
           about = """ [4] 𝔸𝕓𝕠𝕦𝕥 𝕦𝕤"""
           exit_s = """ [x] 𝔼𝕩𝕚𝕥 𝕊𝕒𝕤𝕙𝕒𝕪"""
-
       container(
-              Frame(
               HSplit([
                   Window(FormattedTextControl(f"{show_all}", style="fg:black bg:#006B47"), align="center"),
                   Window(FormattedTextControl(f"{show_cat}", style="fg:black bg:#009965"), align="center"),
@@ -374,7 +346,7 @@ class logo:
                   Window(FormattedTextControl(f"{about}", style="fg:black bg:#009965"), align="center"),
                   Window(FormattedTextControl(f"{exit_s}", style="fg:black bg:#006B47"), align="center")
                   ])
-              ))
+              )
       self.tool_footer()
 
   @classmethod
