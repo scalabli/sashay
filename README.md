@@ -1,6 +1,6 @@
 <h1>Sashay<img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
 
-[![Sashay](assets/sashay.png)](https://github.com/gerrishons)
+[![Sashay](assets/sashay-logo.png)](https://github.com/gerrishons)
 ---
 [![Downloads](https://pepy.tech/badge/sashay)](https://pepy.tech/project/sashay)
 [![PyPI version](https://badge.fury.io/py/sashay.svg)](https://badge.fury.io/py/sashay)
