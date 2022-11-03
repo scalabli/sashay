@@ -1,6 +1,6 @@
 <h1>Sashay<img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
 
-[![Sashay](assets/sashay-logo.png)](https://github.com/gerrishons)
+[![Sashay](pics/sashay-logo.png)](https://github.com/gerrishons)
 ---
 [![Downloads](https://pepy.tech/badge/sashay)](https://pepy.tech/project/sashay)
 [![PyPI version](https://badge.fury.io/py/sashay.svg)](https://badge.fury.io/py/sashay)
@@ -28,7 +28,7 @@ pip install -U sashay
 
 <br>
 <p align="center">
-<img width="50%" src="pics/home_2022.3.png"/>
+<img width="50%" src="pics/home-2022.4.png"/>
 <img width="50%" src="pics/categories_2022.3.png"/>
 </p>
 
