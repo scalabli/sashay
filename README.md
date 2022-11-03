@@ -28,7 +28,7 @@ pip install -U sashay
 
 <br>
 <p align="center">
-<img width="50%" src="pics/home-2022.4.png"/>
+<img width="90%" src="pics/home-2022.4.png"/>
 <img width="50%" src="pics/categories_2022.3.png"/>
 </p>
 
